@@ -148,6 +148,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 12px;
 }
 
 .contacts-buttons .button {
@@ -165,7 +166,26 @@ body {
 .button:focus {
   background: var(--background-buttonRed-section2-section7);
   color: var(--font-color-white);
+  border: solid var(--font-color-white);
 }
+
+.arrow {
+  border: solid var(--background-buttonRed-section2-section7);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.arrow:hover,
+.arrow:focus{
+  border: solid var(--font-color-white);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
 
 /* modal part - not complete */
 .is-hidden {
