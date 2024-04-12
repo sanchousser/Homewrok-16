@@ -1,3 +1,10 @@
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: #fff5f6;
+}
 .advantages {
   flex-wrap: wrap;
   padding-top: 125px;
@@ -8,11 +15,7 @@
 .advantages-list {
   list-style: none;
   display: flex;
-  background: repeating-linear-gradient(
-    90deg,
-    transparent 0 50px,
-    #fff5f6 50px 100px
-  );
+  background-color: #fff5f6;
 }
 .advantages-item {
   width: 100%;
@@ -36,11 +39,7 @@
 
 @media screen and (min-width: 768px) {
   .advantages {
-    background: repeating-linear-gradient(
-      90deg,
-      transparent 0 50px,
-      #fff5f6 50px 100px
-    );
+    background-color: #fff5f6;
   }
   .advantages-item {
     width: 33.3333333333%;
@@ -57,11 +56,7 @@
 }
 @media screen and (min-width: 1280px) {
   .advantages {
-    background: repeating-linear-gradient(
-      90deg,
-      transparent 0 50px,
-      #fff5f6 50px 100px
-    );
+    background-color: #fff5f6;
   }
   .advantages-number {
     font-size: 58px;
@@ -76,11 +71,7 @@
 }
 .gallery {
   flex-wrap: wrap;
-  background: repeating-linear-gradient(
-    90deg,
-    transparent 0 50px,
-    #fff5f6 50px 100px
-  );
+  background-color: #fff5f6;
   display: flex;
   justify-content: center;
 }
@@ -104,20 +95,12 @@
 }
 @media screen and (min-width: 768px) {
   .gallery {
-    background: repeating-linear-gradient(
-      90deg,
-      transparent 0 50px,
-      #fff5f6 50px 100px
-    );
+    background-color: #fff5f6;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .gallery {
-    background: repeating-linear-gradient(
-      90deg,
-      transparent 0 50px,
-      #fff5f6 50px 100px
-    );
+    background-color: #fff5f6;
   }
 }
