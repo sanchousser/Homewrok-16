@@ -122,32 +122,29 @@
         </div>
       </li>
     </ul>
-    <div class="contacts-buttons">
-      <button class="button our-locations-button" type="button" data-modal-open>
-        Our Locations
-        <i class="arrow"></i>
-      </button>
-      <button class="button franchise-button" type="button" data-modal-open>
-        Franchise
-        <i class="arrow"></i>
-      </button>
+<div class="contacts-buttons">
+  <button class="button our-locations-button" type="button" id="our-locations-button">
+    Our Locations
+    <i class="arrow"></i>
+  </button>
+  <button class="button franchise-button" type="button" id="franchise-button">
+    Franchise
+    <i class="arrow"></i>
+  </button>
+</div>
+<div class="modal is-hidden container" id="modal">
+  <div class="modal-content">
+    <button title="close-btn" class="close-btn" id="close-btn">
+      <i data-feather="x"></i>
+    </button>
+    <h2 class="modal-heading">Our Locations Modal</h2>
+    <div>
+      <form class="modal-form">
+        <p>Just for test</p>
+        <button type="submit" class="modal-send-btn">Send</button>
+      </form>
     </div>
   </div>
-
-  <div class="modal is-hidden container" data-modal>
-    <div class="modal-content">
-      <button title="close-btn" class="close-btn" data-modal-close>
-        <i data-feather="x"></i>
-      </button>
-      <h2 class="modal-heading">Our Locations Modal</h2>
-      <div>
-        <form class="modal-form">
-          <p>Just for test</p>
-
-          <button type="submit" class="modal-send-btn">Send</button>
-        </form>
-      </div>
-    </div>
-  </div>
+</div>
 </section>
-<script src="./contacts-modal.js"></script>
+
