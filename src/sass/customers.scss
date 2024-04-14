@@ -1,0 +1,234 @@
+/* Stilizare pentru desktop */
+@media screen and (min-width: 769px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .customers-img {
+    border-radius: 44px;
+    width: 85px;
+    height: 85px;
+    padding-top: 120px;
+    padding-bottom: 10px;
+  }
+
+  .customers-ghilimele {
+    padding-left: 73px;
+    padding-right: 15px;
+  }
+
+  .customers-ghilimele-paragraf {
+    display: flex;
+    background-color: #fafafa;
+    padding: 32px;
+    padding-left: 73px;
+    padding-right: 73px;
+    margin-bottom: 16px;
+    margin-left: 116px;
+    margin-right: 116px;
+  }
+
+  .customers-comment p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #000;
+    background-image: repeating-linear-gradient(
+      to top,
+      #e1e1e1,
+      #e1e1e1 1px,
+      transparent 1px,
+      transparent 32px
+    );
+  }
+
+  .customers-comment {
+    max-width: 968px;
+    width: 100%;
+  }
+
+  .customers-reviews-name-city p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.86;
+    text-align: center;
+    color: #000;
+    padding-top: 16px;
+    padding-bottom: 32px;
+  }
+
+  .customers-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* Stilizare desktop sfarsit */
+
+/* Stilizare pentru tableta */
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .customers-img {
+    border-radius: 44px;
+    width: 85px;
+    height: 85px;
+    padding-top: 120px;
+    padding-bottom: 32px;
+  }
+
+  .customers-ghilimele {
+    padding-left: 74px;
+    padding-top: 20px;
+    padding-bottom: 104px;
+  }
+
+  .customers-ghilimele-paragraf {
+    display: flex;
+    background-color: #fafafa;
+    padding-top: 32px;
+    margin-bottom: 4px;
+   margin-left: 74px;
+   margin-right: 74px;
+  }
+
+  .customers-comment p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 29.96px;
+    letter-spacing: 4%;
+    text-align: center;
+    color: #000;
+    padding-bottom: 36px;
+    padding-top: 20px;
+    padding-right: 70px;
+  }
+
+  .customers-puncte{
+    margin: 0px;
+  }
+
+  .customers-comment {
+    max-width: 620px;
+    width: 100%;
+  }
+
+  .customers-reviews-name-city p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 29.76px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 0px;
+  }
+
+  .customers-list{
+    padding-top: 32px;
+
+  }
+
+  .customers-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Stilizare pentru tableta sfarsit */
+
+/* Stilizare pentru mobile */
+
+@media screen and (max-width: 320px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+
+  }
+
+
+  .customers-img {
+    border-radius: 44px;
+    width: 85px;
+    height: 85px;
+    padding-top: 60px;
+    padding-bottom: 32px;
+    padding-left: 118px;
+    padding-right: 117px;
+  }
+
+  .customers-ghilimele {
+    padding-left: 53px;
+   
+  }
+
+  .customers-ghilimele-paragraf {
+    display: flex;
+    background-color: #fafafa;
+    padding-top: 47px;
+    margin-bottom: 4px;
+    padding-left: 20px;
+    margin-right: 20px;
+  }
+
+  .customers-comment p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 31.2px;
+    letter-spacing: 4%;
+    text-align: center;
+    color: #000;
+    padding-bottom: 36px;
+    margin-left: -38px;
+    padding-right: 58px;
+   
+  }
+
+  .customers-comment {
+    max-width: 280px;
+    width: 100%;
+  }
+
+  .customers-puncte{
+    padding-top: 16px;
+   
+    
+  }
+
+  .customers-reviews-name-city p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 26.04px;
+    text-align: center;
+    color: #000;
+    padding-top: 16px;
+    margin-bottom: 0px;
+    
+  }
+
+  .customers-list{
+    padding-top: 16px ;
+  }
+
+  .customers-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* Stilizare pentru mobile sfarsit */
