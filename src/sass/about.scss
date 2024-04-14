@@ -1,6 +1,4 @@
 :root {
-  --font-dm-sans: 'DM Sans';
-  --font-titan-one: 'Titan One';
   --background-section2-section3-rozDeschis: #ffb8ca;
   --background-section2-roz-inchis: #ffa5ba;
   --background-section3-section7-bej: #f0d1a5;
@@ -55,7 +53,7 @@
   width: 400px;
   height: 104px;
 
-  font-family: var(--font-dm-sans);
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 19.44px;
@@ -66,7 +64,7 @@
 .text2-about {
   width: 401px !important;
   height: 130px;
-  font-family: var(--font-dm-sans);
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 194%;
@@ -76,7 +74,7 @@
   line-height: 19.44px;
 }
 .about-h3 {
-  font-family: var(--font-titan-one);
+  font-family: 'Titan One', sans-serif;
   font-weight: 400;
   font-size: 30px;
   letter-spacing: 0.04em;
@@ -87,7 +85,7 @@
   margin-bottom: 0;
 }
 .about-h1 {
-  font-family: var(--font-titan-one);
+  font-family: 'Titan One', sans-serif;
   font-weight: 400;
   font-size: 58px;
   letter-spacing: 0.06em;
@@ -107,7 +105,7 @@
   border-radius: 22px;
   border: none;
   margin-left: 20px;
-  font-family: var(--font-dm-sans);
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   font-size: 14px;
   text-align: center;
