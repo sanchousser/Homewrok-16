@@ -137,6 +137,54 @@
 
 }
 
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 0 auto;
+    max-width: 768px;
+  }
+  .title-products h3 {
+    font-family: var(--font-titan-one);
+    font-weight: 400;
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--font-color-pink);
+  }
+  .title-products h2 {
+    font-family: var(--font-titan-one);
+    font-weight: 400;
+    font-size: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--font-color-red);
+  }
+  .img1 {
+    width: 224px;
+    height: 224px;
+  }
+  .card h3 {
+    font-family: var(--font-titan-one);
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--font-color-white);
+  }
+  .card p {
+    font-family: var(--font-dm-sans);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: var(--font-color-white);
+  }
+
+
+}
+
 
 @media only screen and (max-width: 480px) {
   .container {
@@ -193,7 +241,7 @@
   }
 
   .card p {
-    font-family: var(--font-titan-one);
+    font-family: var(--font-dm-sans);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
