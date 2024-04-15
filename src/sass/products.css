@@ -163,6 +163,13 @@
     width: 224px;
     height: 224px;
   }
+  .card1,
+  .card2,
+  .card3 {
+    border-radius: 24px;
+    width: 224px;
+    height: 473px;
+  }
   .card h3 {
     font-family: var(--font-titan-one);
     font-weight: 400;
