@@ -180,6 +180,9 @@
 /*Stilizare mobile 1158px*/
 @media screen and (max-width: 320px) {
   .container-aboute {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
     height: 1100px;
   }
 
