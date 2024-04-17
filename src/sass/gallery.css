@@ -1,0 +1,145 @@
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.advantages-gallery {
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.advantages {
+  flex-wrap: wrap;
+  padding-top: 125px;
+  background-color: #fff5f6;
+  height: auto;
+}
+.advantages .header-h3 {
+  display: none;
+}
+.advantages-list {
+  list-style: none;
+  display: flex;
+  background-color: #fff5f6;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.advantages-item {
+  width: 100%;
+}
+.advantages-number {
+  font-family: 'Titan One';
+  color: #d41443;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.advantages-description {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 170%;
+  color: #000;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-gallery {
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .advantages-list {
+    list-style: none;
+    display: flex;
+    background-color: #fff5f6;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .advantages {
+    background-color: #fff5f6;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .advantages-item {
+    width: 33.3333333333%;
+  }
+  .advantages-number {
+    font-size: 48px;
+    line-height: 55px;
+    text-transform: none;
+  }
+  .advantages-description {
+    font-size: 14px;
+    line-height: 174%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .advantages-gallery {
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .advantages-list {
+    list-style: none;
+    display: flex;
+    background-color: #fff5f6;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .advantages {
+    background-color: #fff5f6;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .advantages-number {
+    font-size: 58px;
+    line-height: 66px;
+    text-transform: none;
+  }
+  .advantages-description {
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.02em;
+  }
+}
+.gallery {
+  flex-wrap: wrap;
+  background-color: #fff5f6;
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+.header-h2 {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.147;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+.header-h2--hidden {
+  display: none;
+}
+.img {
+  display: block;
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    background-color: #fff5f6;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gallery {
+    background-color: #fff5f6;
+    height: auto;
+  }
+}
