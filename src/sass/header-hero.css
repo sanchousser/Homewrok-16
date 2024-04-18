@@ -420,7 +420,7 @@
 
 .tasty-ice-cream {
   position: relative;
-  top: -10px;
+  top: -40px;
   right: -50px;
 }
 
@@ -448,7 +448,7 @@
   margin-right: 20px;
 }
 
-@media screen and (min-width: 521px) and (max-width: 768px) {
+@media screen and (min-width: 321px) and (max-width: 768px) {
   /* Stiluri pentru tablete */
   .js-open-menu {
     display: flex;
@@ -483,6 +483,11 @@
     height: auto;
     max-width: 236px;
     z-index: 1;
+  }
+
+  .tasty-ice-cream {
+    top: -30px;
+    right: -50px;
   }
 
   .tasty-ice-cream img {

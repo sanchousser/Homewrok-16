@@ -1,0 +1,217 @@
+:root {
+  --font-dm-sans: 'DM Sans', sans-serif;
+  --font-titan-one: 'Titan One', sans-serif;
+  --background-section2-section3-rozDeschis: #ffb8ca;
+  --background-section2-roz-inchis: #ffa5ba;
+  --background-section3-section7-bej: #f0d1a5;
+  --background-section3-section7-verde: #c2e297;
+  --backround-sec4-sec5-sec7-sec8-rozAlbit: #fff5f6;
+  --bacground-buttonWhite-sec1-sec2-sec4-sec7: #ffffff;
+  --background-buttonRed-section2-section7: #d41443;
+  --backgoundSVG-footer: #fea5bb;
+  --background-modal: #e18298;
+  --underline-color: #e1e1e1;
+  --font-color-white: #ffffff;
+  --font-color-red: #d41443;
+  --font-color-pink: #ffa5ba;
+  --font-color-footer-Grey: #907e82;
+}
+
+.container-products h2,
+h3 {
+  font-family: var(--font-titan-one);
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container-products {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  // position: relative;
+}
+
+.title-products h3 {
+  font-family: var(--font-titan-one);
+  color: var(--font-color-pink);
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+      font-size: 26px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
+}
+
+.title-products h2 {
+  font-family: var(--font-titan-one);
+  color: var(--font-color-red);
+  font-weight: 400;
+  font-size: 34px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 5px;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+    
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+        
+  }
+}
+
+.card-products {
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top:200px;
+  @media screen and (min-width: 1200px) {
+      gap: 32px;
+      margin-top: 320px;
+  }
+}
+
+.product-card-list {
+  width: 280px;
+  height: 629px;
+  position: relative;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    width: 224px;
+    height: 611px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 368px;
+    height: 796px;
+  }
+}
+
+.product-content-card{
+  border-radius: 24px;
+  background-color: var(--background-section2-section3-rozDeschis);
+  width: 280px;
+  height: 489px;  
+  padding-top: 35%;
+  // position: relative;
+  @media screen and (min-width: 768px) {
+    width: 224px;
+    height: 473px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    width: 368px;
+    height: 535px;
+  }
+}
+
+.card2 {
+  background-color: var(--background-section3-section7-bej);
+}
+
+.card3 {
+  background-color: var(--background-section3-section7-verde);
+}
+
+// .product-content-card::before{
+//   content: url(../images/ice-cream.png);
+//   position: absolute;
+//   z-index: 1;
+//   top: -250px;
+//   left:0;
+//   right:0;
+//   width: 100%;
+//   height: 100%;
+// }
+
+// .card2::before {
+//   content: url(../images/ice-coffe.png);
+// }
+
+// .card3::before {
+//   content: url(../images/milkshakes.png);
+// }
+
+.container-products p {
+  font-family: var(--font-dm-sans);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 176%;
+  text-align: center;
+  color: var(--font-color-white);
+  height: 150px;
+  padding: 0px 18px;
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    padding: 0px 32px;
+    height: 134px;
+  }
+}
+
+.product-content-card h3 {
+  letter-spacing: 0.04em;
+  color: var(--font-color-white);
+  line-height: 34.35px;
+  font-size: 20px;
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
+}
+
+.product-content-card h3::after {
+  content: '\a...';
+  white-space: pre;
+  color: var(--font-color-white);
+  height: 26px;
+  width: 6px;
+}
+
+.product-images {
+  width: 100%;
+  height: auto;
+  width: 280px;
+  height: 280px;
+  margin-top: -180px;
+  margin-left: -135px;
+  position: absolute;
+  @media screen and (min-width: 768px) {
+    width: 224px;
+    height: 224px;
+    margin-top: -140px;
+    margin-left: -110px;
+  }
+    
+  @media screen and (min-width: 1200px) {
+    width: 368px;
+    height: 394px;
+    margin-top: -260px;
+    margin-left: -180px;
+  }
+}
+
+.arrow-products {
+  width: 20px;
+  height: 13px;
+  fill: var(--font-color-red);
+}
+
+.product-arrow-button{
+  background-color: var(--bacground-buttonWhite-sec1-sec2-sec4-sec7);
+  border: solid var(--bacground-buttonWhite-sec1-sec2-sec4-sec7);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
