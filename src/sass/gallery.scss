@@ -1,7 +1,7 @@
 .container {
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+
   width: 100%;
 }
 .advantages-gallery {
@@ -24,6 +24,7 @@
   background-color: #fff5f6;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin: 0;
 }
 .advantages-item {
   width: 100%;
@@ -76,7 +77,7 @@
     line-height: 174%;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .advantages-gallery {
     height: auto;
     flex-wrap: wrap;
@@ -137,7 +138,7 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .gallery {
     background-color: #fff5f6;
     height: auto;
