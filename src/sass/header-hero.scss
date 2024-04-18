@@ -1,19 +1,19 @@
 :root {
-    --background-section2-section3-rozDeschis: #FFB8CA;
-    --background-section2-roz-inchis: #FFA5BA;
-    --background-section3-section7-bej: #F0D1A5;
-    --background-section3-section7-verde: #C2E297;
-    --backround-sec4-sec5-sec7-sec8-rozAlbit: #FFF5F6;
-    --bacground-buttonWhite-sec1-sec2-sec4-sec7: #FFFFFF;
-    --background-buttonRed-section2-section7: #D41443;
-    --backgoundSVG-footer: #FEA5BB;
-    --background-modal: #E18298;
-    --underline-color: #E1E1E1;
+    --background-section2-section3-rozDeschis: #ffb8ca;
+    --background-section2-roz-inchis: #ffa5ba;
+    --background-section3-section7-bej: #f0d1a5;
+    --background-section3-section7-verde: #c2e297;
+    --backround-sec4-sec5-sec7-sec8-rozAlbit: #fff5f6;
+    --bacground-buttonWhite-sec1-sec2-sec4-sec7: #ffffff;
+    --background-buttonRed-section2-section7: #d41443;
+    --backgoundSVG-footer: #fea5bb;
+    --background-modal: #e18298;
+    --underline-color: #e1e1e1;
 
-    --font-color-white: #FFFFFF;
-    --font-color-red: #D41443;
-    --font-color-pink: #FFA5BA;
-    --font-color-footer-Grey: #907E82;
+    --font-color-white: #ffffff;
+    --font-color-red: #d41443;
+    --font-color-pink: #ffa5ba;
+    --font-color-footer-Grey: #907e82;
 }
 
 /* @font-face {
@@ -27,8 +27,7 @@
     src: url('https: //fonts.googleapis.com/css2?family=Titan+One&display=swap');
 } */
 
-
-.container {
+.container-hero {
     max-width: 1200px;
     min-width: 300px;
     width: 100%;
@@ -58,8 +57,7 @@
 }
 
 .navigation-menu {
-
-    font-family: "DM Sans", sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 20.83px;
@@ -73,14 +71,11 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
-
-
 }
 
 .navigation-menu li {
     display: flex;
     justify-content: space-between;
-
 }
 
 .navigation-menu ul li a {
@@ -91,27 +86,24 @@
 .navigation-menu ul li a:hover {
     text-decoration: none;
     color: var(--font-color-red);
-
 }
 
 .buy-now-bttn {
     width: 159px;
     height: 44px;
     border-radius: 22px 22px 22px 22px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border: 2px;
     color: var(--font-color-red);
-    font-family: "DM Sans", sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 20.83px;
     text-align: center;
-
 }
 
 .menu-icon-button {
     display: flex;
-
 }
 
 .menu-icon-button {
@@ -135,77 +127,6 @@
 }
 
 
-.js-menu-container {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    width: 250px;
-    right: 0px;
-    background-color: var(--background-modal);
-    padding-left: 20px;
-
-}
-
-.js-menu-container.is-open {
-    display: flex;
-    flex-direction: column;
-    background-color: var(#E17992);
-    width: 250px;
-    z-index: 1000;
-    justify-content: center;
-    align-items: start;
-    height: 500px;
-}
-
-
-
-.js-close-menu {
-   display: flex;
-   background-color: none;
-   color: #FFFFFF;
-   border: none;
-   position: relative;
-   right: -130px;
-   top: 20px;
-   
-}
-
-
-.mobile-navigation-menu {
-    position: relative;
-    top: 20px;
-
-
-}
-
-.menu-list-mobile {
-    list-style: none;
-    font-family: "DM Sans", sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 18.23px;
-    text-align: left;
-    outline: none;
-}
-
-.buy-now-bttn-mobile {
-    width: 159px;
-    height: 44px;
-    border-radius: 22px 22px 22px 22px;
-    background-color: #FFFFFF;
-    border: 2px;
-    color: var(--font-color-red);
-    font-family: "DM Sans", sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20.83px;
-    text-align: center;
-    position: relative;
-    top: 30px;
-    justify-content: center;
-
-}
-
 .menu-list {
     list-style: none;
     padding: 0;
@@ -221,8 +142,6 @@
     font-size: 18px;
 }
 
-
-
 .hero-section {
     display: flex;
     height: 610px;
@@ -235,13 +154,12 @@
     z-index: 3;
 }
 
-
 .middle-hero {
     display: flex;
     justify-content: center;
 }
 
-.container {
+.container-hero {
     position: relative;
     max-width: 1200px;
 }
@@ -255,11 +173,7 @@
     height: auto;
     max-width: 236px;
     z-index: 1;
-
- 
 }
-
-
 
 .circle-background {
     background-color: var(--background-section2-roz-inchis);
@@ -271,17 +185,11 @@
     left: 62%;
     transform: translate(-50%, -50%);
     z-index: 0;
-
-
 }
 
-
-
 .right-hero {
-
     position: relative;
     top: -7.5%;
-
 }
 
 .hero-motto {
@@ -291,11 +199,10 @@
 
 .tasty-ice-cream {
     left: 20px;
-
 }
 
 .hero-motto h2 {
-    font-family: "Titan One";
+    font-family: 'Titan One';
     font-size: 38px;
     font-weight: 400;
     line-height: 43.51px;
@@ -304,12 +211,10 @@
     color: var(--font-color-white);
     display: block;
     margin-bottom: 0px;
-
-   
 }
 
 .hero-motto h1 {
-    font-family: "Titan One";
+    font-family: 'Titan One';
     font-size: 58px;
     font-weight: 400;
     line-height: 52.49px;
@@ -330,18 +235,15 @@
     width: 107px;
     height: 40px;
     border-radius: 20px 20px 20px 20px;
-    background-color: var(--background-buttonRed-section2-section7);
+    background-color: var(--font-color-white);
     border: none;
-    font-family: "DM Sans", sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 18.23px;
     text-align: center;
-    color: var(--font-color-white);
-
-  
+    color: var(--background-buttonRed-section2-section7);
 }
-
 
 .how-its-made-bttn {
     width: 138px;
@@ -349,14 +251,12 @@
     border-radius: 20px 20px 20px 20px;
     background-color: var(--bacground-buttonWhite-sec1-sec2-sec4-sec7);
     border: none;
-    font-family: "DM Sans", sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 18.23px;
     text-align: center;
     color: var(--font-color-red);
-
-   
 }
 
 .milk-and-recipe {
@@ -364,18 +264,13 @@
     gap: 0px;
     position: relative;
     top: 40px;
-
-   
 }
 
 .milk-cup img {
     width: 213px;
     height: 216px;
     top: 388px;
-
-    
 }
-
 
 .text-recipe {
     display: flex;
@@ -386,17 +281,15 @@
 .recipe {
     width: 200px;
     height: 78px;
-    font-family: "DM Sans", sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 19.6px;
     text-align: left;
     color: var(--font-color-white);
-
-   
 }
 
-.arrow {
+.arrow-hero {
     margin-top: 24px;
     width: 26px;
     height: 26px;
@@ -404,23 +297,25 @@
     border-radius: 50%;
 }
 
-.arrow svg {
-    fill: var(--font-color-red);     
+.arrow-hero svg {
+    fill: var(--font-color-red);
     width: 14px;
     height: 14px;
-    position: relative; 
+    position: relative;
     top: 6px;
     left: 6px;
 }
 
-.arrow:hover {
-    box-shadow: 0 0 5px rgb(224, 103, 103);
+.arrow-hero svg:hover {
+    fill: white;
     cursor: pointer;
-    transition: box-shadow 0.3s ease;
 }
 
-
-
+.arrow-hero:hover {
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    background-color: var(--font-color-red);
+}
 
 .numbers {
     position: relative;
@@ -428,8 +323,6 @@
     right: 56px;
     z-index: 1;
 }
-
-
 
 .circle-white {
     width: 30px;
@@ -440,11 +333,7 @@
     left: 290px;
     top: -90px;
     z-index: -1;
-
-   
-
 }
-
 
 .title-big {
     font-family: Titan One;
@@ -455,12 +344,10 @@
     text-align: right;
     color: var(--font-color-red);
     margin-bottom: 0px;
-
-
 }
 
 .title-small {
-    font-family: "DM Sans", sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 18.23px;
@@ -475,32 +362,127 @@
     right: -50px;
 }
 
-
-
 .products-bttn:hover,
 .how-its-made-bttn:hover {
     box-shadow: 0 0 5px rgb(224, 103, 103);
     cursor: pointer;
     transition: box-shadow 0.3s ease;
+    background-color: var(--background-buttonRed-section2-section7);
+    color: white;
 }
-
-
 
 .buy-now-bttn:hover {
     box-shadow: 0 0 5px rgb(224, 103, 103);
     cursor: pointer;
     transition: box-shadow 0.3s ease;
+    background-color: var(--background-buttonRed-section2-section7);
+    color: white;
 }
 
-
 /*Machetare mobile first */
+.js-menu-container {
+    display: none;
+}
 
 .js-open-menu {
     display: none;
-    margin-right: 20px;
 }
 
 @media screen and (min-width: 521px) and (max-width: 768px) {
+    .js-menu-container {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        background-color: var(--background-modal);
+        padding-left: 0px;
+        right: 0;
+        width: 254px;
+        height: 1020px;
+        padding-left: 40px;
+    }
+    
+    .js-close-menu {
+        display: flex;
+        background-color: none;
+        color: #ffffff;
+        border: none;
+        position: relative;
+        right: -160px;
+        top: -450px;
+        background: none;
+    }
+    
+    .mobile-navigation-menu {
+        position: absolute;
+        top: 135px;
+        left: 0px;
+    }
+    
+    .menu-list-mobile {
+        list-style: none;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18.23px;
+        text-align: left;
+        outline: none;
+        justify-content: left;
+        width: 254px;
+        border-bottom: 1px solid;
+        border-color: rgb(234, 224, 224, 0.5);
+
+    }
+   
+
+    .menu-list-mobile li {
+        padding-bottom: 11px;
+        padding-top: 11px;
+        border-top: 1px solid;
+        border-color: rgb(234, 224, 224, 0.3);
+    }
+    
+    .buy-now-bttn-mobile {
+        width: 186px;
+        height: 44px;
+        border-radius: 22px 22px 22px 22px;
+        background-color: #ffffff;
+        border: 2px;
+        color: var(--font-color-red);
+        font-family: 'DM Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20.83px;
+        text-align: center;
+        position: relative;
+        top: -430px;
+    }
+    
+    .menu-list-mobile li a {
+        color: var(--font-color-white);
+        text-decoration: none;
+    }
+    
+    .menu-list-mobile li a:hover {
+        color: var(--font-color-red);
+    }
+    
+    
+    
+    
+    
+    .js-menu-container.is-open {
+        display: flex;
+        flex-direction: column;
+        background-color: #e17992;
+        width: 254px;
+        height: 1020px;
+        z-index: 1000;
+        justify-content: center;
+        align-items: start;
+        height: 1020px
+    }
+
+
     /* Stiluri pentru tablete */
     .js-open-menu {
         display: flex;
@@ -512,13 +494,13 @@
     .navigation-menu {
         display: none;
     }
-    
+
     .hero-section {
         display: flex;
         height: 416px;
         justify-content: space-between;
     }
-    
+
     .ice-cream-cone img {
         width: 143px;
         height: 336px;
@@ -536,19 +518,19 @@
         max-width: 236px;
         z-index: 1;
     }
-    
+
     .tasty-ice-cream img {
         width: 190px;
         height: 150px;
         margin-top: 0px;
     }
-    
+
     .hero-motto {
         width: 162px;
         height: 80px;
         margin-top: 30px;
     }
-    
+
     .hero-motto h1 {
         margin: 0;
         width: 162px;
@@ -562,19 +544,18 @@
         font-size: 22px;
         line-height: 25.19px;
         letter-spacing: 0.04em;
-
     }
 
     .circle-background {
-       background-color: var(--background-section2-roz-inchis);
-       height: 335px;
-       width: 333px;
-       border-radius: 50%;
-       position: absolute;
-       top: 47%;
-       left: 62%;
-       transform: translate(-50%, -50%);
-       z-index: 0;
+        background-color: var(--background-section2-roz-inchis);
+        height: 335px;
+        width: 333px;
+        border-radius: 50%;
+        position: absolute;
+        top: 47%;
+        left: 62%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
     }
 
     .background-hero {
@@ -600,8 +581,8 @@
     }
 
     .milk-cup img {
-      width: 152px;
-      height: 154px;
+        width: 152px;
+        height: 154px;
     }
 
     .recipe {
@@ -609,24 +590,22 @@
         height: 48px;
         font-size: 8px;
         line-height: 12px;
-       
     }
 
-    .arrow {
+    .arrow-hero {
         width: 18px;
         height: 18px;
     }
 
-    .arrow svg {
+    .arrow-hero svg {
         width: 10px;
         height: 10px;
-        top: 0px;
-        left: 4px;;
-
+        top: 2px;
+        left: 4px;
     }
 
     .numbers {
-       margin: 0 auto;
+        margin: 0 auto;
     }
 
     .title-big {
@@ -635,27 +614,107 @@
         letter-spacing: 0.04em;
     }
 
-
     .title-small {
         font-size: 8px;
         line-height: 10.42px;
         text-align: right;
     }
-
-
-  
 }
 
-
 @media screen and (max-width: 520px) {
+
+    .js-menu-container {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        background-color: var(--background-modal);
+        padding-left: 0px;
+        right: 0;
+        padding-left: 30px;
+    }
+
+    .js-close-menu {
+        display: flex;
+        background-color: none;
+        color: #ffffff;
+        border: none;
+        position: relative;
+        right: -170px;
+        top: -190px;
+        background: none;
+    }
+
+    .mobile-navigation-menu {
+        position: absolute;
+        top: 135px;
+        left: 0px;
+    }
+
+    .menu-list-mobile {
+        list-style: none;
+        font-family: 'DM Sans', sans-serif;
+        width: 250px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18.23px;
+        text-align: left;
+        outline: none;
+        border-bottom: 1px solid;
+        border-color: rgb(234, 224, 224, 0.3);
+    }
+
+    .menu-list-mobile li {
+        padding-bottom: 11px;
+        padding-top: 11px;
+        border-top: 1px solid;
+        border-color: rgb(234, 224, 224, 0.3);
+    }
+
+    .buy-now-bttn-mobile {
+        width: 209px;
+        height: 44px;
+        border-radius: 22px 22px 22px 22px;
+        background-color: #ffffff;
+        border: 2px;
+        color: var(--font-color-red);
+        font-family: 'DM Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20.83px;
+        text-align: center;
+        position: relative;
+        top: -170px;
+        justify-content: center;
+    }
+
+    .menu-list-mobile li a {
+        color: var(--font-color-white);
+        text-decoration: none;
+    }
+
+    .menu-list-mobile li a:hover {
+        color: var(--font-color-red);
+    }
+
+
+
+    .js-menu-container.is-open {
+        display: flex;
+        flex-direction: column;
+        background-color: #e17992;
+        width: 250px;
+        height: 502px;
+        z-index: 1000;
+        justify-content: center;
+        align-items: start;
+    }
     /* Stiluri pentru telefoane mobile */
     .js-open-menu {
         display: flex;
-    }   
+    }
 
-   
-   .navigation-menu {
-      display: none;
+    .navigation-menu {
+        display: none;
     }
 
     .buy-now-bttn {
@@ -663,8 +722,8 @@
     }
 
     .hero-section {
-      height: 502px;
-      justify-content: space-between;
+        height: 502px;
+        justify-content: space-between;
     }
 
     .ice-cream-cone img {
@@ -677,77 +736,74 @@
     }
 
     .ice-cream-cone {
-      position: absolute;
-      top: 65%;
-      left: 65%;
-      transform: translate(-50%, -50%);
-      width: 100%;
-      height: auto;
-      max-width: 236px;
-      z-index: 1;
+        position: absolute;
+        top: 65%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: auto;
+        max-width: 236px;
+        z-index: 1;
     }
 
-
     .hero-motto {
-      width: 218px;
-      height: 106px;
-      margin-top: 120px;
+        width: 218px;
+        height: 106px;
+        margin-top: 120px;
     }
 
     .hero-motto h1 {
-      margin: 0;
-      font-size: 48px;
-      font-weight: 400;
-      line-height: 46.32px;
-
+        margin: 0;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 46.32px;
     }
 
     .hero-motto h2 {
         font-size: 26px;
         line-height: 29.77px;
         letter-spacing: 0.04em;
-
     }
 
     .circle-background {
-      background-color: var(--background-section2-roz-inchis);
-      height: 344px;
-      width: 344px;
-      border-radius: 50%;
-      position: absolute;
-      top: 55%;
-      left: 62%;
-      transform: translate(-50%, -50%);
-      z-index: 0;
-      display: none;
+        background-color: var(--background-section2-roz-inchis);
+        height: 344px;
+        width: 344px;
+        border-radius: 50%;
+        position: absolute;
+        top: 55%;
+        left: 62%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+        display: none;
     }
 
     .background-hero {
-      height: 502px;
+        height: 502px;
     }
 
     .buttons-hero {
-      margin-top: 40px;
+        margin-top: 40px;
     }
 
     .products-bttn {
-      width: 62.4px;
-      height: 24px;
-      font-size: 8px;
-      line-height: 10.42px;
+        width: 62.4px;
+        height: 24px;
+        font-size: 8px;
+        line-height: 10.42px;
     }
 
     .how-its-made-bttn {
-      width: 82.8px;
-      height: 24px;
-      font-size: 8px;
-      line-height: 10.42px;
+        width: 82.8px;
+        height: 24px;
+        font-size: 8px;
+        line-height: 10.42px;
     }
 
     .milk-and-recipe {
         display: none;
     }
-    
+
     .right-hero {
         display: none;
     }
@@ -756,4 +812,3 @@
         display: flex;
     }
 }
-
