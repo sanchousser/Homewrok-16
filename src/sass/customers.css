@@ -1,8 +1,8 @@
-* Stilizare pentru desktop * @media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) {
     .container {
         width: 100%;
         margin: 0 auto;
-        height: 580px;
+        height: auto;
     }
 
     .customers-img {
@@ -14,14 +14,13 @@
     }
 
     .customers-ghilimele {
-        * padding-left: 73px;
-        * * padding-right: 15px;
-        *
+        padding-left: 73px;
+        padding-right: 15px;
     }
 
     .customers-ghilimele-paragraf {
         display: flex;
-        background-color: #FAFAFA;
+        background-color: #fafafa;
         padding: 32px;
         padding-left: 73px;
         padding-right: 73px;
@@ -39,8 +38,8 @@
         text-align: center;
         color: #000;
         background-image: repeating-linear-gradient(to top,
-                #E1E1E1,
-                #E1E1E1 1px,
+                #e1e1e1,
+                #e1e1e1 1px,
                 transparent 1px,
                 transparent 32px);
     }
@@ -69,11 +68,15 @@
     }
 }
 
-* Stilizare desktop sfarsit * * Stilizare pentru tableta * @media screen and (min-width: 321px) and (max-width: 768px) {
+/* Stilizare desktop sfarsit */
+
+/* Stilizare pentru tableta */
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
     .container {
         width: 100%;
+        height: auto;
         margin: 0 auto;
-        height: 580px;
     }
 
     .customers-img {
@@ -85,14 +88,14 @@
     }
 
     .customers-ghilimele {
-        padding-left: 73px;
+        padding-left: 74px;
         padding-top: 20px;
         padding-bottom: 104px;
     }
 
     .customers-ghilimele-paragraf {
         display: flex;
-        background-color: #FAFAFA;
+        background-color: #fafafa;
         padding-top: 32px;
         margin-bottom: 4px;
         margin-left: 74px;
@@ -143,11 +146,15 @@
     }
 }
 
-* Stilizare pentru tableta sfarsit * * Stilizare pentru mobile * @media screen and (max-width: 320px) {
+/* Stilizare pentru tableta sfarsit */
+
+/* Stilizare pentru mobile */
+
+@media screen and (max-width: 320px) {
     .container {
         width: 100%;
+        height: auto;
         margin: 0 auto;
-        height: 700px;
     }
 
     .customers-img {
@@ -156,8 +163,8 @@
         height: 85px;
         padding-top: 60px;
         padding-bottom: 32px;
-        padding-left: 118px;
-        padding-right: 117px;
+        padding-left: 115px;
+        padding-right: 115px;
     }
 
     .customers-ghilimele {
@@ -166,7 +173,7 @@
 
     .customers-ghilimele-paragraf {
         display: flex;
-        background-color: #FAFAFA;
+        background-color: #fafafa;
         padding-top: 47px;
         margin-bottom: 4px;
         padding-left: 20px;
@@ -217,4 +224,5 @@
         align-items: center;
     }
 }
+
 
