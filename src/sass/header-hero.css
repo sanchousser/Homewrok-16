@@ -592,7 +592,7 @@
   }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 320px) {
   /* Stiluri pentru telefoane mobile */
   .js-open-menu {
     display: flex;
