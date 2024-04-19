@@ -124,6 +124,7 @@
     background: none;
     border: none;
     display: flex;
+
 }
 
 
@@ -354,6 +355,7 @@
     text-align: right;
     color: var(--font-color-white);
     margin-top: 2px;
+    text-transform: lowercase;
 }
 
 .tasty-ice-cream {
@@ -379,7 +381,7 @@
     color: white;
 }
 
-/*Machetare mobile first */
+
 .js-menu-container {
     display: none;
 }
@@ -389,6 +391,8 @@
 }
 
 @media screen and (min-width: 521px) and (max-width: 768px) {
+    
+
     .js-menu-container {
         display: none;
         position: fixed;
@@ -600,7 +604,7 @@
     .arrow-hero svg {
         width: 10px;
         height: 10px;
-        top: 2px;
+        top: 0px;
         left: 4px;
     }
 

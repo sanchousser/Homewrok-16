@@ -99,11 +99,10 @@ h3 {
   }
 }
 
-.product-content-card{
+.product-content-card {
   border-radius: 24px;
-  background-color: var(--background-section2-section3-rozDeschis);
   width: 280px;
-  height: 489px;  
+  height: 380px;  
   padding-top: 35%;
   
   @media screen and (min-width: 768px) {
@@ -115,6 +114,10 @@ h3 {
     width: 368px;
     height: 535px;
   }
+}
+
+.card1 {
+  background-color: var(--background-section2-section3-rozDeschis);
 }
 
 .card2 {
@@ -190,10 +193,32 @@ h3 {
   fill: var(--font-color-red);
 }
 
-.product-arrow-button{
+.product-arrow-button {
   background-color: var(--bacground-buttonWhite-sec1-sec2-sec4-sec7);
   border: solid var(--bacground-buttonWhite-sec1-sec2-sec4-sec7);
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  top: 0px;
+  @media screen and (min-width: 768px) {
+    position: relative;
+    top: 70px;
+    
+  }
+  
+}
+
+
+
+.product-arrow-button:hover,
+.product-arrow-button:active {
+  background-color: var(--background-buttonRed-section2-section7);
+
+}
+
+.product-arrow-button:hover .arrow-products,
+.product-arrow-button:active .arrow-products {
+  fill: var(--font-color-white);
 }
