@@ -1,18 +1,13 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const refs = {
-    openModalBtn: document.getElementById('data-modal-open'),
-    closeModalBtn: document.getElementById('data-modal-close'),
-    modal: document.getElementById('data-modal'),
-  };
+document.addEventListener('DOMContentLoaded', function() {
+    const openModalBtn = document.querySelector(".read-more-btn");
+    const closeModalBtn = document.querySelector(".close-btn");
+    const modal = document.querySelector("[data-modal-target]");
 
-  if (refs.openModalBtn && refs.closeModalBtn && refs.modal) {
-    refs.openModalBtn.addEventListener('click', toggleModal);
-    refs.closeModalBtn.addEventListener('click', toggleModal);
-  }
+    openModalBtn.addEventListener("click", function() {
+        modal.classList.remove("hidden-modal");
+    });
 
-  function toggleModal() {
-    if (refs.modal) {
-      refs.modal.classList.toggle('is-hidden-about');
-    }
-  }
+    closeModalBtn.addEventListener("click", function() {
+        modal.classList.add("hidden-modal");
+    });
 });
