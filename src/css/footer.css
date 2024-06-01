@@ -1,7 +1,7 @@
- :root {
-  --footer-background: #1E2827;
-  --primary-font: "Epilogue", sans-serif;
-  --secondary-font: "Raleway", sans-serif;
+:root {
+  --footer-background: #1e2827;
+  --primary-font: 'Epilogue', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
 }
 
 * {
@@ -34,47 +34,80 @@ a {
   text-decoration: none;
   color: inherit;
 }
- 
- .footer {
-    background-color: var(--footer-background);
-    padding: 104px 132px;
+
+.footer {
+  background-color: var(--footer-background);
+  padding-left: 104px;
+  padding-right: 104px;
+  padding-top: 132px;
 }
 
 .footer-logo {
-    fill: white;
-    width: 50px;
-    height: 50px;
-    margin-bottom: 40px;
+  fill: white;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 40px;
 }
 
 .footer-info {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-address {
-    margin-top: 18px;
+font-family: var(--primary-font);
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: -0.02em;
+text-align: left;
+margin-top: 18px;
 }
 
-.footer-nav li{
-    margin-bottom: 18px;
+.footer-nav li {
+margin-bottom: 18px;
+font-family: var(--primary-font);
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: -0.02em;
+text-align: left;
+
+}
+
+.footer-social {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #ffffff1a;
+  border-radius: 10px;
+}
+
+.footer-socials ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
 
-.footer-social{
-    width: 28px;
-    height: 28px;
-    border: 1px solid #FFFFFF1A;
-    border-radius: 10px;
+.footer .container {
+  display: flex;
+  justify-content: space-between;
 }
 
-.footer-socials ul{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-.footer .container{
+.footer-copyright-terms {
     display: flex;
     justify-content: space-between;
+margin-top: 174px;
+padding-bottom: 32px;
+font-family: var(--primary-font);
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: -0.02em;
+text-align: right;
+color: #C6CDD1;
+}
+
+.footer-terms a{
+padding-left: 18px;
 }
