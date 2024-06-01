@@ -1,0 +1,129 @@
+:root {
+  --font-main: Montserrat, Arial, sans-serif;
+  --color-coal: #111111;
+  --color-dark: #1e1823;
+  --color-orange: #fd9222;
+  --color-pearl: #fafafa;
+  --color-white:#ffffff
+}
+
+body {
+  font-family: var(--font-main);
+  padding: 1.25rem;
+  background-color: var(--color-pearl);
+}
+
+.top-sellers__section {
+    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.top-sellers__title {
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  letter-spacing: -0.03rem;
+  margin-bottom: 2rem;
+  color: var(--color-coal);
+}
+.top-sellers__title span {
+  color: var(--color-orange);
+}
+
+.top-sellers__img {
+  width: 335px;
+  height: 464px;
+  border-radius: 15px;
+}
+
+.top-sellers__desc {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  letter-spacing: -0.02rem;
+  color: var(--color-coal);
+  width: 19.125rem;
+  align-self: flex-start;
+}
+
+.top-sellers__btn {
+  width: 7.5rem;
+  height: 2.563rem;
+  border-radius: 6.25rem;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17.07px;
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  border: none;
+}
+
+/* .is-hidden{
+    display: none;
+} */
+.seller-modal{
+    position: absolute;
+    top: 69vh;
+    right: 0;
+    width: 100vw;
+    z-index: 999;
+    background-color: var(--color-pearl);
+}
+
+.seller-modal__form-close{
+    border: none;
+    background-color: var(--color-pearl);
+    position: absolute;
+    padding: 0;
+    top: 0.625rem;
+    right: 0.625rem;
+}
+
+.close-icon{
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: var(--color-coal);
+    stroke: var(--color-coal);
+}
+
+.top-sellers__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.seller-modal__title{
+font-size: 1.25rem;
+font-weight: 600;
+line-height: 1.5rem;
+letter-spacing: -0.03rem;
+color: var(--color-coal);
+margin-bottom: 2rem;
+}
+.seller-modal__title span{
+    color: var(--color-orange);
+}
+
+.seller-modal__option-container{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    margin-bottom: 2rem;
+}
+
+.seller-modal__option-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 16.438rem;
+    height: 5.313rem;
+    background-color: var(--color-white);
+    border: 1px solid #1111111A;
+    border-radius: 15px;
+}
+

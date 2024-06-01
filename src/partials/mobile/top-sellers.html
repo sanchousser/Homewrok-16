@@ -1,1 +1,107 @@
-<h1>Hello World!</h1>
+<!-- TOP SELLERS -->
+<section class="top-sellers__section">
+    <h2 class="top-sellers__title"><span>TOP</span>SELLERS</h2>
+
+    <img class="top-sellers__img" src="../assets/mobile/hzl-chocho@1x.jpg" alt="image of hazelnut chocolate"
+        srcset="../assets/mobile/hzl-chocho@1x.jpg 1x, ../assets/mobile/hzl-chocho@2x.jpg 2x">
+    <p class="top-sellers__desc">Crazy enough chocolate originates from a bean just like the coffee bean called Cacao.
+        Cacao has been around for thousands of years and was first discovered by the Native American tribe called the
+        Mayans.</p>
+    <img class="top-sellers__img" src="../assets/mobile/crm-chocho@1x.jpg" alt="image of caramel chocolate"
+        srcset="../assets/mobile/crm-chocho@1x.jpg 1x, ../assets/mobile/crm-chocho@2x.jpg 2x">
+    <button type="button" data-modal-seller-open class="top-sellers__btn">Buy now</button>
+</section>
+
+
+<!-- BUY NOW MODAL -->
+<div class="seller-modal is-hidden" data-modal-seller>
+    <button type="button" data-modal-seller-close class="seller-modal__form-close"><svg class="close-icon">
+            <use href="../assets/mobile/seller-form-icons.svg#icon-x-close" />
+        </svg></button>
+    <form action="POST" class="top-sellers__form">
+        <h2 class="seller-modal__title"><span>BUY </span>NOW</h2>
+        <div class="seller-modal__option-container">
+            <div class="seller-modal__option-box">
+                <img class="seller-modal__image"
+                    src="../assets/mobile/modal-dark@1x.jpg" alt="Image of dark chocolate"
+                    srcset="../assets/mobile/modal-dark@1x.jpg 1x, ../assets/mobile/modal-dark@2x.jpg 2x">
+                <button
+                    class="seller-modal__option-btn" type="button"
+                >100 g
+                </button>
+            </div>
+            <div class="seller-modal__option-box">
+                <img class="seller-modal__image"
+                    src="../assets/mobile/modal-stack@1x.jpg"
+                    alt="Image of stacked chocolate"
+                    srcset="../assets/mobile/modal-stack@1x.jpg 1x, ../assets/mobile/modal-stack@2x.jpg 2x">
+                <button
+                    class="seller-modal__option-btn"
+                    type="button"
+                >200 g
+                </button>
+            </div>
+            <div class="seller-modal__option-box">
+                <img class="seller-modal__image"
+                    src="../assets/mobile/modal-bar@1x.jpg"
+                    alt="Image of a bar of chocolate"
+                    srcset="../assets/mobile/modal-bar@1x.jpg 1x, ../assets/mobile/modal-bar@2x.jpg 2x">
+                    <button
+                        class="seller-modal__option-btn"
+                        type="button"
+                    >300 g
+                </button>
+            </div>
+        </div>
+        <label 
+            for="name"
+            class="seller-modal__input-field"
+        >Personal Information
+            <input type="text"
+                placeholder="Name"
+                id="name">
+        </label>
+        <input
+            type="text"
+            placeholder="Surname"
+            id="surname">
+        <label
+            for="email"
+            class="seller-modal__input-field"
+        >Email
+            <input
+                type="text"
+                placeholder="Enter your email"
+                id="email">
+        </label>
+        <label
+            for="phone"
+            class="seller-modal__input-field"
+        >Phone number
+            <input
+                type="number"
+                id="phone">
+        </label>
+        <label
+            for="card"
+            class="seller-modal__input-field"
+        >Card number
+            <input
+                type="number"
+                id="card">
+            <svg>
+                <use href="../assets/mobile/seller-form-icons.svg#icon-Mastercard" />
+            </svg>
+        </label>
+        <label
+            for="comments"
+            class="seller-modal__input-field"
+        >Comment
+            <textarea
+                name="comments"
+                id="comments">
+            </textarea>
+        </label>
+        <button type="submit"></button>
+    </form>
+</div>
