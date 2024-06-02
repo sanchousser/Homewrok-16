@@ -1,0 +1,135 @@
+.unique-comp h2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.unique-comp span {
+    color: var(--orange);
+}
+
+.unique-comp__description {
+    font-weight: 400;
+    font-size: 14px; 
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.unique-comp ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.unique-comp__card {
+    border-radius: 15px;
+    border: 1px solid var(--orange);
+    max-width: 335px;
+    height: 270px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.unique-comp__card:first-child {
+    background-color: var(--orange);
+}
+
+.unique-comp__card:nth-child(3) {
+    background-color: var(--black);
+    border-color: var(--black)
+}
+
+
+.ingredient-name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 25px;
+}
+
+.unique-comp__card:first-child .ingredient-name, 
+.unique-comp__card:nth-of-type(3) .ingredient-name {
+    color: var(--white);
+}
+
+.ingredient-img {
+    margin-left: 56px;
+}
+
+.ingredient-over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    
+}
+
+.unique-comp li:hover .ingredient-over {
+    transform: translateY(0);
+}
+
+.ingredient-over__name {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+
+.ingredient-over__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+}
+
+.ingredient-over__btn {
+    border-radius: 35px;
+    padding: 6px 16px;
+    height: 24px;
+    font-weight: 400;
+    font-size: 10px; 
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 14px;
+}
+
+.ingredient-over__btn__1 {
+    border: none;
+    color: var(--white);
+    background-color: var(--orange);
+}
+
+.ingredient-over__btn__2 {
+    border: 1px solid #fd9222;
+}
