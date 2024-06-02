@@ -1,6 +1,6 @@
 :root {
   --font-main: Montserrat, Arial, sans-serif;
-  --color-input-text:#4040404D;
+  --color-input-text: #4040404d;
   --color-borders: #1111111a;
   --color-coal: #111111;
   --color-dark: #1e1823;
@@ -64,9 +64,10 @@ body {
   border: none;
 }
 
-/* .is-hidden{
-    display: none;
-} */
+.is-hidden{
+  display: none;
+}
+
 .seller-modal {
   position: absolute;
   top: 69vh;
@@ -74,7 +75,9 @@ body {
   width: 100vw;
   z-index: 999;
   background-color: var(--color-pearl);
+  transition-duration: 150ms;
 }
+
 
 .seller-modal__form-close {
   border: none;
@@ -93,9 +96,11 @@ body {
 }
 
 .top-sellers__form {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 19.438rem;
   padding: 2rem 1.5rem;
 }
 
@@ -164,33 +169,74 @@ body {
   font-weight: 400;
   line-height: 1.125rem;
   letter-spacing: -0.02rem;
-  color: var(--color-input-text);
-  padding: 0 10px;
+  padding: 0 .875rem;
 }
-.input-space{
+.seller-modal__input-field::placeholder{
+  color: var(--color-input-text);
+}
+.input-space {
   margin-bottom: 1.125rem;
 }
-.seller-modal__icon-card{
+.seller-modal__icon-card {
   position: absolute;
-  top: 35px;
-  right: 10px;
+  top:  2.188rem;
+  right: 0.875rem;
   width: 2rem;
   height: 1.313rem;
 }
 
-.seller-modal__phone-icon{
+.seller-modal__phone-icon {
   width: 1.5rem;
   height: 1.125rem;
 }
 
-.seller-modal__phone-list{
+.seller-modal__phone-list {
   display: flex;
   gap: 5px;
   position: absolute;
-  top: 35px;
-  left: 10px;
-font-size:.875rem;
-font-weight: 500;
-line-height: 1.125rem;
-letter-spacing: -0.02em;
+  top: 2.188rem;
+  left: 0.875rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.125rem;
+  letter-spacing: -0.02em;
+}
+
+.seller-modal__phone-list::after{
+  content: "";
+  position: absolute;
+  top: -5px;
+  left:4.375rem;
+  width: 2px;
+  height: 1.875rem;
+  background-color: var(--color-borders);
+}
+
+.phone-space{
+  padding-left: 5.938rem;
+}
+
+.seller-modal__comment-field{
+  position: relative;
+  width: 16.438rem;
+  height: 5.688rem;
+  border: 1.5px solid var(--color-borders);
+  border-radius: .5rem;
+  padding: .875rem;
+}
+.seller-modal__comment-field::placeholder{
+  color:var(--color-input-text);
+}
+
+.seller-modal__btn{
+  width: 7.5rem;
+  height: 2.563rem;
+  border-radius: 6.25rem;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17.07px;
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  border: none;
+  align-self: flex-start;
 }

@@ -79,9 +79,10 @@
             for="phone"
         >Phone number
             <input
-                class="seller-modal__input-field"
+                class="seller-modal__input-field phone-space"
                 type="number"
                 id="phone"
+                placeholder="Phone number"
             >
             <span class="seller-modal__phone-list">
                 <svg class="seller-modal__phone-icon">
@@ -97,6 +98,8 @@
                 class="seller-modal__input-field"
                 type="number"
                 id="card"
+                placeholder="Card number"
+
             >
             <svg class="seller-modal__icon-card">
                 <use href="../assets/mobile/seller-form-icons.svg#icon-Mastercard" />
@@ -106,11 +109,15 @@
             for="comments"
         >Comment
             <textarea
+                rows="4" 
+                cols="50"
+                maxlength="150"
                 class="seller-modal__comment-field"
                 name="comments"
-                id="comments">
-            </textarea>
+                id="comments"
+                placeholder="Describe yourself here..."
+            ></textarea>
         </label>
-        <button type="submit">Submit</button>
+        <button type="submit" class="seller-modal__btn">Submit</button>
     </form>
 </div>
