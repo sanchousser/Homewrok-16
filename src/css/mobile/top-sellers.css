@@ -76,6 +76,7 @@ body {
   z-index: 999;
   background-color: var(--color-pearl);
   transition-duration: 150ms;
+  overflow: hidden;
 }
 
 
