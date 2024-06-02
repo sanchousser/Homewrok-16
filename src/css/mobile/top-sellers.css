@@ -1,5 +1,6 @@
 :root {
   --font-main: Montserrat, Arial, sans-serif;
+  --color-borders:#1111111A;
   --color-coal: #111111;
   --color-dark: #1e1823;
   --color-orange: #fd9222;
@@ -79,8 +80,8 @@ body {
     background-color: var(--color-pearl);
     position: absolute;
     padding: 0;
-    top: 0.625rem;
-    right: 0.625rem;
+    top: 0.875rem;
+    right: 0.875rem;
 }
 
 .close-icon{
@@ -94,7 +95,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 2rem;
+    padding: 2rem 1.5rem;
 }
 
 .seller-modal__title{
@@ -117,13 +118,39 @@ margin-bottom: 2rem;
 }
 
 .seller-modal__option-box{
+  padding: 0.5rem 1rem;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 16.438rem;
     height: 5.313rem;
     background-color: var(--color-white);
-    border: 1px solid #1111111A;
+    border: 1px solid var(--color-borders);
     border-radius: 15px;
+}
+
+.seller-modal__option-btn{
+  width: 4.563rem;
+  height: 1.875rem;
+  border: 1px solid var(--color-borders);
+  border-radius: 6.25rem;
+}
+
+.seller-modal__image{
+  width: 5.25rem;
+}
+.seller-modal__input-field{
+  width: 16.438rem;
+  height: 2.813rem;
+  border: 1.5px solid var(--color-borders);
+  border-radius: 8px;
+  box-shadow: 0px 5.44px 5.44px 0px #00000008;
+}
+.top-sellers__form label{
+font-size: 12px;
+font-weight: 500;
+line-height: 14px;
+letter-spacing: -0.02em;
+margin: 0;
 }
 
