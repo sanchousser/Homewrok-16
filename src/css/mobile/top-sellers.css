@@ -1,11 +1,12 @@
 :root {
   --font-main: Montserrat, Arial, sans-serif;
-  --color-borders:#1111111A;
+  --color-input-text:#4040404D;
+  --color-borders: #1111111a;
   --color-coal: #111111;
   --color-dark: #1e1823;
   --color-orange: #fd9222;
   --color-pearl: #fafafa;
-  --color-white:#ffffff
+  --color-white: #ffffff;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 }
 
 .top-sellers__section {
-    position: relative;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,91 +67,130 @@ body {
 /* .is-hidden{
     display: none;
 } */
-.seller-modal{
-    position: absolute;
-    top: 69vh;
-    right: 0;
-    width: 100vw;
-    z-index: 999;
-    background-color: var(--color-pearl);
+.seller-modal {
+  position: absolute;
+  top: 69vh;
+  right: 0;
+  width: 100vw;
+  z-index: 999;
+  background-color: var(--color-pearl);
 }
 
-.seller-modal__form-close{
-    border: none;
-    background-color: var(--color-pearl);
-    position: absolute;
-    padding: 0;
-    top: 0.875rem;
-    right: 0.875rem;
+.seller-modal__form-close {
+  border: none;
+  background-color: var(--color-pearl);
+  position: absolute;
+  padding: 0;
+  top: 0.875rem;
+  right: 0.875rem;
 }
 
-.close-icon{
-    height: 1.5rem;
-    width: 1.5rem;
-    fill: var(--color-coal);
-    stroke: var(--color-coal);
+.close-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: var(--color-coal);
+  stroke: var(--color-coal);
 }
 
-.top-sellers__form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 1.5rem;
+.top-sellers__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1.5rem;
 }
 
-.seller-modal__title{
-font-size: 1.25rem;
-font-weight: 600;
-line-height: 1.5rem;
-letter-spacing: -0.03rem;
-color: var(--color-coal);
-margin-bottom: 2rem;
+.seller-modal__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  letter-spacing: -0.03rem;
+  color: var(--color-coal);
+  margin-bottom: 2rem;
 }
-.seller-modal__title span{
-    color: var(--color-orange);
-}
-
-.seller-modal__option-container{
-    display: flex;
-    flex-direction: column;
-    gap:0.5rem;
-    margin-bottom: 2rem;
+.seller-modal__title span {
+  color: var(--color-orange);
 }
 
-.seller-modal__option-box{
+.seller-modal__option-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.seller-modal__option-box {
   padding: 0.5rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 16.438rem;
-    height: 5.313rem;
-    background-color: var(--color-white);
-    border: 1px solid var(--color-borders);
-    border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 16.438rem;
+  height: 5.313rem;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-borders);
+  border-radius: 15px;
 }
 
-.seller-modal__option-btn{
+.seller-modal__option-btn {
   width: 4.563rem;
   height: 1.875rem;
   border: 1px solid var(--color-borders);
   border-radius: 6.25rem;
 }
 
-.seller-modal__image{
+.seller-modal__image {
   width: 5.25rem;
 }
-.seller-modal__input-field{
+
+.top-sellers__form label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: -0.02em;
+  width: 16.438rem;
+  margin-bottom: 1.125rem;
+}
+
+.seller-modal__input-field {
   width: 16.438rem;
   height: 2.813rem;
   border: 1.5px solid var(--color-borders);
   border-radius: 8px;
   box-shadow: 0px 5.44px 5.44px 0px #00000008;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  letter-spacing: -0.02rem;
+  color: var(--color-input-text);
+  padding: 0 10px;
 }
-.top-sellers__form label{
-font-size: 12px;
-font-weight: 500;
-line-height: 14px;
-letter-spacing: -0.02em;
-margin: 0;
+.input-space{
+  margin-bottom: 1.125rem;
+}
+.seller-modal__icon-card{
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  width: 2rem;
+  height: 1.313rem;
 }
 
+.seller-modal__phone-icon{
+  width: 1.5rem;
+  height: 1.125rem;
+}
+
+.seller-modal__phone-list{
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  top: 35px;
+  left: 10px;
+font-size:.875rem;
+font-weight: 500;
+line-height: 1.125rem;
+letter-spacing: -0.02em;
+}

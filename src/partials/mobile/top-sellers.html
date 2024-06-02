@@ -63,7 +63,7 @@
         </label>
         <input
             type="text"
-            class="seller-modal__input-field"
+            class="seller-modal__input-field input-space"
             placeholder="Surname"
             id="surname">
         <label
@@ -81,7 +81,14 @@
             <input
                 class="seller-modal__input-field"
                 type="number"
-                id="phone">
+                id="phone"
+            >
+            <span class="seller-modal__phone-list">
+                <svg class="seller-modal__phone-icon">
+                    <use href="../assets/mobile/seller-form-icons.svg#icon-Group"/>
+                </svg>
+                +380
+            </span>
         </label>
         <label
             for="card"
@@ -89,8 +96,9 @@
             <input
                 class="seller-modal__input-field"
                 type="number"
-                id="card">
-            <svg>
+                id="card"
+            >
+            <svg class="seller-modal__icon-card">
                 <use href="../assets/mobile/seller-form-icons.svg#icon-Mastercard" />
             </svg>
         </label>
