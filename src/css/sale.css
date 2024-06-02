@@ -1,0 +1,44 @@
+.sale-section {
+    width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.sale-section .container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.sale-title {
+    font-family: var(--font-epilogue);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    width: 84px;
+    padding: 44px;
+    margin-left: 132px; 
+    color: var(--black-color)
+}
+
+.sale-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-family: var(--font-epilogue);
+}
+.sale-products {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+   margin-top: -1px;
+}
