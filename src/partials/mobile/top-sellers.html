@@ -55,53 +55,69 @@
         </div>
         <label 
             for="name"
-            class="seller-modal__input-field"
         >Personal Information
             <input type="text"
+                class="seller-modal__input-field"
                 placeholder="Name"
                 id="name">
         </label>
         <input
             type="text"
+            class="seller-modal__input-field input-space"
             placeholder="Surname"
             id="surname">
         <label
             for="email"
-            class="seller-modal__input-field"
         >Email
             <input
+                class="seller-modal__input-field"
                 type="text"
                 placeholder="Enter your email"
                 id="email">
         </label>
         <label
             for="phone"
-            class="seller-modal__input-field"
         >Phone number
             <input
+                class="seller-modal__input-field phone-space"
                 type="number"
-                id="phone">
+                id="phone"
+                placeholder="Phone number"
+            >
+            <span class="seller-modal__phone-list">
+                <svg class="seller-modal__phone-icon">
+                    <use href="../assets/mobile/seller-form-icons.svg#icon-Group"/>
+                </svg>
+                +380
+            </span>
         </label>
         <label
             for="card"
-            class="seller-modal__input-field"
         >Card number
             <input
+                class="seller-modal__input-field"
                 type="number"
-                id="card">
-            <svg>
+                id="card"
+                placeholder="Card number"
+
+            >
+            <svg class="seller-modal__icon-card">
                 <use href="../assets/mobile/seller-form-icons.svg#icon-Mastercard" />
             </svg>
         </label>
         <label
             for="comments"
-            class="seller-modal__input-field"
         >Comment
             <textarea
+                rows="4" 
+                cols="50"
+                maxlength="150"
+                class="seller-modal__comment-field"
                 name="comments"
-                id="comments">
-            </textarea>
+                id="comments"
+                placeholder="Describe yourself here..."
+            ></textarea>
         </label>
-        <button type="submit"></button>
+        <button type="submit" class="seller-modal__btn">Submit</button>
     </form>
 </div>
