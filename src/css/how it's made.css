@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width:480px) {
   .manufacturing {
     width: 20.938rem;
     height: 64.5rem;
