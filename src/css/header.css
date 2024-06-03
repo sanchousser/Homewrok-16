@@ -4,16 +4,28 @@
       display: flex;
       margin: auto;
       justify-content: space-between;
+      align-items: center;
+      margin-top: 24px;
+      margin-bottom: 32px;
+      margin-left: 32px;
+      margin-right: 32px;
 }
 
 .logo-container {
-      width: 185px;
-      height: 20px;
       font-size: 18px;
       font-weight: 700;
       line-height: 1.1;
       letter-spacing: -0.03em;
       text-align: left;
+      display: flex;
+      flex-direction: raw;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 4px;
+}
+.logo-container svg {
+      width: 24px;
+      height: 24px;
 }
 
 .logo-text__simply {
@@ -23,11 +35,39 @@
 .header__navigation ul {
       list-style: none;
       display: flex;
+      align-items: center;
+      justify-content: center;
       max-width: 532px;
       gap: 25px;
       font-size: 14px;
       font-weight: 500;
       line-height: 1.14;
       letter-spacing: -0.02em;
+      gap: 25px;
+}
 
+.header__navigation a {
+      text-decoration: none;
+      color: var(--black);
+}
+.header_social {
+      display: flex;
+      flex-direction: raw;
+      justify-content: center;
+      align-items: center;
+      gap:20px;
+
+}
+.header_social li {
+      list-style: none;
+      width: 24px;
+      height: 24px;
+
+}
+
+.header_social__icon {
+      fill: var(--white);
+      stroke: var(--black);
+      width: 20px;
+      height: 20px;
 }
