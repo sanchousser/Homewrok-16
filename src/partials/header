@@ -1,7 +1,7 @@
 <header>
 <nav class="nav-bar">
     <a class="nav-bar__text"><p><span class="nav-bar__span">Simply </span>chocolate</p></a>
-    <button data-modal-open type="button">
+    <button class="c" data-modal-open type="button">
     <svg class="logo__svg"><use href="./images/Rebeca-icons.svg/choco.svg#icon-chocolate-3-converted" width="21" height="21"/></svg>
     </button>
     <ul class="hidden-header">
