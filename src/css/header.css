@@ -1,6 +1,33 @@
+.header.container {
+      max-width: 1136px;
+      width: 100%;
+      display: flex;
+      margin: auto;
+      justify-content: space-between;
+}
+
+.logo-container {
+      width: 185px;
+      height: 20px;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      text-align: left;
+}
+
+.logo-text__simply {
+      font-style: italic;
+}
+
 .header__navigation ul {
-    list-style: none;
-    display: flex;
-    /* width: 275px; */
-    justify-content: space-between;
+      list-style: none;
+      display: flex;
+      max-width: 532px;
+      gap: 25px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.14;
+      letter-spacing: -0.02em;
+
 }
