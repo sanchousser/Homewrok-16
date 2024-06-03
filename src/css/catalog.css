@@ -146,7 +146,7 @@
 }
 [data-modal-close] {
   position: absolute;
-  top: 50px;
+  top: 30px;
   right: 10px;
   cursor: pointer;
   border: none;
