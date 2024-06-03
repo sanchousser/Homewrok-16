@@ -3,14 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
+    />
+    <!-- Mobile -->
+    <link rel="stylesheet" href="../src/css/mobile/top-sellers.css" />
+    <link rel="stylesheet" href="../src/css/mobile/subscribe.css" />
+    <!-- Tablet -->
+    <link rel="stylesheet" href="../src/css/tablet/advantages.css">
+    <link rel="stylesheet" href="../src/css/tablet/how it's made.css">
+    <!-- Desktop -->
+
+    <title>SIMPLYCHOCOLATE</title>
     <script type="module" src="./index.js"></script>
   </head>
+
   <body>
-    <h1>Example title</h1>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <!-- Mobile -->
+    <include src="./partials/mobile/top-sellers.html"></include>
+    <include src="./partials/mobile/subscribe.html"></include>
+
+    <!-- Tablet -->
+    <include src="./partials/tablet/advantages.html"></include>
+    <include src="./partials/tablet/how it's made.html"></include>
+    <!-- Desktop -->
     <load src="partials/unique-components.html" />
     <load src="partials/footer.html" />
   </body>
