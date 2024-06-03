@@ -16,6 +16,8 @@ body {
 }
 
 .top-sellers__section {
+  margin: 0 auto;
+  max-width: 21rem;
   position: relative;
   display: flex;
   flex-direction: column;
