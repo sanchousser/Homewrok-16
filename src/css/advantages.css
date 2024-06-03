@@ -1,23 +1,23 @@
+@media screen and (min-width: 375px) {   
+
 ul {
     padding: 0px;
 }
 
-li {
-    list-style-type: none;
-}
-
-
 .advantages {
-    width: 20.938rem;
+    width: 375px;
     height: 49.375rem;
     background-color: rgba(30, 24, 35, 1);
     padding-left: 1.25rem;
 
 }
 
+.advantages__li {
+    list-style-type: none;
+}
 .advantages__svg {
-    width: 2rem;
-    height: 2rem;
+    width: 63.349334px;
+    height: 63.349334px;
     border-radius: 50%;
     border: 0.063rem solid rgba(255, 255, 255, 0.5);
     padding: 0.938rem;
@@ -44,4 +44,5 @@ li {
     color: rgba(255, 255, 255, 0.7);
     margin: 0rem;
 
+}
 }
