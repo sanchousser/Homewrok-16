@@ -6,6 +6,7 @@
 .sale-section .container {
   display: flex;
   gap: 20px;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -16,22 +17,23 @@
 }
 
 .sale-title {
+  display: flex;
+  justify-content: flex-start;
   font-family: var(--font-epilogue);
+  margin-left: -90px;
   font-size: 40px;
   font-weight: 600;
   line-height: 44px;
   letter-spacing: -0.02em;
   text-align: left;
-  width: 84px;
   padding: 44px;
+  margin-left: 134px;
   color: var(--black-color);
 }
 
 .sale-text {
   display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-  font-family: var(--font-epilogue);
+  padding-top: 204px;
 }
 .sale-products {
   list-style: none;
