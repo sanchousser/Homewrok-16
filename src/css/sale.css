@@ -13,21 +13,16 @@
   width: 1200px;
   max-width: 100%;
   margin: 0 auto;
-  width: 1200px;
-  max-width: 100%;
 }
 
 .sale-title {
   font-family: var(--font-epilogue);
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 44px;
   letter-spacing: -0.02em;
-  text-align: left;
-  width: 84px;
-  padding: 44px;
-  margin-left: 132px;
-  color: var(--black-color);
+  color: var(--dark-green-color);
+  margin-bottom: 64px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 44px;
 }
 
 .sale-text {
@@ -45,13 +40,6 @@
   margin-top: -1px;
 }
 
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-  margin-top: -1px;
-  margin-right: 20px;
-}
 .sale-img {
   margin-top: -1px;
 }
