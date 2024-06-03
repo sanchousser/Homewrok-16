@@ -1,0 +1,12 @@
+.how-is-made h2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.how-is-made span {
+    color: var(--orange);
+}
