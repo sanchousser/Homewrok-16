@@ -31,6 +31,8 @@
   }
   .mixer {
     position: absolute;
+    width: 335px;
+      height: 500px;
   }
   .video {
     position: relative;
