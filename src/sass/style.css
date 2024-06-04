@@ -122,10 +122,10 @@ img {
 }
 
 .main-page__button {
-    font-family: inherit;
+    font-family: var(--primary-font);
     font-size: 14px;
     font-weight: 600;
-    padding: 12px 28px 12px 28px;
+    padding: 12px 26px;
     border-radius: 20px;
     color: var(--white);
 }
@@ -246,7 +246,6 @@ img {
 }
 
 [data-modal-content] {
-    background-color: var(--white);
     position: absolute;
     top: 136px;
     padding-right: 46px;
@@ -488,7 +487,7 @@ img {
     }
 
     .hidden-header__item:nth-child(6) {
-        margin-left: 186px;
+        margin-left: 130px;
         margin-right: -6px;
     }
 
