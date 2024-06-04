@@ -31,13 +31,8 @@ ul {
     list-style-type: none;
 }
 .advantages__svg {
-<<<<<<< Updated upstream:src/css/mobile/advantages.css
     width: 63.349334px;
     height: 63.349334px;
-=======
-    width: 4rem;
-    height: 4rem;
->>>>>>> Stashed changes:src/css/tablet/advantages.css
     border-radius: 50%;
     border: 0.063rem solid rgba(255, 255, 255, 0.5);
     padding: 0.938rem;
@@ -67,34 +62,6 @@ ul {
 }
 }
 
-<<<<<<< Updated upstream:src/css/mobile/advantages.css
 @media screen and (min-width: 376px) and (max-width: 768px) {
     
 } 
-=======
-/* for tablet */
-
-@media screen and (min-width: 768px) {
-    .container {
-        width: 768px;
-    }
-
- .advantages {
-    width: 768px;
-    height: 620px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 2rem;
-    
- }
- .advantages ul {
-   
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
- }
- .advantages__li {
-    
- }
-}
->>>>>>> Stashed changes:src/css/tablet/advantages.css

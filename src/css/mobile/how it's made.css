@@ -9,7 +9,6 @@
 ::marker {
     color: rgba(76, 76, 76, 1);}
 
-<<<<<<< Updated upstream:src/css/mobile/how it's made.css
 @media screen and (min-width: 375px) {
   .manufacturing {
     width: 20.938rem;
@@ -17,7 +16,6 @@
     font-family: Montserrat;
     margin-left: 20px;
   }
-=======
 @media screen and (min-width: 375px)  {
 .container {
         width: 375px;
@@ -33,7 +31,6 @@
 }
 
 .manufacturing__tittle {
->>>>>>> Stashed changes:src/css/tablet/how it's made.css
 
   .manufacturing__tittle {
     font-size: 20px;
@@ -47,11 +44,9 @@
 
   .manufacturing__tittle span {
     color: rgba(253, 146, 34, 1);
-<<<<<<< Updated upstream:src/css/mobile/how it's made.css
   }
 
   .img-video {
-=======
 }
 .image-video {
 width: 335px;
@@ -60,7 +55,6 @@ width: 335px;
         margin-right: auto;
 }
 .video {
->>>>>>> Stashed changes:src/css/tablet/how it's made.css
     width: 335px;
     height: 500px;
   }
@@ -95,12 +89,10 @@ width: 335px;
     gap: 18px;
   }
 
-<<<<<<< Updated upstream:src/css/mobile/how it's made.css
   ::marker {
     color: rgba(76, 76, 76, 1);
   }
 }
-=======
 
 }
 .text-tablet{
@@ -146,4 +138,3 @@ width: 335px;
     .manufacturing__tittle {
         text-align: center;
     }
->>>>>>> Stashed changes:src/css/tablet/how it's made.css
