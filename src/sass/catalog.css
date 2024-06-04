@@ -285,6 +285,10 @@ align-items: center;}
         text-transform:uppercase ;
 }
 
+.modal-form__btn:hover {
+box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
 .submit-info {
     font-family: Epilogue;
         font-size: 12px;
