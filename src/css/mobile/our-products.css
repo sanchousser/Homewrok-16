@@ -2,6 +2,7 @@
 
 @media screen and (max-width: 480px) {
   .our-products {
+    padding: 1.25rem;
     max-width: 21rem;
     margin-bottom: 4.5rem;
   }
@@ -23,19 +24,19 @@
 
   .our-products__card {
     background-color: var(--color-white);
-    width: 21rem;
+    width: 20rem;
     height: 22.75rem;
     border: 1px solid var(--color-borders);
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2rem;
   }
 
   .our-products__img {
-    width: 14.375rem;
+    width: 14rem;
     height: auto;
-    padding: 2rem;
   }
 
   .our-products__card-title {
