@@ -5,10 +5,11 @@
       margin: auto;
       justify-content: space-between;
       align-items: center;
-      margin-top: 24px;
-      margin-bottom: 32px;
-      margin-left: 32px;
-      margin-right: 32px;
+      margin: 0 auto;
+      padding-top: 24px;
+      padding-bottom: 32px;
+      padding-right:32px;
+      padding-left: 32px;;
 
 }
 
@@ -56,16 +57,16 @@
       justify-content: center;
       max-width: 532px;
       gap: 25px;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 1.14;
-      letter-spacing: -0.02em;
-      gap: 25px;
+    
 }
 
 .header__navigation a {
       text-decoration: none;
       color: var(--black);
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.14;
+      letter-spacing: -0.02em;
 }
 
 .header_social {
@@ -84,10 +85,17 @@
 }
 
 .header_social__icon {
-      fill: var(--white);
-      stroke: var(--black);
+      fill: var(--bl);
+      stroke: var(--white);
       width: 20px;
       height: 20px;
+      cursor: pointer;
+}
+
+.header_social__icon:hover, 
+.header_social__icon:focus {
+      stroke: var(--orange);
+
 }
 
 /* Mobile header styling */
@@ -147,8 +155,6 @@
 
 
 .js-menu-container {
-      /* max-width: 220px;
-      max-height: 812px; */
       max-width: 290px;
       max-height: 1024px;
       display: none;
@@ -158,13 +164,14 @@
       right: 32px;
       height: 100%;
       width: 100%;
-      /* padding: 20px; */
+      position: absolute;
+      top: 0;
+      right:0;
+      z-index: 2;
 }
 
 @media screen and (max-width: 374px) {
       .js-menu-container {
-            max-width: 290px;
-            max-height: 1024px;
             max-width: 220px;
             max-height: 812px;
       }
@@ -182,15 +189,24 @@
       flex-direction: column;
       align-items:flex-start;
       justify-content:flex-start;
-      /* max-width: 532px; */
+      max-width: 124px;
       gap: 25px;
       font-size: 14px;
       font-weight: 500;
       line-height: 1.14;
       letter-spacing: -0.02em;
       gap: 25px;
-      padding: 20px;
+      margin: 0 auto;
+      position: absolute;
+      top: 156px;
+      left: 85px;
+}
 
+@media screen and (max-width: 375px) {
+      .header__navigation__mobil ul {
+            top: 136px;
+            left: 50px;
+      }
 }
 
 .header__navigation__mobil a {
@@ -200,11 +216,42 @@
       font-weight: 500;
       line-height: 1.14;
       letter-spacing: -0.02em;
-      text-align: left;
+      text-align: left;  
       
 }
 
-/* Media query for mobile  */
+.header__navigation__mobil a:hover,
+.header__navigation__mobil a:focus {
+      color: var(--orange);
+}
+
+.header_social__mobil {
+      list-style: none;
+      text-decoration: none;
+      display: flex;
+      max-width: 66px;
+      width: 100%;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 24px;
+      left: 32px;
+}
+
+@media screen and (max-width: 375px) {
+      .header_social__mobil {
+            bottom: 20px;
+            left: 20px;
+      }
+}
+
+.header_social__icon a {
+      width:24px;
+      height:24px;
+}
+
+/* Media query for mobile/tablet  */
 
 @media screen and (max-width: 767px) {
       .js-open-menu {
@@ -237,16 +284,35 @@
       }
 
       .buton-mobile_X {
-            width: 19px;
-            height: 19px;
+            width: 32px;
+            height: 32px;
             background-color: var(--black);
             cursor: pointer;
-            fill: var(--white);
             stroke: var(--white);
+            position:absolute;
+            top: 24px;
+            right: 32px;
 
       }
 
-      .button-close-menu svg:hover {
+      @media screen and (max-width: 375px) {
+            .buton-mobile_X {
+                  width: 28px;
+                  height: 28px;
+                  top: 20px;
+                  right: 20px;
+            
+            }
+      }
+
+}
+
+.buton-mobile_X:hover {
+      stroke: var(--orange);
+
+}
+
+.button-close-menu svg:hover {
             fill: var(--blue);
       }
 
@@ -257,4 +323,3 @@
 
 
 
-}
