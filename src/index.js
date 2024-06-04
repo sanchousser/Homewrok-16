@@ -15,9 +15,9 @@
 
 /*Header menu*/
 (() => {
-  const mobileMenu = document.querySelector('.js-menu-container-hero');
-  const openMenuBtn = document.querySelector('.js-open-menu-hero');
-  const closeMenuBtn = document.querySelector('.js-close-menu-hero');
+  const mobileMenu = document.querySelector('.js-menu-container-header');
+  const openMenuBtn = document.querySelector('.js-open-menu-header');
+  const closeMenuBtn = document.querySelector('.js-close-menu-header');
 
   const toggleMenu = () => {
     const isMenuOpen =
