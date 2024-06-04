@@ -1,13 +1,4 @@
-:root {
-  --font-main: Montserrat, Arial, sans-serif;
-  --color-input-text: #4040404d;
-  --color-borders: #1111111a;
-  --color-coal: #111111;
-  --color-dark: #1e1823;
-  --color-orange: #fd9222;
-  --color-pearl: #fafafa;
-  --color-white: #ffffff;
-}
+@import url(variabile-temp.css);
 
 body {
   font-family: var(--font-main);
