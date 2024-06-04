@@ -115,6 +115,7 @@ margin-bottom: 14px;
         padding: 18px 35px;
         display: flex;
         margin-left: auto;
+        margin-bottom: 80px;
 }
 
 /* Modal section*/
@@ -329,6 +330,8 @@ box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
             max-height: auto;
         }
 }
+
+/*Desktop*/
 
 @media screen and (min-width: 1280px) {
     .modal-form__btn {
