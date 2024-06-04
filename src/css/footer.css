@@ -50,8 +50,8 @@
   text-decoration: none;
 }
 .footer-icons {
-  stroke: var(--white-color);
   display: flex;
+  margin-top: -60px;
   gap: 16px;
   border-radius: solid 4px var(--white-color);
 }
