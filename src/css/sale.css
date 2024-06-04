@@ -22,13 +22,10 @@
   line-height: 44px;
   letter-spacing: -0.02em;
   text-align: left;
-  padding: 44px;
-  margin-left: 134px;
   color: var(--black-color);
 }
 .sale-container__products {
   display: flex;
-  padding-top: 204px;
 }
 
 .sale-products {
