@@ -69,7 +69,7 @@
   margin-bottom: 20px;
 }
 
-span {
+.sale-discount {
   font-family: var(--font-epilogue);
   font-size: 12px;
   font-weight: 400;
