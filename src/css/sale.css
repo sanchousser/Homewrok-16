@@ -2,6 +2,7 @@
   width: 1440px;
   max-width: 100%;
   margin: 0 auto;
+  padding: 80px 0 100px 0;
 }
 .sale-section .container {
   display: flex;
@@ -26,6 +27,8 @@
 }
 .sale-container__products {
   display: flex;
+  margin-top: 204px;
+  margin-left: -50px;
 }
 
 .sale-products {
