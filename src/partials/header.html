@@ -5,22 +5,31 @@
 
 <!--header section-->
 <header class="header section">
-  <!-- <div class="header__logo-mobile">
-  <a href="#"><
-    p><span>SIMPLY</span>CHOCOLATE</p>
-  </a>
-      </div> -->
+
+  <div class="header__logo-mobile">
+    <div class="logo-container">
+      <span class="logo-text">
+        <span class="logo-text__simply">SIMPLY</span>
+        <span class="logo-text__chocolate">CHOCOLATE</span>
+      </span>
+      <svg class="header_logo__icon__mobile"  width="11"
+      height="15">
+        <use href="./images/icons.svg#icon-chocolate_MobilTablet" />
+      </svg>
+    </div>
+   </div>
+
   <div class="header container">
     <div class="logo-container">
       <span class="logo-text">
         <span class="logo-text__simply">SIMPLY</span>
         <span class="logo-text__chocolate">CHOCOLATE</span>
       </span>
-      <svg class="header_logo__icon">
+      <svg class="header_logo__icon"  width="12.5"
+      height="17">
         <use href="./images/icons.svg#icon-chocolate_Desktop" />
       </svg>
     </div>
-
     <nav class="header__navigation">
       <ul>
         <li>
@@ -34,14 +43,14 @@
     </nav>
     <ul class="header_social">
       <li>
-        <a href="">
+        <a href="http://instagram.com" target="_blank">
           <svg class="header_social__icon">
             <use href="./images/icons.svg#icon-instagram_DesktopTablet" />
           </svg>
         </a>
       </li>
       <li>
-        <a href="">
+        <a href="http://twitter.com" target="_blank">
           <svg class="header_social__icon">
             <use href="./images/icons.svg#icon-twitter_DesktopTablet" />
           </svg>
@@ -49,4 +58,59 @@
       </li>
     </ul>
   </div>
+  <button
+    class="js-open-menu button button--toggle-menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+  >
+    <svg
+      class="button--toggle-menu__icon"
+      width="24"
+      height="24"
+      fill="currentColor"
+    >
+      <use href="./images/icons.svg#icon-menu_Mobil" />
+    </svg>
+  </button>
 </header>
+
+<!--Meniu pt navigare - mobile size -->
+
+<div class="js-menu-container">
+  <button class="js-close-menu button button-close-menu">
+    <a href="">
+      <svg class="buton-mobile_X">
+        <use href="./images/icons.svg#icon-menu_Tablet" />
+      </svg>
+    </a>
+  </button>
+  <nav class="header__navigation__mobil">
+      <ul>
+        <li>
+          <a href="" class="active">Home</a>
+        </li>
+        <li><a href="">How it's made</a></li>
+        <li><a href="">Our Products</a></li>
+        <li><a href="">Top Sellers</a></li>
+        <li><a href="">Chocolate is loved</a></li>
+      </ul>
+  </nav>
+  <ul class="header_social__mobil">
+      <li>
+        <a href="http://instagram.com" target="_blank">
+          <svg class="header_social__icon">
+            <use href="./images/icons.svg#icon-instagram_DesktopTablet" />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="http://twitter.com" target="_blank">
+          <svg class="header_social__icon">
+            <use href="./images/icons.svg#icon-twitter_DesktopTablet" />
+          </svg>
+        </a>
+      </li>
+  </ul>
+  </div>
+
+</div>
