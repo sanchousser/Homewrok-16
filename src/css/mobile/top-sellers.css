@@ -1,13 +1,4 @@
-:root {
-  --font-main: Montserrat, Arial, sans-serif;
-  --color-input-text: #4040404d;
-  --color-borders: #1111111a;
-  --color-coal: #111111;
-  --color-dark: #1e1823;
-  --color-orange: #fd9222;
-  --color-pearl: #fafafa;
-  --color-white: #ffffff;
-}
+@import url(variabile-temp.css);
 
 body {
   font-family: var(--font-main);
@@ -15,7 +6,10 @@ body {
   background-color: var(--color-pearl);
 }
 
+@media screen and (max-width:480px) {
 .top-sellers__section {
+  margin: 0 auto;
+  max-width: 21rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -71,8 +65,7 @@ body {
 .seller-modal {
   position: absolute;
   top: 69vh;
-  right: 0;
-  width: 100vw;
+  width: 19.438rem;
   z-index: 999;
   background-color: var(--color-pearl);
   transition-duration: 150ms;
@@ -240,4 +233,6 @@ body {
   background-color: var(--color-orange);
   border: none;
   align-self: flex-start;
+}
+
 }

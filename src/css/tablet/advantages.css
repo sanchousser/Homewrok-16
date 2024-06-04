@@ -1,38 +1,21 @@
 @media screen and (max-width: 480px) {   
 
-.advantages ul {
+ul {
     padding: 0px;
-    list-style: none;
 }
-<<<<<<< Updated upstream:src/css/mobile/advantages.css
-=======
-.advantages li {
-    list-style-type: none;
-}
-@media screen and (min-width: 375px) {
-
-
-
-
-
-
->>>>>>> Stashed changes:src/css/tablet/advantages.css
 
 .advantages {
-    width: 375px;
+    max-width: 21rem;
+    margin: 0 auto;
     height: 49.375rem;
     background-color: rgba(30, 24, 35, 1);
-<<<<<<< HEAD:src/css/advantages.css
-    padding: 1.25rem;
-=======
     padding-left: 1.25rem;
-    margin-left: auto;
-    margin-right: auto;
->>>>>>> 376c7d194de38117bb8d459d2167cd9b58d9eab7:src/css/mobile/advantages.css
 
 }
 
-
+.advantages__li {
+    list-style-type: none;
+}
 .advantages__svg {
     width: 63.349334px;
     height: 63.349334px;
@@ -43,7 +26,6 @@
 }
 
 .advantages__tittle {
-    font-family: Montserrat;
     font-size: 1.125rem;
     font-weight: 600;
     line-height: 1.371rem;
@@ -53,7 +35,6 @@
 }
 
 .advantages__text {
-    font-family: Montserrat;
     font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.067rem;
@@ -64,7 +45,3 @@
 
 }
 }
-
-@media screen and (min-width: 376px) and (max-width: 768px) {
-    
-} 
