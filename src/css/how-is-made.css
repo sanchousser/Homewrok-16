@@ -1,0 +1,135 @@
+
+.how-is-made {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.how-is-made h2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.how-is-made span {
+    color: var(--orange);
+}
+
+.hm {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hm p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33333;
+    margin: 14px;
+}
+
+.hm ul {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 18px;
+    margin: 0px 15px 15px 30px;
+}
+
+.hm_show {
+    border-radius: 15px;
+    width: 335px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.4), url("/src/images/how-is-made/how-is-made-for-mobile.jpg");
+    position: relative; 
+}
+
+.hm_descr {
+    border-radius: 15px;
+    max-width: 335px;
+    background-color: rgb(247, 182, 145);
+    text-align: left;
+}
+
+.hm_show svg {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+}
+
+/* .hm iframe {
+    display: none;
+} */
+
+
+
+@media screen and (min-width: 768px) {
+    
+    .how-is-made h2 {
+        font-size: 24px;
+        margin-top: 100px; 
+    }
+
+    .hm_show {
+        width: 614px;
+        height: 400px;
+        background: rgba(0, 0, 0, 0.4), url("/src/images/how-is-made/how-is-made-for-tablet.jpg");  
+    }
+    
+    .hm_show svg {
+        width: 44px;
+        height: 44px;
+    }
+
+    .hm_descr {
+        max-width: 614px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .how-is-made h2 {
+        margin-top: 128px;
+    }
+
+    .hm {
+        flex-direction: row;
+        gap: 20px;
+    }
+    
+    .hm_descr {
+        max-width: 516px;
+        height: 400px;
+        padding: 31px;
+    }
+
+    .hm_show {
+        width: 600px;
+        height: 400px;
+        background: rgba(0, 0, 0, 0.4), url("/src/images/how-is-made/how-is-made-for-station.jpg");  
+    }
+
+    .hm ul {
+        gap: 18px;
+    }
+
+    .hm p {
+        margin-bottom: 28px;
+    }
+}
