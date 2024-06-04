@@ -1,0 +1,61 @@
+:root {
+    --new_watches__subtitle-font-name: "Epilogue", Calibri, Tahoma;
+}
+
+  .new_watches__subtitle {
+    font-family: var(--new_watches__subtitle-font-name);
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(20,20,20,0.66);
+
+  }
+  .new_watches__main-text {
+    font-family: var(--new_watches__subtitle-font-name);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .new_watches__main-text-box {
+    width: 448px;
+  }
+  .new_watches__main_box {
+    display: flex;
+    flex-direction: column;
+  }
+  .new_watches__main_box_images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
+  .new_watches__main_box_image {
+    width: 576px;
+    height: 422px;
+  }
+
+  @media screen and (max-width: 850px) {
+    .new_watches__main-text {
+      font-size: 40px;
+    }
+    .new_watches__main_box_image {
+      width: 342px;
+      height: 260px;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .new_watches__main-text {
+      font-size: 32px;
+    }
+    .new_watches__main_box_images {
+      flex-direction: column;
+    }
+    .new_watches__main_box_image {
+      width: 335px;
+      height: 260px;
+    }
+    .new_watches__main-text-box {
+      width: 335px;
+    }
+  }
