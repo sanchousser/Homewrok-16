@@ -1,0 +1,57 @@
+<div class="topsellers">
+
+    <h1 class="topsellers__title"><span style="color:
+rgba(253, 146, 34, 1) ;">top</span> sellers</h1>
+
+    <ul class="topsellers__list">
+        <li>
+            <img src="/src/images/topsellers/tsimg01.png" alt="chocolate and coffee">
+            <p class="topsellers__text">Crazy enough chocolate originates from a bean just like the coffee bean called
+                Cacao. Cacao has been around for thousands of years and was first discovered by the Native American
+                tribe called the Mayans.
+        </li>
+        <li>
+            <img src="/src/images/topsellers/tsimg02.png" alt="chocolate and mint">
+        </li>
+    </ul>
+    <button data-modal-open class="topsellers__btn" type="button">Buy now</button>
+    </div>
+
+    <!-- Modal section-->
+
+    <div data-modal class="is-hidden">
+        <div data-modal-content>
+            <p></p>
+            <button data-modal-close type="button">x</button>
+            <h1 class="modal-title"><span style="color:rgba(253, 146, 34, 1) ;">buy</span> now</h1>
+            <form name="modal-form" class="modal-form">
+                <label class="modal-form__position">Personal information
+                    <input type="text" name="name" class="modal-form__input" placeholder="Name" />
+
+                    <input type="text" name="surname" class="modal-form__input" placeholder="Surname" />
+                </label>
+                <label class="modal-form__position">Telephone
+                    <input type="number" name="telephone" class="modal-form__input" />
+                    
+                </label>
+                <label class="modal-form__position">E-mail
+                    <input type="email" name="email" class="modal-form__input" />
+                    
+                </label>
+                <label class="modal-form__position">Comments
+                    <textarea name="comment" placeholder="Enter the text" class="modal-form__comment"></textarea>
+                </label>
+                <label class="modal-form__position modal-form__checked form-checked">
+                    <input type="checkbox" name="agree" value="agree" class="modal-form__input" />
+                    <span class="replace-checkbox            modal-checkbox__position">
+                        
+                    </span>
+
+
+                    I agree with the letter and accept the <a href="#" class="condition">Terms and Conditions</a>
+                </label>
+                <button type="submit" class="modal-form__btn">submit</button>
+
+            </form>
+        </div>
+    </div>
