@@ -85,11 +85,18 @@
 }
 
 .header_social__icon {
-      fill: var(--bl);
-      stroke: var(--white);
+      fill: var(--white);
+      stroke: var(--black);
       width: 20px;
       height: 20px;
       cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+      .header_social__icon {
+            fill: var(--black);
+            stroke: var(--white);
+      }
+      
 }
 
 .header_social__icon:hover, 
