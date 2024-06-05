@@ -173,6 +173,7 @@ img {
     width: 67px;
     font-size: 12px;
     padding-top: 7px;
+    color: var(--white);
 }
 
 .scroll-down-container {
