@@ -25,7 +25,6 @@ img,picture,svg {
     }
     
     .container_hero {
-    
         width: 100%; 
         font-family: var(--primary-font);
         font-weight: 500px;
@@ -76,8 +75,7 @@ img,picture,svg {
     }
     .btn_link{
         display: inline-block;
-        text-decoration: none;
-        
+        text-decoration: none; 
         font-family:var(--primary-font);
         font-weight: 600;
         font-size: 14px;
