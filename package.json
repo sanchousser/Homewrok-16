@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/team-project.git"
+    "url": "git+https://github.com/alinaelenadogaru/team-project.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/team-project/issues"
+    "url": "https://github.com/alinaelenadogaru/team-project/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
