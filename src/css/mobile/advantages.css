@@ -4,8 +4,6 @@
     padding: 0px;
     list-style: none;
 }
-<<<<<<< Updated upstream:src/css/mobile/advantages.css
-=======
 .advantages li {
     list-style-type: none;
 }
@@ -16,19 +14,15 @@
 
 
 
->>>>>>> Stashed changes:src/css/tablet/advantages.css
 
 .advantages {
     width: 375px;
-    height: 49.375rem;
+    height: auto;
     background-color: rgba(30, 24, 35, 1);
-<<<<<<< HEAD:src/css/advantages.css
     padding: 1.25rem;
-=======
     padding-left: 1.25rem;
     margin-left: auto;
     margin-right: auto;
->>>>>>> 376c7d194de38117bb8d459d2167cd9b58d9eab7:src/css/mobile/advantages.css
 
 }
 
