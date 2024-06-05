@@ -1,7 +1,7 @@
 @import url(variabile-temp.css);
 
 @media screen and (max-width: 480px) {
-  .body{
+  .body {
     padding: 0;
   }
   .our-products {
@@ -60,11 +60,21 @@
 
   .our-products__card-desc {
     color: var(--color-description);
-    font-size: .75rem;
+    font-size: 0.75rem;
     font-weight: 400;
-    line-height: .875rem;
+    line-height: 0.875rem;
     letter-spacing: -0.02rem;
     margin: 0 0 1.125rem 0;
   }
-}
 
+  .our-products__card-btn {
+    width: 5.875rem;
+    height: 2.063rem;
+    border: 1px solid var(--color-borders);
+    background-color: var(--color-pearl);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.07px;
+    color: var(--color-coal);
+  }
+}
