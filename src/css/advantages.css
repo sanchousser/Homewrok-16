@@ -1,0 +1,64 @@
+img,picture,svg {
+    max-width: 100%;
+    display: block;}
+
+    :root {
+        --orange: #FD9222;
+        --white: #FFFFFF;
+        --black: #111111;
+        --dark-violet:#1E1823;
+        --primary-font: 'Montserrat', sans-serif;
+    
+    }
+
+
+ .benefits_container {
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    background-color: #1E1823;
+    color: white;
+    padding: 2em;
+    }
+
+      
+     .element {
+        width: 30%;
+    } 
+
+    .element + .element {
+        margin-left: 50px;
+    }
+
+    .benefits_icons{
+      width: 25px;
+         height: 25px;
+         margin-bottom: 30px;
+        border-radius: 100px;
+        /* padding: 20px 20px;
+         border-radius: 100px;
+         border: 1px solid ; */
+    } 
+
+    .elements_text h2 {
+        font-weight: 600;
+        font-family: var(--primary-font);
+        font-size: 18px;
+        line-height: 22px;
+        color: var(--white);
+
+    }
+
+    .elements_text p {
+        font-weight: 400;
+        font-family: var(--primary-font);
+        font-size: 10x;
+        line-height: 17px;
+        letter-spacing: -2%;
+        color: var(--white) 
+        rgba(255, 255, 255, 0.7);
+        margin-top: 1em;
+    }
