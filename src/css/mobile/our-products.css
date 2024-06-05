@@ -1,16 +1,5 @@
 @import url(variabile-temp.css);
 
-@media screen and (max-width:375px) {
-  .our-products__card{
-    width: 19.438rem;
-  }
-  .our-products__list{
-    gap: 70px;
-    padding-left: 30%;
-    padding-right: 30%;
-  }
-}
-
 @media screen and (max-width: 480px) {
   .body {
     padding: 0;
@@ -102,5 +91,16 @@
   }
   .our-products__scroll-bar{
     margin: 1.25rem auto;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .our-products__card{
+    width: 19.438rem;
+  }
+  .our-products__list{
+    gap: 70px;
+    padding-left: 30%;
+    padding-right: 30%;
   }
 }
