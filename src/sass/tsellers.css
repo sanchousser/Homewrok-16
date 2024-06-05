@@ -3,7 +3,7 @@
  */
 
 li {
-    padding-top: 16px;
+    padding-top: 32px;
 }
 
 .topsellers {
@@ -40,9 +40,11 @@ li {
     line-height: 18px;
     letter-spacing: -0.02em;
     text-align: left;
+    padding-top: 20px;
 }
 
 .topsellers__btn {
+    margin-top:20px;
     width: 120px;
     height: 41px;
     padding: 12px 28px 12px 28px;
