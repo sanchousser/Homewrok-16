@@ -1,7 +1,12 @@
 @import url(variabile-temp.css);
 
+<<<<<<< HEAD
 @media screen and (max-width: 480px) {
   .body {
+=======
+
+  .body{
+>>>>>>> 890da8d30544f26bce4020e85b56b5125f554195
     padding: 0;
   }
   .our-products {
@@ -66,6 +71,7 @@
     line-height: 0.875rem;
     letter-spacing: -0.02rem;
     margin: 0 0 1.125rem 0;
+<<<<<<< HEAD
   }
 
   .our-products__card-btn {
@@ -104,3 +110,6 @@
     padding-right: 30%;
   }
 }
+=======
+  }
+>>>>>>> 890da8d30544f26bce4020e85b56b5125f554195

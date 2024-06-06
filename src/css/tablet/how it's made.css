@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 480px) {
+
   .manufacturing {
     max-width: 21rem;
     margin: 0 auto;
@@ -58,4 +58,4 @@
   ::marker {
     color: rgba(76, 76, 76, 1);
   }
-}
+
