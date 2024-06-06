@@ -1,5 +1,5 @@
 /* Mobile 320px - 375px */
-@media screen and (max-width: 480px) {
+ 
   /* Header style */
 
   .header__section {
@@ -276,4 +276,4 @@
   .hero__icon-container:hover .hero__scroll-icon {
     fill: var(--white);
   }
-}
+

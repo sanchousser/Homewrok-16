@@ -9,14 +9,14 @@
 ::marker {
     color: rgba(76, 76, 76, 1);}
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .manufacturing {
     width: 20.938rem;
     height: 64.5rem;
     font-family: Montserrat;
     margin-left: 20px;
   }
-@media screen and (min-width: 375px)  {
+
 .container {
         width: 375px;
         margin-left: auto;
@@ -30,7 +30,7 @@
     margin-right: auto;
 }
 
-.manufacturing__tittle {
+
 
   .manufacturing__tittle {
     font-size: 20px;
@@ -92,18 +92,18 @@ width: 335px;
   ::marker {
     color: rgba(76, 76, 76, 1);
   }
-}
 
-}
+
+
 .text-tablet{
     display: none;
 }
-
 }
+
 
 /* for tablet */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
 .container {
     width: 768px;
 }
@@ -138,3 +138,4 @@ width: 335px;
     .manufacturing__tittle {
         text-align: center;
     }
+  }

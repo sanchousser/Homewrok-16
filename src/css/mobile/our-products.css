@@ -1,6 +1,6 @@
 @import url(variabile-temp.css);
 
-@media screen and (max-width: 480px) {
+
   .body{
     padding: 0;
   }
@@ -66,5 +66,3 @@
     letter-spacing: -0.02rem;
     margin: 0 0 1.125rem 0;
   }
-}
-

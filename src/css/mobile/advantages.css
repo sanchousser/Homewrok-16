@@ -1,19 +1,4 @@
-@media screen and (max-width: 480px) {   
-
-.advantages ul {
-    padding: 0px;
-    list-style: none;
-}
-.advantages li {
-    list-style-type: none;
-}
-@media screen and (min-width: 375px) {
-
-
-
-
-
-
+@media screen and (min-width: 375px) and (max-width: 767px) {   
 
 .advantages {
     width: 375px;
@@ -25,7 +10,10 @@
     margin-right: auto;
 
 }
-
+.advantages ul {
+    padding: 0px;
+    list-style: none;
+}
 
 .advantages__svg {
     width: 63.349334px;
@@ -59,6 +47,6 @@
 }
 }
 
-@media screen and (min-width: 768px) and {
+@media screen and (min-width: 768px) and (max-width: 1199px){
     
 } 
