@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap');
+:root {
+    --theme-color: #3950ca;
+    --bg-color: rgba(79, 48, 183, 0.06);
+    --comp-color: #ff6584;
+    --gradient: linear-gradient(#6a5fdd 0%, #241d8c 100%);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background-color: rgb(243, 241, 241);
+}
+
+.review-section {
+    width: 375px;
+    height: 404px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.reviews-title {
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    color: black;
+    margin-bottom: 2px;
+    text-align: center;
+    width: 223px;
+    margin-left: 56px;
+    padding: 0;
+}
+
+.review-button {
+    font-size: 14px;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1.5px solid orange;
+    padding: 12px 28px;
+    font-weight: 600;
+    margin-left: 85px;
+    margin-top: 32px;
+}
+
+.media {
+    width: 335px;
+    height: 200px;
+    border: 1px solid lightgrey;
+    background-color: white;
+    position: relative;
+    top: 40px;
+    border-radius: 10px;
+}
+
+.review-box {
+    width: 335px;
+    height: 242px;
+    margin-left: -20px;
+}
+
+.media-img {
+    max-width: 80px;
+    height: 80px;
+    margin-left: 132px;
+    position: absolute;
+    z-index: 2;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.media-name {
+    font-size: 18px;
+    text-align: center;
+    line-height: 24px;
+    position: relative;
+    top: 56px;
+}
+
+.media-text {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    color: #7d8597;
+    width: 299px;
+    height: 54px;
+    text-align: center;
+    margin-left: 18px;
+    position: relative;
+    top: 80px;
+}
+
+.reviews-title span {
+    color: orange;
+}
+
+.swiper-pagination {
+    width: 107px;
+    height: 13px;
+}
+
+
+  h2,h1 {
+    margin:0;
+    padding-top:30px;
+  }
+  
+  .bg-color {
+    background: var(--bg-color);
+  }
+  
+  .half-color-box {
+    background: var(--gradient);
+    height: 300px;
+    margin-bottom: 100px;
+  }
+  
+  .por {
+    position: relative;
+  }
+  
+  .review-box .quote {
+    position: absolute;
+    width: 40px;
+    right: 10px;
+    bottom: 10px;
+  }
+  
+  .test-arrowbox {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    top: 70px;
+  }
+  
+  .review-box h5 {
+    margin: 0;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+
+  .swiper-wrapper {
+    display: flex;
+  }
+
+  .swiper-testimonial {
+    padding: 100px 20px;
+    padding-top: 30px;
+  }
+  
+  .half-color-box {
+    background: var(--gradient);
+    height: 300px;
+    margin-bottom: 140px;
+  }
+  
+  .test-arrowbox .swiper-button-next-test,
+  .test-arrowbox .swiper-button-prev-test {
+    margin-right: 20px;
+    /* background: var(--comp-color);2 */
+    border-radius: 50%;
+    --size: 55px;
+    width: var(--size);
+    height: var(--size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .arrow-right {
+    transform: rotate(180deg);
+    margin-top: -8px;
+  }
+  
+  .arrow {
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+  }
+  
+  .arrow:hover {
+    transform: translateX(-15px);
+  }
+
+  .swiper-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+@media screen and (min-width:768px) {
+    .review-section {
+      height: 463px;
+        width: 704px;
+        margin: 100px 32px;
+    }
+
+    .reviews-title {
+        margin-left: 218px;
+        margin-bottom: 20px;
+    }
+
+    .media {
+        width: 344px;
+        margin-left: 20px;
+    }
+
+    .swiper-wrapper {
+        width: 344px;
+    }
+
+    .review-box {
+        width: 344px;
+    }
+
+    .swiper-slide {
+        width: 344px;
+        margin: 0;
+    }
+
+    .swiper-container {
+        display: flex;
+        gap: 12px;
+        padding-bottom: 22px;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+    }
+
+    .review-button {
+      margin-top: 50px;
+      margin-left: 241px;
+      width: 222px;
+      height: 50px;
+      font-size: 18px;
+    }
+}
+
+/* CSS Slider container */
+.imageshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default  */
+.imageClass {
+  display: none;
+}
+
+/* Adding fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+      opacity: .4
+  }
+
+  to {
+      opacity: 1
+  }
+}
+
+/* Defining the dot styles */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Setting a different style for hovering and active */
+.active,
+.dot:hover {
+  background-color: #717171;
+}
