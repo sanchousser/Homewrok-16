@@ -34,7 +34,7 @@
 
   .our-products__card {
     background-color: var(--color-white);
-    width: 20.938rem;
+    width: 16.875rem;
     height: 22.75rem;
     border: 1px solid var(--color-borders);
     border-radius: 15px;
@@ -96,7 +96,7 @@
 
 @media screen and (max-width:375px) {
   .our-products__card{
-    width: 19.438rem;
+    width: 16.875rem;
   }
   .our-products__list{
     gap: 70px;
