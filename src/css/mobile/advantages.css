@@ -144,7 +144,7 @@
 
 } 
 
-/* for descktop */
+/* for descktop: advantages */
 @media screen and (min-width: 1200px) {
   .advantages {
     width: 1200px;
@@ -163,15 +163,22 @@
     flex-direction: row;
         flex-wrap: wrap;
         gap: 70px;
-}
-.advantages__li {
-    width: 308px;
-    border-right: 1px solid rgba(255, 255, 255, 0.5);
-    size: ;
+     
 }
 
 .advantages__svg {
   margin-top: 0px;
 }
+
+.for-descktop {
+     width: 326px;
+     border-right: 1px solid rgba(255, 255, 255, 0.5);
+     height: 124px;
+
+    }
+
+
+
+
 
 }

@@ -92,6 +92,9 @@ width: 335px;
 .tablet-text {
    display: none;
 }
+.desktop-text {
+  display: none;
+}
 }
 
 
@@ -103,6 +106,10 @@ width: 335px;
 }
 .tablet-text {
     display: initial;
+    
+}
+.desktop-text {
+  display: none;
 }
 .container {
     width: 768px;
@@ -147,7 +154,60 @@ width: 335px;
   
 }
 
-/* for descktop */
+/* for descktop: how it's made */
 @media screen and (min-width: 1200px) {
-  
+  .manufacturing__descktop {
+    display: flex;
+    gap: 20px;
+  }
+  .img-video {
+        width: 600px;
+    height: 400px;
+  }
+  .video {
+    width: 600px;
+    height: 400px;
+
+  }
+.manufacturing__content {
+  width: 516px;
+  height: 400px;
+    padding: 32px;
+          
+}
+
+
+  .manufacturing__content ul {
+    font-family: Montserrat;
+    
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-left: 15px;
+    
+  }
+
+  ::marker {
+    color: rgba(76, 76, 76, 1);
+  }
+
+  .description {
+    margin-bottom: 0px;
+   
+  }
+.desktop-text {
+  display: initial;
+}
+.mobile-text {
+ display: none;
+}
+.tablet-text {
+   display: none;
+}
+
 }
