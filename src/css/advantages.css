@@ -16,6 +16,7 @@ img,picture,svg {
     margin: 0 auto;
     max-width: 1200px;
     margin-top: 30px;
+    margin-bottom: 128px;    /* Adaugat Anca */
     display: flex;
     flex-wrap: wrap;
     /* justify-content: center; */

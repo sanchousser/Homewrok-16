@@ -1,6 +1,28 @@
  /*our products section*/
+
+
+ /* Adaugat Anca - margine- bottom pe section */
+ .products {
+    margin-bottom: 128px;
+ }
+
+ @media screen and (max-width: 767px) {
+     .products {
+         margin-bottom: 100px;
+     }
+ }
+
+ @media screen and (max-width: 375px) {
+     .products {
+         margin-bottom: 72px;
+     }
+ }
+
+/* Adaugat Anca - margine- bottom pe section */
+ 
  .background-section {
     padding: 20px;
+   
 }
 
 .products h2 {
