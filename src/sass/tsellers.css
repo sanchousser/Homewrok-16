@@ -3,7 +3,7 @@
  */
 
 li {
-    padding-top: 32px;
+    padding-top: 16px;
 }
 
 .topsellers {
@@ -17,7 +17,7 @@ li {
     margin-bottom: 0px;
     text-transform: uppercase;
     text-align: center;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
