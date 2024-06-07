@@ -4,13 +4,16 @@
 
     <ul class="topsellers__list">
         <li>
-            <img src="/src/images/tsellers-img/tsimg01.jpg" alt="chocolate and coffee">
+            <img src="/src/images/tsellers-img/tsimg02.jpg" alt="chocolate and coffee">
             <p class="topsellers__text">Crazy enough chocolate originates from a bean just like the coffee bean called
                 Cacao. Cacao has been around for thousands of years and was first discovered by the Native American
                 tribe called the Mayans.
         </li>
         <li>
-            <img src="/src/images/tsellers-img/tsimg02.jpg" alt="chocolate and mint">
+            <img src="/src/images/tsellers-img/tsimg01.jpg" alt="chocolate and mint">
+        </li>
+        <li>
+            <img src="/src/images/tsellers-img/tsimg03.jpg" alt="chocolate and mint">
         </li>
     </ul>
     <button data-modal-open class="topsellers__btn" type="button">Buy now</button>
@@ -51,24 +54,22 @@
                 <input type="text" name="name" pattern="\w{3,16}" class="modal-form__input" placeholder="Surname" />
             </label>
             </fieldset>
-
-            </label>
+            
             <label class="modal-form__position">E-mail
                 <input type="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" class="modal-form__input" placeholder="Enter your email" />
-            
             </label>
-            
-            
+                        
             <label class="modal-form__position ">Telephone
-                <input type="number" name="telephone" pattern="[0-9]{3}" class="modal-form__input modal-form__position__tel"
+                <input type="tel" name="telephone" pattern="[0-9]{3}" class="modal-form__input modal-form__position__tel"
                     placeholder="Phone number" />
                 <span class="border-end">+380</span>
                 <svg width="18px" height="18px">
                     <use href="/src/images/tsellers-img/symbol-defs.svg#icon-LeftIcon"></use>
                 </svg>
             </label>
+            
             <label class="modal-form__position ">Card number
-                <input type="number" name="mcard" pattern="[0-9\s]{13,19}" class="modal-form__input" placeholder="Enter card" />
+                <input type="text" name="mcard" pattern="[0-9\s]{13,19}" class="modal-form__input" placeholder="Enter card" />
                 <svg class="modal-form__position__mcard" width="18px" height="18px">
                     <use href="/src/images/tsellers-img/symbol-defs.svg#icon-Mastercard"></use>
                 </svg>

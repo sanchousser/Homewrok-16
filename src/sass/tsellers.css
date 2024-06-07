@@ -5,6 +5,9 @@
 li {
     padding-top: 16px;
 }
+li:last-child{
+    display: none;
+}
 
 .topsellers {
     display: flex;
@@ -163,7 +166,7 @@ li {
     justify-content: space-between;
     align-items: center;
     background-color: rgba(255, 255, 255, 1);
-    border: 1px, solid, rgba(17, 17, 17, 0.1);
+    border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
     margin-right: auto;
     margin-left: auto;
@@ -234,7 +237,7 @@ li {
 
 .border-end {
     font-size: 14px;
-    font-weight: 17px;
+    font-weight: 17;
     letter-spacing: 0.02em;
     color: var(--black);
     width: 42px;
@@ -485,5 +488,40 @@ li {
         margin: 16px 0px 0px 4px;
         width: 133px;
         height: 45px;
+    }
+}
+
+/*topsellers desktop style  */
+
+@media screen and (min-width: 1200px) {
+    li {
+        padding-top: 50px;
+    }
+
+    li:last-child {
+        display: contents;
+    }
+    li:first-child{
+        position: relative;
+        left: 40px;
+    }
+    img{
+        width:368px;
+        height: 464px;
+    }
+    .topsellers__list{
+        align-items: baseline;
+        margin-right: 40px;
+        
+    }
+    .topsellers__btn{
+        top:527px;
+        left: 480px;
+        width: 162px;
+        height: 50px;
+    }
+    .topsellers__text {
+      width: 407px; 
+        
     }
 }
