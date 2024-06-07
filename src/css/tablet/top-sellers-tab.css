@@ -5,9 +5,14 @@ body {
   background-color: var(--color-pearl);
 }
 
-@media screen and (min-width:481px) and (max-width:768px) {
+@media screen and (min-width: 481px) and (max-width:768px) {
+  .top-sellers__mobile-hide{
+    display: none;
+  }
+
   .top-sellers__section {
     margin: 0 auto;
+    padding: 1.25rem;
     max-width: 21rem;
     position: relative;
     display: flex;
@@ -16,8 +21,13 @@ body {
     gap: 1.25rem;
   }
 
+  .tab-dsk{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .top-sellers__title {
-    font-family: Montserrat;
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 1.5rem;
@@ -29,10 +39,23 @@ body {
     color: var(--color-orange);
   }
 
+  .top-seller__img-container{
+    display: flex;
+    gap: 1rem;
+  }
+
   .top-sellers__img {
-    width: 335px;
-    height: 464px;
+    max-width: 21.5rem;
+    height: 29rem;
     border-radius: 15px;
+  }
+
+  .top-sellers__sell-container{
+    width: 43rem;
+    align-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
   }
 
   .top-sellers__desc {
@@ -58,13 +81,7 @@ body {
   }
 
   .is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  .is-hidden .seller-modal {
-    transform: translate(50%, -68%) scale(0.1);
+    display: none;
   }
 
   .seller-modal__backdrop {
@@ -84,8 +101,8 @@ body {
   .seller-modal {
     pointer-events: all;
     position: absolute;
-    top: 30%;
-    left: 20%;
+    top: 36%;
+    left: 10%;
     width: 19.438rem;
     background-color: var(--color-pearl);
     transition-duration: 150ms;

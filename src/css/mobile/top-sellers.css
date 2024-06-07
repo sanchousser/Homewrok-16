@@ -6,9 +6,12 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  .tab-dsk{
+    display: none;
+  }
   .top-sellers__section {
     margin: 0 auto;
-    padding: 1.25rem;
+    padding-top: 1.25rem;
     max-width: 21rem;
     position: relative;
     display: flex;
