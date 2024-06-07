@@ -25,7 +25,7 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 1.17;
-     letter-spacing: -0.02em;
+    letter-spacing: -0.02em;
     color: var(--first-color);
     margin-bottom: 32px;
 }
@@ -86,7 +86,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 32px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); ;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     margin-bottom: 32px;
 }
 
@@ -114,68 +114,65 @@
     color: var(--accent-color);
 }
 
-
 @media screen and (min-width: 768px) {
-.container {
-    width: 768px;
-    padding-right: 32px;
-    padding-left: 32px;
-}
+    .container {
+        width: 768px;
+        padding-right: 32px;
+        padding-left: 32px;
+    }
 
-.section-footer {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
+    .section-footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 
-.footer-title {
-    font-size: 28px;
-    line-height: 1.21;
-    margin-bottom: 0;
-}
+    .footer-title {
+        font-size: 28px;
+        line-height: 1.21;
+        margin-bottom: 0;
+    }
 
-.footer-social-icon-mobile {
-    width: 24px;
-    height: 24px;
-}
+    .footer-social-icon-mobile {
+        width: 24px;
+        height: 24px;
+    }
 
-.desktop-tablet-container {
-    display: flex;
-    padding-bottom: 50px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
+    .desktop-tablet-container {
+        display: flex;
+        padding-bottom: 50px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
 
-.address-social-wrapper {
-    margin-left: auto;
-    column-gap: 50px;
-    border: none;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
+    .address-social-wrapper {
+        margin-left: auto;
+        column-gap: 50px;
+        border: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
 
-.footer-social-list {
-    column-gap: 18px;
-}
+    .footer-social-list {
+        column-gap: 18px;
+    }
 
-.footer-nav-list {
-    display: flex;
-    flex-direction: row;
-    column-gap: 24px;
-    padding-top: 24px;
-}
-
+    .footer-nav-list {
+        display: flex;
+        flex-direction: row;
+        column-gap: 24px;
+        padding-top: 24px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-.container {
-    width: 1200px;
-}
+    .container {
+        width: 1200px;
+    }
 
-.desktop-tablet-container {
-    padding-bottom: 58px;
-}
-    
-.address-social-wrapper {
-    column-gap: 63px;
-}
+    .desktop-tablet-container {
+        padding-bottom: 58px;
+    }
 
+    .address-social-wrapper {
+        column-gap: 63px;
+    }
 }
