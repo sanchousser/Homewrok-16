@@ -1,38 +1,13 @@
-.container {
-    padding-right: 20px;
-    padding-left: 20px;
-}
+
 * {
   margin: 0;
   padding: 0;
 }
 ::marker {
     color: rgba(76, 76, 76, 1);}
-
-@media screen and (min-width: 375px) {
-  .manufacturing {
-    width: 20.938rem;
-    height: 64.5rem;
-    font-family: Montserrat;
-    margin-left: 20px;
-  }
-@media screen and (min-width: 375px)  {
-.container {
-        width: 375px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-.manufacturing {
-    width: 20.938rem;
-    height: 64.5rem;
-    font-family: Montserrat;
-    margin-left: auto;
-    margin-right: auto;
-}
+ 
 
 .manufacturing__tittle {
-
-  .manufacturing__tittle {
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
@@ -40,14 +15,35 @@
     text-align: center;
     color: rgba(17, 17, 17, 1);
     margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
   }
-
   .manufacturing__tittle span {
     color: rgba(253, 146, 34, 1);
   }
+    .manufacturing__tittle-product {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .manufacturing {
+    width: 20.938rem;
+    height: 64.5rem;
+    font-family: Montserrat;
+    margin-left: 20px;
+        margin-left: auto;
+    margin-right: auto;
+  }
 
-  .img-video {
-}
+.container {
+        width: 375px;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
 .image-video {
 width: 335px;
     height: 500px;
@@ -69,13 +65,7 @@ width: 335px;
     margin-left: 14px;
   }
 
-  .manufacturing__tittle-product {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 24px;
-    text-align: left;
-    margin-bottom: 20px;
-  }
+
 
   .manufacturing__content ul {
     font-family: Montserrat;
@@ -92,32 +82,57 @@ width: 335px;
   ::marker {
     color: rgba(76, 76, 76, 1);
   }
+
+
+
+.mobile-text {
+ display: initial;
+}
+.tablet-text {
+   display: none;
+}
+.desktop-text {
+  display: none;
+}
 }
 
-}
-.text-tablet{
-    display: none;
-}
-
-}
 
 /* for tablet */
 
-@media screen and (min-width: 768px) {
-.container {
-    width: 768px;
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .manufacturing {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .mobile-text {
+    display: none;
 }
+.tablet-text {
+    display: initial;
+    
+}
+.desktop-text {
+  display: none;
+}
+
 .manufacturing {
     width: 768px;
+       margin-left: auto;
+    margin-right: auto;
    
 }
-.text-tablet {
+.tablet-text {
         display: initial;
     }
     .text-mobil {
         display: none;
     }
-.image-video {
+.img-video {
         width: 614px;
         height: 400px;
         margin-left: auto;
@@ -132,9 +147,82 @@ width: 335px;
             height: 356px;
             margin-left: auto;
             margin-right: auto;
-            padding-left: 32px;
+            padding: 32px;
         }
-    
-    .manufacturing__tittle {
-        text-align: center;
+    .manufacturing__content ul {
+      padding-left: 20px;
+          margin-left: auto;
+    margin-right: auto;
     }
+ 
+  
+}
+
+/* for desktop: how it's made */
+@media screen and (min-width: 1200px) {
+  .manufacturing {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .manufacturing__desktop {
+    display: flex;
+    gap: 20px;
+     margin-left: auto;
+    margin-right: auto;
+    width: 1136px;
+  }
+  .img-video {
+        width: 600px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .video {
+    width: 600px;
+    height: 400px;
+
+  }
+.manufacturing__content {
+  width: 516px;
+  height: 400px;
+    padding: 32px;
+    margin-left: auto;
+    margin-right: auto;
+          
+}
+
+  .manufacturing__content ul {
+    font-family: Montserrat;
+    
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-left: 15px;
+    
+  }
+
+  ::marker {
+    color: rgba(76, 76, 76, 1);
+  }
+
+  .description {
+    margin-bottom: 0px;
+   
+  }
+.desktop-text {
+  display: initial;
+}
+.mobile-text {
+ display: none;
+}
+.tablet-text {
+   display: none;
+}
+
+}
