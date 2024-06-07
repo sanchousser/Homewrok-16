@@ -1,9 +1,12 @@
  /*our products section*/
-
-
  /* Adaugat Anca - margine- bottom pe section */
  .products {
     margin-bottom: 128px;
+    max-width: 1200px;
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    justify-content: center;
  }
 
  @media screen and (max-width: 767px) {
@@ -16,20 +19,20 @@
      .products {
          margin-bottom: 72px;
      }
- }
-
-/* Adaugat Anca - margine- bottom pe section */
+    }
  
  .background-section {
     padding: 20px;
-   
 }
 
+img{
+    size-adjust:335px ;
+}
 .products h2 {
     justify-content: center;
     align-items: center;
     gap: 32px;
-    font-size: 20px;
+    font-size: 24px;
     letter-spacing: -0.03em;
     text-transform: uppercase;
     text-align: center;
@@ -44,19 +47,20 @@
 }
 
 .product-list {
+    display: flex;
     flex-wrap: nowrap;
     list-style: none;
-    display: flex;
     margin: 0;
     padding: 18px;
     justify-content: center;
-    overflow-x: auto;
-    box-sizing: border-box;
+    overflow-x: auto; scroll-behavior: smooth; 
+    overflow: hidden;
+    box-sizing:border-box;
+
 }
 
 .product-item {
-    flex: 0 0 auto;
-    width: 12%;
+    flex: 0 0 25%;
     margin: 0 10px;
     text-align: center;
     border: 1px solid #FAFAFA;
@@ -64,11 +68,14 @@
     box-sizing: border-box;
     border-color: #E2E2E2;
     border-radius: 10px;
+    object-fit: contain;
+
 }
 
 .product-item img {
     width: 100%;
     height: auto;
+
 }
 
 .product-item h4 {
@@ -91,82 +98,53 @@
     color: #111111;
     font-weight: 600;
 }
+.carousel-indicators {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    /* Add some space between the indicators and the product list */
+}
 
-.prev-btn,
-.next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: var(--orange);
-    padding: 10px;
+.carousel-indicators .dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #ddd;
+    border-radius: 50%;
     cursor: pointer;
 }
 
-.prev-btn {
-    left: 10px;
+.carousel-indicators .dot.active {
+    background-color: var(--orange);
+    /* Change the color to match your accent color */
 }
-
-.next-btn {
-    right: 10px;
-}
-
-.slider {
-    scroll-margin-bottom: 10px;
-    position: relative;
-    scrollbar-gutter: inherit;
-}
-
-.background-section {
-    background-image: url(../images/Subcribe-desktop@1x.jpg);
+.responsive-img-prod {
     width: 100%;
-    height: 370;
-    align-items: center;
+    height:auto;
 }
 
-.background-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
+/* For mobile devices */
+@media screen and (min-width: 320px) and (max-width: 375px) {
+    .product-item {
+        flex: 0 0 100%;
+        margin: 0 5px;
+        text-align: center;
+    }
 }
 
-.background-section h2 {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    margin-top: 24px;
-    color: #fff;
+/* For tablet devices */
+@media screen and (min-width: 376px) and (max-width: 767px) {
+    .product-item {
+        flex: 0 0 50%;
+        margin: 0 5px;
+    }
 }
 
-.background-section p {
-    text-align: center;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: -0.03em;
-    margin-top: 24px;
-    color: #fff;
-    max-width: 467px;
-    padding-bottom: 20px;
+/* For desktop devices */
+@media screen and (min-width: 769px) and (max-width:1200px){
+    .product-item {
+        flex: 0 0 25%;
+        margin: 0 5px;
+    }
 }
-
-.button-subscribe {
-    background-color: #FD9222;
-    color: #fff;
-    border-radius: 15px;
-    padding: 15px;
-    width: 35%;
-    border-color: none;
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: 30%;
-}
-
-/* Mobile image */
-
-
-/* Tablet image */
