@@ -1,7 +1,8 @@
 @import url(variabile-temp.css);
 
 @media screen and (max-width: 480px) {
-  .body {
+
+  .body{
     padding: 0;
   }
   .our-products {
