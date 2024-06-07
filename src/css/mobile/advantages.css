@@ -162,25 +162,29 @@
     display: flex;
     flex-direction: row;
         flex-wrap: wrap;
-        gap: 70px;
+        
      
 }
+ .for-desktop {
+    width: 325px;
+ }
 .line {
-    
+    width: 1px ;
+    height: 124px;
+    background: rgba(255, 255, 255, 0.5);
+    margin-right: 70px;
+    margin-top: 65px;
+   
+   
 }
 .advantages__svg {
   margin-top: 0px;
 }
 
-.for-descktop {
-     width: 326px;
-     border-right: 1px solid rgba(255, 255, 255, 0.5);
-     height: 124px;
-
-    }
-
-
-
-
-
 }
+
+
+
+
+
+
