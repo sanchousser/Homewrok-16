@@ -18,7 +18,7 @@ body {
 .title {
   height: 24px;
   max-width: 223px;
-  padding-bottom: 74px;
+  padding-bottom: 72px;
   font-family: Montserrat;
   font-size: 20px;
   font-weight: 600;
@@ -78,22 +78,14 @@ font-weight: 600;
 line-height: 17.07px;
 text-align: center;
 background-color: transparent;
-margin: 0 80px;
+margin: 0 70px;
 }
 
-.dot1:hover, .dot2:hover, .dot3:hover, .dot4:hover {
-  scale: 1.2;
-}
-
-.dot2:hover, .dot3:hover, .dot4:hover {
+.dot:hover {
   background-color: orange;
-}
-
-.first-dot {
   background-color: orange;
   width: 28px;
   border-radius: 30px;
-  display: inline-block;
   height: 13px;
 }
 
@@ -128,6 +120,7 @@ margin: 0 80px;
   z-index: 2;
   border-radius: 100px;
   overflow: hidden;
+  margin-bottom: 18px;
 }
 
 .media-text {
@@ -155,8 +148,8 @@ margin: 0 80px;
 }
 
 .nav-dots {
-  margin: 0 114px 30px;
-  width: 107;
+  margin: 0 119px 30px;
+  width: 107PX;
 }
 
 @media (max-width: 600px) {
@@ -165,25 +158,79 @@ margin: 0 80px;
   }
 }
 
-footer {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  text-align: center;
-  padding: 16px;
-  background-color: #eaeaea90;
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
+@media screen and (min-width:768px) {
+  .reviews-section {
+    margin: 100px 32px;
+    height: 463px;
+    max-width: 704px;
+  }
+
+  .title {
+    line-height: 28px;
+    max-width: 268px;
+    margin-bottom: 50px;
+    padding: 0;
+    height: 25px;
+  }
+
+  .carousel-container {
+    max-width: 704px;
+    overflow-y: hidden;
+  }
+
+  .media {
+    width: 344px;
+  }
+
+  .dot {
+    margin-right: 5px;
+  }
+
+  .nav-dots {
+    margin: 0 295px 50px;
+  }
+
+  .reviews-button {
+    margin: 0 244px;
+  }
+
+  .media-text {
+    width: 312px;
+  }
 }
 
-footer p {
-  color: #221133;
-  margin: 0;
-}
+@media screen and (min-width:1200px) {
+  .reviews-section {
+    margin: 128px 32px;
+    height: 463px;
+    max-width: 1136px;
+    padding: 0 24px;
+  }
 
-footer a {
-  text-decoration: none;
-  color: inherit;
+  .title {
+    max-width: 268px;
+    font-size: 24px;
+  }
+
+  .carousel-container {
+    max-width: 1136px;
+    overflow-y: hidden;
+    gap: 28px;
+  }
+
+  .media {
+    width: 360px;
+  }
+
+  .media-text {
+    width: 312px;
+  }
+
+  .nav-dots {
+    margin: 0 507px;
+  }
+
+  .reviews-button {
+    margin: 64px 459px 0;
+  }
 }
