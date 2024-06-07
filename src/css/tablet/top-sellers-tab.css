@@ -1,14 +1,13 @@
-@import url(variabile-temp.css);
+@import url(../mobile/variabile-temp.css);
 
 body {
   font-family: var(--font-main);
   background-color: var(--color-pearl);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width:481px) and (max-width:768px) {
   .top-sellers__section {
     margin: 0 auto;
-    padding: 1.25rem;
     max-width: 21rem;
     position: relative;
     display: flex;
@@ -31,8 +30,8 @@ body {
   }
 
   .top-sellers__img {
-    max-width: 20.5rem;
-    height: 29rem;
+    width: 335px;
+    height: 464px;
     border-radius: 15px;
   }
 
@@ -59,7 +58,13 @@ body {
   }
 
   .is-hidden {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .is-hidden .seller-modal {
+    transform: translate(50%, -68%) scale(0.1);
   }
 
   .seller-modal__backdrop {
@@ -79,8 +84,8 @@ body {
   .seller-modal {
     pointer-events: all;
     position: absolute;
-    top: 36%;
-    left: 10%;
+    top: 30%;
+    left: 20%;
     width: 19.438rem;
     background-color: var(--color-pearl);
     transition-duration: 150ms;
