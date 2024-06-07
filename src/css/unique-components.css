@@ -1,3 +1,6 @@
+.unique-comp {
+    margin-bottom: 72px;
+}
 .unique-comp h2 {
     font-weight: 600;
     font-size: 20px;
@@ -149,6 +152,10 @@
 
 @media screen and (min-width: 768px) {
     
+    .unique-comp {
+        margin-bottom: 100px;
+    }
+    
     .unique-comp h2 {
         font-size: 24px;
     }
@@ -171,6 +178,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .unique-comp {
+            margin-bottom: 128px;
+        }
     .unique-comp ul {
         display: flex;
         flex-direction: row;
@@ -178,6 +188,7 @@
         gap: 19px;
         justify-content: center;
         max-height: 270px;
+        margin-bottom: 128px;
     }
 
     .unique-comp__card {
