@@ -102,7 +102,6 @@ html {
 img {
     max-width: 100%;
     width: 375px;
-    min-width: 320px;
 }
 
 .main-page__title {
