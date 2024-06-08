@@ -2,12 +2,12 @@
 /*our products section*/
 /* Adaugat Anca - margine- bottom pe section */
 .products {
-    margin-bottom: 128px;
     max-width: 1200px;
     display: flex;
     flex-flow: column;
     margin: 0 auto;
     justify-content: center;
+    margin-bottom: 128px;
 }
 
 @media screen and (max-width: 767px) {
@@ -135,6 +135,7 @@ img {
         flex: 0 0 100%;
         margin: 0 5px;
         text-align: center;
+        margin-bottom: 72px;
     }
 }
 
@@ -143,6 +144,7 @@ img {
     .product-item {
         flex: 0 0 50%;
         margin: 0 5px;
+        margin-bottom: 100px;
     }
 }
 
@@ -153,6 +155,7 @@ img {
         margin: 0 5px;
     }
 }
+
 
 
 /*our products section*/
