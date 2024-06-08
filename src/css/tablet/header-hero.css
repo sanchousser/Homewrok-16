@@ -63,14 +63,15 @@ body {
 
   /* Menu style */
 
-  .header-menu-button {
+  .js-open-menu-header {
     background-color: transparent;
     border: none;
     cursor: pointer;
     padding: 0;
+    display: block;
   }
 
-  .js-open-menu-header .icon {
+  .js-open-menu-header .icon-header {
     width: 28px;
     height: 28px;
     stroke: black;
@@ -88,7 +89,7 @@ body {
     z-index: 1000;
   }
 
-  .js-menu-container-header.is-open {
+  .js-menu-container-header.is-open-header {
     display: block;
   }
 
@@ -103,14 +104,15 @@ body {
     height: 28px;
   }
 
-  .js-close-menu-header .icon {
+  .js-close-menu-header .icon-header {
     width: 28px;
     height: 28px;
+    stroke: var(--white);
   }
 
-  .js-close-menu-header .icon:hover {
+  .js-close-menu-header .icon-header:hover {
     stroke: var(--orange);
-    fill: var(--orange);
+    animation: bounce 0.5s ease-in-out;
   }
 
   .header__menu-nav {
@@ -118,6 +120,7 @@ body {
   }
 
   .header__menu-nav a {
+    position: relative;
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
@@ -134,28 +137,56 @@ body {
   .header__menu-nav a:focus,
   .header__menu-nav a:active {
     color: var(--orange);
+    animation: bounce 0.5s ease-in-out;
   }
 
-  .header__menu-socials {
-    margin-left: 20px;
-    margin-bottom: 20px;
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
   }
 
-  .header__menu-socials .icon {
-    width: 18px;
-    height: 18px;
-    margin-right: 18px;
+  .header__nav a:hover::after,
+  .header__menu-nav a:focus::after,
+  .header__nav a:active::after {
+    content: '';
+    height: 1px;
+    width: 10%;
+    position: absolute;
+    top: 50px;
+    left: 15;
+    background-color: var(--orange);
+    transition: ease-in-out 300ms;
   }
 
-  .header__menu-socials .icon:hover {
-    fill: var(--orange);
+  .header__menu-socials-container {
+    margin-left: 32px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+  }
+
+  .header__menu-socials .icon-header {
+    width: 20px;
+    height: 20px;
+    stroke: var(--white);
+  }
+
+  .header__menu-socials .icon-header:hover {
     stroke: var(--orange);
+    transition: color 0.3s ease-in-out;
   }
 
   /* Hero section style */
 
   .hero-section {
     display: flex;
+    align-items: flex-end;
     background-color: var(--white);
     overflow: hidden;
     background-image: linear-gradient(
@@ -169,7 +200,7 @@ body {
     background-position: center;
     width: calc(100% - 2.5rem);
     max-width: 100%;
-    height: 100%;
+    height: 90vh;
     margin: 0 1.25rem 1.25rem 1.25rem;
   }
 
@@ -184,7 +215,7 @@ body {
     line-height: 34px;
     letter-spacing: -0.03em;
     text-align: left;
-    margin: 671px 180px 0 40px;
+    margin: 0 180px 0 40px;
   }
 
   .hero__buttons-scroll {
@@ -219,6 +250,7 @@ body {
     color: var(--orange);
     background-color: var(--light-yellow);
     border: (var(--light-yellow));
+    animation: bounce 0.5s ease-in-out;
   }
 
   .hero__btn2 {
@@ -241,12 +273,14 @@ body {
   .hero__btn2:after {
     color: var(--orange);
     border: 1px solid var(--orange);
+    animation: bounce 0.5s ease-in-out;
   }
 
   .hero__scroll-container {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    margin: 2rem 0;
   }
 
   .hero__scroll {
@@ -259,36 +293,32 @@ body {
     margin-left: 100px;
     margin-right: 10px;
     text-decoration: none;
-  }
-
-  .hero__icon-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 1.75rem;
-    height: 1.75rem;
-    background-color: var(--white);
-    border: 1px solid var(--white);
-    border-radius: 50%;
   }
 
   .hero__scroll-icon {
-    width: 15px;
-    height: 11px;
-    stroke: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin-left: 14px;
+    width: 28px;
+    height: 28px;
     fill: var(--orange);
   }
-  /*
+
   .hero__scroll-container:hover .hero__scroll {
     color: var(--orange);
+    animation: bounce 0.5s ease-in-out;
   }
 
-  .hero__scroll-container:hover .hero__icon-container {
+  .hero__scroll-container:hover .hero__scroll-icon {
     background-color: var(--orange);
     border-color: var(--orange);
-  }
-
-  .hero__icon-container:hover .hero__scroll-icon {
     fill: var(--white);
-  }*/
+    animation: bounce 0.5s ease-in-out;
+  }
 }
