@@ -1,8 +1,165 @@
- /*our products section*/
+
+/*our products section*/
+/* Adaugat Anca - margine- bottom pe section */
+.products {
+    margin-bottom: 128px;
+    max-width: 1200px;
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+    .products {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .products {
+        margin-bottom: 72px;
+    }
+}
+
+.background-section {
+    padding: 20px;
+}
+
+img {
+    size-adjust: 335px;
+}
+
+.products h2 {
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    font-size: 24px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 24px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.products span {
+    color: var(--orange);
+
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    margin: 0;
+    padding: 18px;
+    justify-content: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+
+.product-item {
+    flex: 0 0 25%;
+    margin: 0 10px;
+    text-align: center;
+    border: 1px solid #FAFAFA;
+    padding: 20px;
+    box-sizing: border-box;
+    border-color: #E2E2E2;
+    border-radius: 10px;
+    object-fit: contain;
+
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+
+}
+
+.product-item h4 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.product-item p {
+    font-size: 12px;
+}
+
+.button {
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-inline: 10px;
+    border-color: var(--light_grey);
+    box-shadow: none;
+    color: #111111;
+    font-weight: 600;
+}
+
+.carousel-indicators {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    /* Add some space between the indicators and the product list */
+}
+
+.carousel-indicators .dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-indicators .dot.active {
+    background-color: var(--orange);
+    /* Change the color to match your accent color */
+}
+
+.responsive-img-prod {
+    width: 100%;
+    height: auto;
+}
+
+/* For mobile devices */
+@media screen and (min-width: 320px) and (max-width: 375px) {
+    .product-item {
+        flex: 0 0 100%;
+        margin: 0 5px;
+        text-align: center;
+    }
+}
+
+/* For tablet devices */
+@media screen and (min-width: 376px) and (max-width: 767px) {
+    .product-item {
+        flex: 0 0 50%;
+        margin: 0 5px;
+    }
+}
+
+/* For desktop devices */
+@media screen and (min-width: 769px) and (max-width:1200px) {
+    .product-item {
+        flex: 0 0 25%;
+        margin: 0 5px;
+    }
+}
+
+
+/*our products section*/
 
 
  /* Adaugat Anca - margine- bottom pe section */
- .products {
+ /* .products {
     margin-bottom: 128px;
  }
 
@@ -20,7 +177,7 @@
 
 /* Adaugat Anca - margine- bottom pe section */
  
- .background-section {
+ /* .background-section {
     padding: 20px;
    
 }
@@ -164,9 +321,9 @@
     justify-content: center;
     margin-left: auto;
     margin-right: 30%;
-}
+} */
 
 /* Mobile image */
-
+ 
 
 /* Tablet image */
