@@ -19,6 +19,7 @@
   flex-wrap: wrap;
   margin-top: 50px;
 }
+
 .benefits_section .container{
   display: flex;
   flex-wrap: wrap;
@@ -285,6 +286,7 @@ color: var(--color-black);
     
 
   }
+<<<<<<< HEAD
 
 
 
@@ -302,3 +304,31 @@ color: var(--color-black);
 
 
 
+=======
+  .benefits_group{
+    padding: 20px;
+  }
+  
+  .benefits_group h2{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    font-family: 'Montserrat';
+    color: rgba(255, 255, 255, 1);
+  }
+  .benefits_group p{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  /* item section */
+  .item_section{
+    padding:72px 20px;
+  
+  }
+>>>>>>> d11dcafa89d711096a4f78595b94f3f1ee5bbefd
