@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 :root {
   --black: #111111;
   --gray: #1e1823;
@@ -26,10 +25,6 @@ body {
 
 /* Mobile */
 @media screen and (max-width: 480px) {
-=======
-/* Mobile 320px - 375px */
- 
->>>>>>> 890da8d30544f26bce4020e85b56b5125f554195
   /* Header style */
 
   .header__section {
@@ -310,4 +305,4 @@ body {
   .hero__icon-container:hover .hero__scroll-icon {
     fill: var(--white);
   }
-
+}
