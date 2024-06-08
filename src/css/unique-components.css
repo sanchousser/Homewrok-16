@@ -93,6 +93,7 @@ margin-bottom: 32px;
 .uniq-images-descr-wrapper {
     padding: 28px 55px 28px 28px;
     border-radius: 15px;
+    max-height: 220px;
 }
 
 .bg-color-wrapper {
