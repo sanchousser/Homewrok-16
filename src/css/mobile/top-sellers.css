@@ -9,7 +9,7 @@ body {
   .tab-dsk{
     display: none;
   }
-  .top-sellers__section {
+  .top-sellers__mobile-hide {
     margin: 0 auto;
     padding-top: 1.25rem;
     max-width: 21rem;
@@ -21,7 +21,6 @@ body {
   }
 
   .top-sellers__title {
-    font-family: Montserrat;
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 1.5rem;
