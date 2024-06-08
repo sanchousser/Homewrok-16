@@ -13,3 +13,31 @@
     </button>
   </div>
 </section>
+
+<!-- Marcaj MODAL cu backdrop, fereastra si buton inchidere -->
+
+<div data-modal class="is-hidden subscribe-modal">
+  <div data-modal-content class="subscribe-modal__content">
+    <img
+      src="./images/SubcribePopUp-desktop_tablet@1x.jpg"
+      alt="tablete de ciocolata"
+    />
+    <button data-modal-close type="button" class="subscribe-close-btn">
+      <a href="">
+        <svg class="buton-modal__X">
+          <use href="./images/icons.svg#icon-x-close_ferestre" />
+        </svg>
+      </a>
+    </button>
+    <h2 class="modal-title__subscribe">
+      <span>EXPLORE OUR</span> <span>NEW CHOCOLATE</span> FIRST!
+    </h2>
+    <form class="modal_form__subscribe" name="modal_form__subscribe">
+      <label class="modal_form__label__subscribe">
+        E-mail
+        <input type="email" name="email" class="modal_form__input__subscribe" />
+        <button type="submit" class="modal_form-btn__subscribe">Submit</button>
+      </label>
+    </form>
+  </div>
+</div>
