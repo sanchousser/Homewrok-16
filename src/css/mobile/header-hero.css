@@ -211,7 +211,9 @@ body {
     margin-left: 20px;
     margin-bottom: 32px;
     display: flex;
-    flex-direction: row;
+    gap:.875rem;
+    flex-flow: row wrap;
+
   }
 
   .hero__btn1 {
