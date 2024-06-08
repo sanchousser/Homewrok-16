@@ -32,7 +32,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 24px 32px 32px 32px;
+    margin: 24px 32px 24px 32px;
   }
 
   .header__logo span {
@@ -61,30 +61,19 @@ body {
     stroke: var(--orange);
   }
 
-  .header__nav-section {
-    display: none;
-  }
-
-  .header__socials {
-    display: none;
-  }
-
   /* Menu style */
 
   .header-menu-button {
-    display: block;
-    background: transparent;
+    background-color: transparent;
     border: none;
     cursor: pointer;
-    width: 28px;
-    height: 28px;
-    margin-right: 20px;
+    padding: 0;
   }
 
-  .header-menu-button .icon {
-    width: 32px;
-    height: 32px;
-    fill: black;
+  .js-open-menu-header .icon {
+    width: 28px;
+    height: 28px;
+    stroke: black;
   }
 
   .js-menu-container-header {
@@ -103,17 +92,20 @@ body {
     display: block;
   }
 
-  .js-close-menu-header .icon {
+  .js-close-menu-header {
     background: none;
     border: none;
     cursor: pointer;
     position: absolute;
     top: 28px;
     right: 28px;
-    width: 32px;
-    height: 32px;
-    stroke: var(--white);
-    fill: var(--white);
+    width: 28px;
+    height: 28px;
+  }
+
+  .js-close-menu-header .icon {
+    width: 28px;
+    height: 28px;
   }
 
   .js-close-menu-header .icon:hover {
@@ -122,7 +114,7 @@ body {
   }
 
   .header__menu-nav {
-    margin: 100px 81px 644px 85px;
+    margin: 136px 46px 560px 50px;
   }
 
   .header__menu-nav a {
@@ -144,16 +136,14 @@ body {
     color: var(--orange);
   }
 
-  .header__menu-socials-container {
-    display: flex;
-    flex-direction: row;
-    margin-left: 32px;
-    margin-bottom: 24px;
+  .header__menu-socials {
+    margin-left: 20px;
+    margin-bottom: 20px;
   }
 
   .header__menu-socials .icon {
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     margin-right: 18px;
   }
 
@@ -173,14 +163,14 @@ body {
         rgba(17, 17, 17, 0) 0%,
         rgba(17, 17, 17, 0.4) 100%
       ),
-      url(../../../assets/hero-bg-mobile.jpeg);
+      url(../../../assets/hero-bg-img.jpeg);
     border-radius: 1rem;
     background-size: cover;
     background-position: center;
     width: calc(100% - 2.5rem);
     max-width: 100%;
     height: 100%;
-    margin: 0 1.25rem;
+    margin: 0 1.25rem 1.25rem 1.25rem;
   }
 
   .hero__title {
@@ -197,10 +187,16 @@ body {
     margin: 671px 180px 0 40px;
   }
 
+  .hero__buttons-scroll {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
   .hero__buttons {
     margin: 32px 40px 40px 40px;
     display: flex;
     flex-direction: row;
+    gap: 14px;
   }
 
   .hero__btn1 {
@@ -216,7 +212,6 @@ body {
     border: 1px solid (var(--orange));
     width: 144px;
     height: 45px;
-    margin-right: 14px;
   }
 
   .hero__btn1:hover,
@@ -252,7 +247,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin: 2rem 0;
   }
 
   .hero__scroll {
@@ -284,7 +278,7 @@ body {
     stroke: var(--orange);
     fill: var(--orange);
   }
-
+  /*
   .hero__scroll-container:hover .hero__scroll {
     color: var(--orange);
   }
@@ -296,5 +290,5 @@ body {
 
   .hero__icon-container:hover .hero__scroll-icon {
     fill: var(--white);
-  }
+  }*/
 }

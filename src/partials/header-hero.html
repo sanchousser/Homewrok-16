@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="../../css/mobile/header-hero.css">
+  <link rel="stylesheet" href="../css/header-hero.css">
 </head>
 
 <body>
@@ -28,57 +28,38 @@
         <svg class="icon">
           <use href="../../../assets/hh-symbol-defs.svg#icon-chocolate-bar" />
         </svg>
-
       </a>
-
     </div>
 
-    <!-- Menu Button-->
+    <!-- Navigation bar -->
 
-    <button class="js-open-menu-header header-menu-button" aria-expanded="false" aria-controls="mobile-menu">
-      <svg class="icon">
-        <use href="../../../assets/hh-symbol-defs.svg#icon-menu-03" />
-      </svg>
-    </button>
+    <nav class="header__navigation">
+      <a href="#" class="home">Home</a>
+      <a href="#" class="how-made">How it's made?</a>
+      <a href="#" class="our-products">Our products</a>
+      <a href="#" class="top-sellers">Top sellers</a>
+      <a href="#" class="chocolate-love">Chocolate is loved</a>
+    </nav>
 
 
-    <!-- Menu -->
+    <!-- Socials -->
 
-    <div class="js-menu-container-header">
-
-      <button class="js-close-menu-header header__button-close-menu" type="button">
-        <svg class="icon">
-          <use href="../../../assets/hh-symbol-defs.svg#icon-x" />
-        </svg>
-
-      </button>
-
-      <nav class="header__menu-nav">
-        <a href="header-hero.html" class="home">Home</a>
-        <a href="how it's made.html" class="how-made">How it's made?</a>
-        <a href="our-products.html" class="our-products">Our products</a>
-        <a href="top-sellers.html" class="top-sellers">Top sellers</a>
-        <a href="subscribe.html" class="chocolate-love">Chocolate is loved</a>
-      </nav>
-
-      <ul class="header__menu-socials-container">
-        <li class="header__menu-socials">
-          <a href="www.instagram.com">
-            <svg class="icon">
-              <use href="../../../assets/hh-symbol-defs.svg#icon-instagram" />
-            </svg>
-          </a>
-        </li>
-        <li class="header__menu-socials">
-          <a href="www.twitter.com">
-            <svg class="icon">
-              <use href="../../../assets/hh-symbol-defs.svg#icon-twitter" />
-            </svg>
-          </a>
-        </li>
-      </ul>
-
-    </div>
+    <ul class="header__socials">
+      <li>
+        <a href="#">
+          <svg class="header__icon">
+            <use href="../../assets/hh-symbol-defs.svg#icon-instagram" />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <svg class="header__icon">
+            <use href="../../assets/hh-symbol-defs.svg#icon-twitter" />
+          </svg>
+        </a>
+      </li>
+    </ul>
 
   </header>
 
