@@ -16,7 +16,7 @@ padding-right: 0.5px;
 .container {
 max-width: 320px;
 }
-.how__titlu {
+.how__title {
 font-family: var(--primary-font);
 font-weight: 600;
 font-size: 20px;
@@ -27,11 +27,11 @@ text-align: center;
 color: #111;
 }
 
-.culoare {
+.color {
 color: #ff6c00;
 }
 
-.how__titlu2 {
+.how__title2 {
 font-family: var(--primary-font);
 font-weight: 600;
     font-size: 18px;
@@ -40,7 +40,7 @@ font-weight: 600;
     padding-left: 24px;
 }
 
-.how__lista2 {
+.how__list2 {
     padding-bottom: 5px;
     font-family: var(--primary-font);
     font-weight: 400;
@@ -60,7 +60,7 @@ height: 976px;
 @media (min-width: 375px) {
 .container {
 max-width: 375px;}
-.how__titlu {
+.how__title {
 font-family: var(--primary-font);
 font-weight: 600;
 font-size: 20px;
@@ -70,16 +70,16 @@ text-transform: uppercase;
 text-align: center;
 color: #111; }
     
-.culoare {
+.color {
 color: #ff6c00;}  
-.how__titlu2 {
+.how__title2 {
 font-family: var(--primary-font);
 font-weight: 600;
 font-size: 18px;
 line-height: 133%;
 color: #111;
 padding-left: 24px;}
-.how__lista2 {
+.how__list2 {
 padding-bottom: 5px;
 font-family: var(--primary-font);
 font-weight: 400;
@@ -97,7 +97,7 @@ height: 976px;}
 @media (min-width: 768px) {
 .container {
 max-width: 768px;}
-.how__titlu {
+.how__title {
 font-family: var(--primary-font);
 font-weight: 600;
 font-size: 24px;
@@ -107,10 +107,10 @@ text-transform: uppercase;
 text-align: center;
 color: #111;}
             
-.culoare {
+.color {
 color: #ff6c00;}
             
-.how__titlu2 {
+.how__title2 {
 font-family: var(--primary-font);
 font-weight: 600;
 font-size: 18px;
@@ -118,7 +118,7 @@ line-height: 133%;
 color: #111;
 padding-left: 24px;}
             
-.how__lista2 {
+.how__list2 {
 padding-bottom: 10px;
 font-family: var(--primary-font);
 font-weight: 400;
@@ -133,7 +133,7 @@ border-radius: 15px;
 height: 400px;
 width: 614px;}
 
-.reteta {
+.recipe {
     margin-left: 60px;
 }
 }
@@ -143,7 +143,7 @@ max-width: 1200px;}
 .video {
     display: flex;
 }
-.how__titlu {
+.how__title {
 font-family: var(--primary-font);
 font-weight: 600;
 font-size: 24px;
@@ -155,11 +155,11 @@ color: #111;
 padding-bottom: 40px;
 }
 
-.culoare {
+.color {
     color: #ff6c00;
 }
 
-.how__titlu2 {
+.how__title2 {
 font-family: var(--primary-font);
 font-weight: 600;
 font-size: 18px;
@@ -167,7 +167,7 @@ line-height: 133%;
 color: #111;
 }
 
-.how__lista2 {
+.how__list2 {
 padding-bottom: 40px;
 font-family: var(--primary-font);
 font-weight: 400;
