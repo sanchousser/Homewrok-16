@@ -3,12 +3,14 @@
     openSellerModalBtn: document.querySelector('[data-modal-seller-open]'),
     openSellerModalBtnDsk: document.querySelector('[data-modal-seller-open-dsk]'),
     closeSellerModalBtn: document.querySelector('[data-modal-seller-close]'),
+    closeSellerModalBtnDsk: document.querySelector('[data-modal-seller-close-dsk]'),
     sellerModal: document.querySelector('[data-modal-seller]'),
   };
 
   refs.openSellerModalBtn.addEventListener('click', toggleModal);
   refs.openSellerModalBtnDsk.addEventListener('click', toggleModal);
   refs.closeSellerModalBtn.addEventListener('click', toggleModal);
+  refs.closeSellerModalBtnDsk.addEventListener('click', toggleModal);
 
   function toggleModal() {
     refs.sellerModal.classList.toggle('is-hidden');
