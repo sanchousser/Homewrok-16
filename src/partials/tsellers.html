@@ -4,13 +4,16 @@
 
     <ul class="topsellers__list">
         <li>
-            <img src="/src/images/tsellers-img/tsimg01.png" alt="chocolate and coffee">
+            <img src="/src/images/tsellers-img/tsimg02.jpg" alt="chocolate and coffee">
             <p class="topsellers__text">Crazy enough chocolate originates from a bean just like the coffee bean called
                 Cacao. Cacao has been around for thousands of years and was first discovered by the Native American
                 tribe called the Mayans.
         </li>
         <li>
-            <img src="/src/images/tsellers-img/tsimg02.png" alt="chocolate and mint">
+            <img src="/src/images/tsellers-img/tsimg01.jpg" alt="chocolate and mint">
+        </li>
+        <li>
+            <img src="/src/images/tsellers-img/tsimg03.jpg" alt="chocolate and mint">
         </li>
     </ul>
     <button data-modal-open class="topsellers__btn" type="button">Buy now</button>
@@ -25,17 +28,17 @@
         <h1 class="modal-title"><span class="modal-title-span">buy</span> now</h1>
         <ul class="modal-list">
             <li class="modal-list-list">
-                <img src="/src/images/tsellers-img/transparentchocolate.png" alt="transparent">
+                <img src="/src/images/tsellers-img/transparentchocolate.jpg" alt="transparent">
                 <button class="modal-list-button">100 g</button>
             </li>
 
             <li class="modal-list-list">
-                <img src="/src/images/tsellers-img/kisspngchocolate.png" alt="kiss">
+                <img src="/src/images/tsellers-img/kisspngchocolate.jpg" alt="kiss">
                 <button class="modal-list-button">200 g</button>
             </li>
 
             <li class="modal-list-list">
-                <img src="/src/images/tsellers-img/kinderchocolate.png" alt="kinder">
+                <img src="/src/images/tsellers-img/kinderchocolate.jpg" alt="kinder">
                 <button class="modal-list-button">300 g</button>
             </li>
 
@@ -43,44 +46,43 @@
 
 
         <form name="modal-form" class="modal-form">
-            <label class="modal-form__position">Personal information
-                <input type="text" name="name" class="modal-form__input" placeholder="Name" />
+            <fieldset class="modal-form__pi">
+            <label class="modal-form__position modal-form__position__name">Personal information
+                <input type="text" name="name" pattern="\w{3,16}" class="modal-form__input" placeholder="Name" />
             </label>
-            <label class="modal-form__position">
-                <input type="text" name="name" class="modal-form__input" placeholder="Surname" />
+            <label class="modal-form__position modal-form__input__surname">
+                <input type="text" name="name" pattern="\w{3,16}" class="modal-form__input" placeholder="Surname" />
             </label>
-
-
+            </fieldset>
+            
+            <label class="modal-form__position">E-mail
+                <input type="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" class="modal-form__input" placeholder="Enter your email" />
+            </label>
+                        
             <label class="modal-form__position ">Telephone
-                <input type="number" name="telephone" class="modal-form__input modal-form__position__tel"
+                <input type="tel" name="telephone" pattern="[0-9]{3}" class="modal-form__input modal-form__position__tel"
                     placeholder="Phone number" />
                 <span class="border-end">+380</span>
                 <svg width="18px" height="18px">
                     <use href="/src/images/tsellers-img/symbol-defs.svg#icon-LeftIcon"></use>
                 </svg>
-
-
             </label>
-            <label class="modal-form__position">E-mail
-                <input type="email" name="email" class="modal-form__input" />
-                
+            
+            <label class="modal-form__position ">Card number
+                <input type="text" name="mcard" pattern="[0-9\s]{13,19}" class="modal-form__input" placeholder="Enter card" />
+                <svg class="modal-form__position__mcard" width="18px" height="18px">
+                    <use href="/src/images/tsellers-img/symbol-defs.svg#icon-Mastercard"></use>
+                </svg>
             </label>
+                      
             <label class="modal-form__position">Comments
                 <textarea name="comment" placeholder="Enter the text" class="modal-form__comment"></textarea>
-            </label>
-            <label class="modal-form__position modal-form__checked form-checked">
-                <input type="checkbox" name="agree" value="agree" class="modal-form__input" />
-                <span class="replace-checkbox            modal-checkbox__position">
-                    
-                </span>
-
-
-                I agree with the letter and accept the <a href="#" class="condition">Terms and Conditions</a>
             </label>
             <button type="submit" class="modal-form__btn">submit</button>
 
         </form>
     </div>
 </div>
+
 
 

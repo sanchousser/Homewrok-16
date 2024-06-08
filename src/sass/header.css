@@ -12,17 +12,35 @@
 
 html {
     box-sizing: border-box;
+    min-width: 320px;
+    max-width: 375px;
+    width: 100%;
+  }
+
+body {
+    position: relative;
+    background-color: #f0efef;
+  }
+
+.header-section {
+    margin-top: 20px;
+    margin-bottom: 72px;
+    height: 620px;
+    min-width: 320px;
+    max-width: 375px;
+    width: 100%;
   }
 
 /*Nav-bar styling*/
 .nav-bar {
     display: flex;
     flex-direction: row;
-    max-width: 100%;
-    min-width: 320px;
-    width: 335px;
+    max-width: 320px;
+    min-width: 280px;
+    width: 100%;
     height: 28px;
-    margin: 19px 18px 15px 22px;
+    margin-left: 20px;
+    margin-right: 20px;
     align-items: center;
     position: relative;
 }
@@ -81,6 +99,13 @@ html {
 }
 
 /*Hero section styling*/
+.hero-section {
+    min-width: 280px;
+    max-width: 320px;
+    width: 100%;
+    margin-right: 20px;
+}
+
 .main-page {
     width: 100%;
     min-width: 320px;
@@ -93,10 +118,11 @@ html {
     background-image: linear-gradient(#00000020, #2f303a40),
     url(../images/header-img/mobile-background@1x.jpg);
     max-width: 335px;
+    min-width: 280px;
+    width: 100%;
     border-radius: 30px;
     background-size: cover;
     padding: 395px 20px 20px 20px;
-    margin-bottom: 72px;
 }
 
 img {
@@ -125,7 +151,7 @@ img {
     font-family: var(--primary-font);
     font-size: 14px;
     font-weight: 600;
-    padding: 12px 26px;
+    padding: 12px 22px;
     border-radius: 20px;
     color: var(--white);
 }
