@@ -125,12 +125,6 @@ body {
     padding: 395px 20px 20px 20px;
 }
 
-img {
-    max-width: 100%;
-    width: 375px;
-    min-width: 320px;
-}
-
 .main-page__title {
     display: none;
 }
