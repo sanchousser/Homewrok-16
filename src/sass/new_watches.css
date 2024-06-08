@@ -1,3 +1,12 @@
+  .new_watches_section {
+    max-width: 100%;
+    font-family: Epilogue;
+    margin:auto;
+    box-sizing: border-box;
+  }
+  .new_watches_div {
+    max-width: 1400px;
+  }
   .new_watches__subtitle {
     font-family: "Epilogue", Calibri, Tahoma;
     font-size: 12px;
