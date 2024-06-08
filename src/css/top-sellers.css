@@ -1,24 +1,8 @@
 /*top seller section*/
 
-/* Adaugat Anca - margine- bottom pe section */
-.top-sellers {
-    margin-bottom: 128px;
-}
-
-@media screen and (max-width: 767px) {
-    .top-sellers {
-        margin-bottom: 100px;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .top-sellers {
-        margin-bottom: 72px;
-    }
-}
-/* Adaugat Anca - margine- bottom pe section */
 
 .seller-list {
+    display: flex;
     padding: 20px;
 
 }
@@ -90,3 +74,22 @@
     margin-right: 30%;
     align-items: center;
 }
+
+/* Adaugat Anca - margine- bottom pe section */
+.top-sellers {
+    margin-bottom: 128px;
+}
+
+@media screen and (max-width: 767px) {
+    .top-sellers {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .top-sellers {
+        margin-bottom: 72px;
+    }
+}
+
+/* Adaugat Anca - margine- bottom pe section */
