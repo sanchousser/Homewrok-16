@@ -36,15 +36,27 @@ svg {
 
 .container_hero {
     width: 100%;
+    padding-top: 13em;
+    padding-bottom: 2em;
+}
+
+.container_hero h2 {
     font-family: var(--primary-font);
     font-weight: 500px;
     font-size: 28px;
-    list-style: 34px;
+    line-height: 34px;
     letter-spacing: -3%;
     color: var(--white);
-    padding-top: 13em;
-    padding-bottom: 1em;
 
+
+}
+
+.title {
+    display: none;
+}
+
+.mobile_subheader {
+    display: none;
 }
 
 .startpage_butons {
@@ -113,9 +125,9 @@ svg {
 
 /* Icon scroll down  */
 
-.scroll_tolink_conainer {
-    flex: 0.25;
-    gap: 30px;
+.scroll_tolink_container {
+    flex: 0.20;
+    gap: 20px;
     display: flex;
     text-align: center;
     align-items: center;
@@ -151,11 +163,11 @@ svg {
 }
 
 
-.scroll_tolink_conainer:hover .text_buttonscroll {
+.scroll_tolink_container:hover .text_buttonscroll {
     color: var(--orange);
 }
 
-.scroll_tolink_conainer:hover .scroll_icon {
+.scroll_tolink_container:hover .scroll_icon {
     fill: var(--white);
     background-color: var(--orange);
 }
@@ -374,4 +386,68 @@ svg {
     letter-spacing: 0.06em;
     margin-top: 15px;
     border-radius: 100px;
+}
+
+
+
+/* Media queries mobile adaptive*/
+/* @media screen and (min-width: 400px) and (max-width: 800px) */
+
+@media screen and (max-width: 478px) {
+    .container_hero h2 {
+        display: none;
+    }
+
+    .mobile_subheader {
+        display: contents;
+        font-weight: 500px;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -3%;
+        color: var(--white);
+
+    }
+
+    .container_hero {
+        padding-top: 22em;
+    }
+
+    .startpage_hero {
+        padding: 3em 20px;
+    }
+
+    .buynow_button {
+        padding: 10px 20px;
+
+    }
+
+    .btn_link {
+        padding: 10px 10px;
+
+    }
+
+    .startpage_butons {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+
+    }
+
+    .scroll_tolink_container {
+        margin-left: 5px;
+        gap: 15px;
+    }
+}
+
+/* Media queries for tablet */
+@media screen and (min-width:479px) and (max-width:767px) {
+    .scroll_tolink_container {
+        flex: 0.35;
+    }
+
+    .scroll_icon {
+        padding: 5px;
+        border-radius: 100%;
+    }
 }
