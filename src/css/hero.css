@@ -32,6 +32,11 @@ svg {
     background-size: cover;
     background-position: 50% 50%;
 
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
 }
 
 .container_hero {
@@ -135,16 +140,26 @@ svg {
 
 
 .text_buttonscroll {
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
     text-decoration: none;
-    font-family: var(--primary-font);
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: -3%;
     color: var(--white);
+    background: none;
+    border: 0;
+    cursor: pointer;
 
 }
 
+.btn_scroll {
+    text-decoration: none;
+    color: var(--white)
+}
 .scroll_icon {
     width: 40px;
     height: 40px;
@@ -163,11 +178,12 @@ svg {
 }
 
 
-.scroll_tolink_container:hover .text_buttonscroll {
+
+.text_buttonscroll:hover .btn_scroll{
     color: var(--orange);
 }
 
-.scroll_tolink_container:hover .scroll_icon {
+.text_buttonscroll:hover .scroll_icon {
     fill: var(--white);
     background-color: var(--orange);
 }
