@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+/* <<<<<<< HEAD */
+=======
+>>>>>>> main
 :root {
   --black: #111111;
   --gray: #1e1823;
@@ -24,6 +28,13 @@ body {
 }
 /* Mobile */
 @media screen and (max-width: 480px) {
+<<<<<<< HEAD
+/* ======= */
+/* Mobile 320px - 375px */
+ 
+/* >>>>>>> 890da8d30544f26bce4020e85b56b5125f554195 */
+=======
+>>>>>>> main
   /* Header style */
 
   .header__section {
@@ -316,4 +327,9 @@ body {
     fill: var(--white);
     animation: bounce 0.5s ease-in-out;
   }
+<<<<<<< HEAD
+
 }
+=======
+}
+>>>>>>> main
