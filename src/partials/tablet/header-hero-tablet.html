@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="../css/header-hero.css">
+  <link rel="stylesheet" href="../../css/tablet/header-hero-tablet.css">
 </head>
 
 <body>
@@ -28,38 +28,59 @@
         <svg class="icon-logo">
           <use href="../../../assets/hh-symbol-defs.svg#icon-chocolate-bar" />
         </svg>
+
       </a>
+
     </div>
 
-    <!-- Navigation bar -->
 
-    <nav class="header__navigation">
-      <a href="#" class="home">Home</a>
-      <a href="#" class="how-made">How it's made?</a>
-      <a href="#" class="our-products">Our products</a>
-      <a href="#" class="top-sellers">Top sellers</a>
-      <a href="#" class="chocolate-love">Chocolate is loved</a>
-    </nav>
+    <!-- Menu Button-->
+
+    <button class="js-open-menu-header header-menu-button" aria-expanded-header="false"
+      aria-controls="js-menu-container-header">
+      <svg class="icon-menu-open">
+        <use href="../../../assets/hh-symbol-defs.svg#icon-menu-03" />
+      </svg>
+    </button>
 
 
-    <!-- Socials -->
+    <!-- Menu -->
 
-    <ul class="header__socials">
-      <li>
-        <a href="#">
-          <svg class="header__icon">
-            <use href="./desktop-symbol-defs.svg#icon-instagram-desktop" />
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <svg class="header__icon">
-            <use href="./desktop-symbol-defs.svg#icon-twitter-desktop" />
-          </svg>
-        </a>
-      </li>
-    </ul>
+    <div class="js-menu-container-header">
+
+      <button class="js-close-menu-header header__button-close-menu" type="button">
+        <svg class="icon-menu-close">
+          <use href="../../../assets/hh-symbol-defs.svg#icon-x" />
+        </svg>
+
+      </button>
+
+      <nav class="header__menu-nav">
+        <a href="#" class="home">Home</a>
+        <a href="#" class="how-made">How it's made?</a>
+        <a href="#" class="our-products">Our products</a>
+        <a href="#" class="top-sellers">Top sellers</a>
+        <a href="#" class="chocolate-love">Chocolate is loved</a>
+      </nav>
+
+      <ul class="header__menu-socials-container">
+        <li class="header__menu-socials">
+          <a href="https://www.instagram.com">
+            <svg class="icon-header">
+              <use href="../desktop-symbol-defs.svg#icon-instagram-desktop" />
+            </svg>
+          </a>
+        </li>
+        <li class="header__menu-socials">
+          <a href="https://www.twitter.com">
+            <svg class="icon-header">
+              <use href="../desktop-symbol-defs.svg#icon-twitter-desktop" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+    </div>
 
   </header>
 
@@ -67,7 +88,7 @@
   <main>
     <!-- Hero section -->
     <section class="hero-section">
-      <div class="hero-content">
+      <div>
 
         <h1 class="hero__title">Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
         </h1>
@@ -85,7 +106,7 @@
           <div class="hero__scroll-container">
             <a class="hero__scroll" href="#footer.html">scroll down
               <svg class="hero__scroll-icon">
-                <use class="icon-scoll" href="./scroll-symbol-defs.svg#icon-scroll-down-arrow" />
+                <use href="../scroll-symbol-defs.svg#icon-scroll-down-arrow" />
               </svg>
             </a>
           </div>
@@ -100,7 +121,7 @@
 
   </main>
 
-  <script src="../../index.js"></script>
+  <script src="../../header-menu.js"></script>
 </body>
 
 </html>
