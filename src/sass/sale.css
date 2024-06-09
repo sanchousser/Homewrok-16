@@ -8,6 +8,7 @@
   box-sizing: border-box;
   margin-left: 115px;
   margin-right: 115px;
+  margin-bottom: 50px;
 }
 .sale__section {
   display: flex;
