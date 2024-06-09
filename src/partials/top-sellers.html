@@ -4,90 +4,174 @@
     <ul class="seller-list thumb">
       <li class="seller">
         <picture class="seller-img">
-          <source srcset="./images/TopSellers_img1_Mobil@1x.jpg" media="(max-width: 768px)" />
-          <source srcset="./images/TopSellers_img1_Tablet@1x.jpg" media="(min-width: 769px)" />
-          <source srcset="./images/TopSellers_img1_Desktop@1x.jpg" media="(min-width: 1200px)" />
-          <img src="./images/TopSellers_img1_Mobil@1x.jpg" 
-          alt=" chocolate with coffee" />
+          <source
+            srcset="./images/TopSellers_img1_Mobil@1x.jpg"
+            media="(max-width: 768px)"
+          />
+          <source
+            srcset="./images/TopSellers_img1_Tablet@1x.jpg"
+            media="(min-width: 769px)"
+          />
+          <source
+            srcset="./images/TopSellers_img1_Desktop@1x.jpg"
+            media="(min-width: 1200px)"
+          />
+          <img
+            src="./images/TopSellers_img1_Mobil@1x.jpg"
+            alt=" chocolate with coffee"
+          />
         </picture>
-        <p class="mobile-p">Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been
-          around for thousands of years and was first discovered by the Native American tribe called the Mayans.
+        <p class="mobile-p">
+          Crazy enough chocolate originates from a bean just like the coffee
+          bean called Cacao. Cacao has been around for thousands of years and
+          was first discovered by the Native American tribe called the Mayans.
         </p>
       </li>
       <li class="seller">
         <picture class="seller-img">
-          <source srcset="./images/TopSellers_img2_Mobil@1x.jpg" media="(max-width: 767px)" />
-          <source srcset="./images/TopSellers_img2_Tablet@1x.jpg" media="(min-width: 768px)" />
-          <source srcset="./images/TopSellers_img2_Desktop@1x.jpg" media="(min-width: 1200px)" />
-          <img src="./images/TopSellers_img2_Mobil@1x.jpg" alt="chocolate with nuts" />
+          <source
+            srcset="./images/TopSellers_img2_Mobil@1x.jpg"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="./images/TopSellers_img2_Tablet@1x.jpg"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./images/TopSellers_img2_Desktop@1x.jpg"
+            media="(min-width: 1200px)"
+          />
+          <img
+            src="./images/TopSellers_img2_Mobil@1x.jpg"
+            alt="chocolate with nuts"
+          />
         </picture>
-
       </li>
       <li class="seller">
         <picture class="seller-img img-hide">
-          <source srcset="./images/TopSellers_img3_Desktop@1x.jpg" media="(min-width: 1200px)" />
-          <img src="./images/TopSellers_img3_Desktop@1x.jpg" alt="tower of chocolate"  />
+          <source
+            srcset="./images/TopSellers_img3_Desktop@1x.jpg"
+            media="(min-width: 1200px)"
+          />
+          <img
+            src="./images/TopSellers_img3_Desktop@1x.jpg"
+            alt="tower of chocolate"
+          />
         </picture>
       </li>
     </ul>
   </div>
   <div class="seller-description">
-    <p class="seller-description-hide">Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been
-      around for thousands of years and was first discovered by the Native American tribe called the Mayans.
+    <p class="seller-description-hide">
+      Crazy enough chocolate originates from a bean just like the coffee bean
+      called Cacao. Cacao has been around for thousands of years and was first
+      discovered by the Native American tribe called the Mayans.
     </p>
-        <button data modal open class="buynow_button" type="button">Buy now</button>
+    <button data modal open="modal2" class="buynow_button" type="button">
+      Buy now
+    </button>
+  </div>
+  <div data-modal="modal2" class="is-hidden">
+    <div data-modal-content>
+      <button data-modal-close type="button">X</button>
+      <h2 class="modal-title"><span>buy </span>now</h2>
+      <div class="container-products-list">
+        <ul class="product-list">
+          <li>
+            <img
+              src="./images/modal_pics_icons/chocolate-modal-1.jpg"
+              alt=" kinder chocolate bar"
+              width="120px"
+              height="107"
+            />
+            <button class="grams">100 g</button>
+          </li>
+          <li>
+            <img
+              src="./images/modal_pics_icons/chocolate-modal-2.jpg"
+              alt="kinder praline chocolate bar"
+              width="121px"
+              height="107"
+            />
+            <button class="grams">200 g</button>
+          </li>
+          <li>
+            <img
+              src="./images/modal_pics_icons/chocolate-modal-3.jpg"
+              alt="dark chocolate bar"
+              width="121px"
+              height="107"
+            />
+            <button class="grams">300 g</button>
+          </li>
+        </ul>
+        <form name="modal-form" class="modal-form">
+          <label class="modal-form-position"
+            >Personal information
+            <div class="pers-info">
+              <input
+                type="text"
+                name="name"
+                class="modal_form_input"
+                placeholder="Name"
+              />
+              <input
+                type="text"
+                name="surname"
+                placeholder="Surname"
+                class="modal-form-input"
+              />
+            </div>
+          </label>
+          <label class="modal-form-position"
+            >Email
+            <input
+              type="email"
+              name="usermail"
+              placeholder="Enter your email"
+              class="modal-form-input"
+            />
+          </label>
+          <label class="modal-form_position"
+            >Phone number
+            <input
+              type="tel"
+              name="userphone"
+              placeholder="Phone number"
+              class="modal-form-input phone"
+            />
+            <svg class="phone-icon">
+              <use
+                href="./images/modal_pics_icons/buynow_icons.svg#icon-Frame"
+              ></use>
+            </svg>
+          </label>
+          <label class="modal-form-position">
+            Card number
+            <input
+              type="number"
+              name="usercard"
+              placeholder="Enter Card"
+              class="modal-form-input"
+            />
+            <svg class="card_icon">
+              <use
+                href="./images/modal_pics_icons/buynow_icons.svg#icon-Mastercard"
+              ></use>
+            </svg>
+          </label>
+          <label class="modal-form-position"
+            >Comment
+            <textarea
+              name="Comment"
+              placeholder="Enter text"
+              class="modal-form-comments"
+              rows="6"
+            ></textarea>
+            <button type="submit" class="modal-form-btn">Submit</button>
+          </label>
+        </form>
       </div>
-    <div data-modal class="is-hidden">
-      <div data-modal-content>
-        <button data-modal-close type="button">X</button>
-        <h2 class="modal-title"><span>buy </span>now</h2>
-        <div class="container-products-list">
-          <ul class="product-list">
-            <li>
-              <img src="./images/modal_pics_icons/chocolate-modal-1.jpg" alt=" kinder chocolate bar" width="120px"
-                height="107" />
-              <button class="grams">100 g</button>
-            </li>
-            <li>
-              <img src="./images/modal_pics_icons/chocolate-modal-2.jpg" alt="kinder praline chocolate bar"
-                width="121px" height="107" />
-              <button class="grams">200 g</button>
-            </li>
-            <li>
-              <img src="./images/modal_pics_icons/chocolate-modal-3.jpg" alt="dark chocolate bar" width="121px"
-                height="107" />
-              <button class="grams">300 g</button>
-            </li>
-          </ul>
-          <form name="modal-form" class="modal-form">
-            <label class="modal-form-position">Personal information
-              <div class="pers-info">
-                <input type="text" name="name" class="modal_form_input" placeholder="Name" />
-                <input type="text" name="surname" placeholder="Surname" class="modal-form-input" />
-              </div>
-            </label>
-            <label class="modal-form-position">Email
-              <input type="email" name="usermail" placeholder="Enter your email" class="modal-form-input" />
-            </label>
-            <label class="modal-form_position">Phone number
-              <input type="tel" name="userphone" placeholder="Phone number" class="modal-form-input phone" />
-              <svg class="phone-icon">
-                <use href="./images/modal_pics_icons/buynow_icons.svg#icon-Frame"></use>
-              </svg>
-            </label>
-            <label class="modal-form-position">
-              Card number
-              <input type="number" name="usercard" placeholder="Enter Card" class="modal-form-input" />
-              <svg class="card_icon">
-                <use href="./images/modal_pics_icons/buynow_icons.svg#icon-Mastercard"></use>
-              </svg>
-            </label>
-            <label class="modal-form-position">Comment
-              <textarea name="Comment" placeholder="Enter text" class="modal-form-comments" rows="6"></textarea>
-              <button type="submit" class="modal-form-btn">Submit</button>
-            </label>
-          </form>
-        </div>
-      </div>
-    </div> 
+    </div>
+  </div>
 </section>

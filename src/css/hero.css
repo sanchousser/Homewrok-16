@@ -409,7 +409,7 @@ svg {
 /* Media queries mobile adaptive*/
 /* @media screen and (min-width: 400px) and (max-width: 800px) */
 
-@media screen and (max-width: 478px) {
+@media screen and (max-width: 374px) {
     .container_hero h2 {
         display: none;
     }
@@ -457,7 +457,7 @@ svg {
 }
 
 /* Media queries for tablet */
-@media screen and (min-width:479px) and (max-width:767px) {
+@media screen and (min-width:375px) and (max-width:767px) {
     .scroll_tolink_container {
         flex: 0.35;
     }
