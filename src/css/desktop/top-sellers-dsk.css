@@ -1,22 +1,17 @@
-@import url(variabile-temp.css);
+@import url(../mobile/variabile-temp.css);
 
 body {
   font-family: var(--font-main);
   background-color: var(--color-pearl);
 }
 
-@media screen and (max-width: 480px) {
-  .container{
-    max-width: 30rem;
-    margin: 0 auto;
-  }
-  .tab-dsk{
+@media screen and (min-width: 769px) {
+  .top-sellers__mobile-hide{
     display: none;
   }
-  .top-sellers__mobile-hide {
-    margin: 0 auto;
-    padding-top: 1.25rem;
-    max-width: 21rem;
+
+  .top-sellers__section {
+    width: 100vw;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -25,21 +20,36 @@ body {
   }
 
   .top-sellers__title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.5rem;
     letter-spacing: -0.03rem;
     margin-bottom: 2rem;
     color: var(--color-coal);
+    text-align: center;
   }
   .top-sellers__title span {
     color: var(--color-orange);
   }
 
-  .top-sellers__img {
+  .top-seller__img-container{
+    display: flex;
     width: 100%;
+    gap: 1rem;
+  }
+
+  .top-sellers__img {
+    max-width: 21.5rem;
+    width: 344px;
     height: auto;
     border-radius: 15px;
+  }
+
+  .top-sellers__sell-container{
+    align-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
   }
 
   .top-sellers__desc {
@@ -48,7 +58,7 @@ body {
     line-height: 1.125rem;
     letter-spacing: -0.02rem;
     color: var(--color-coal);
-    width: 19.125rem;
+    width: 25.438rem;
     align-self: flex-start;
   }
 
@@ -75,25 +85,26 @@ body {
     left: 0;
     width: 100vw;
     height: 80rem;
+    transition: cubic-bezier(0.47, 0, 0.745, 0.715);
     display: flex;
     justify-content: center;
-    transition: cubic-bezier(0.47, 0, 0.745, 0.715);
   }
 
   .seller-modal {
-    pointer-events: all;
     position: relative;
-    width: 19.438rem;
-    max-height: 62.125rem;
+    width: 38.063rem;
+    height: 66.125rem;
     background-color: var(--color-pearl);
     transition-duration: 150ms;
     overflow: hidden;
-    position: relative;
     border-radius: 15px;
   }
+
+  
   .is-hidden {
     display: none;
   }
+
 
   .seller-modal__form-close {
     border: none;
@@ -115,9 +126,8 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 19.438rem;
-    padding: 2rem 1.5rem;
+    align-items: flex-start;
+    padding: 3rem;
   }
 
   .seller-modal__title {
@@ -127,6 +137,7 @@ body {
     letter-spacing: -0.03rem;
     color: var(--color-coal);
     margin-bottom: 2rem;
+    align-self: center;
   }
   .seller-modal__title span {
     color: var(--color-orange);
@@ -134,33 +145,41 @@ body {
 
   .seller-modal__option-container {
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-bottom: 2rem;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
   }
 
   .seller-modal__option-box {
     padding: 0.5rem 1rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    width: 16.438rem;
-    height: 5.313rem;
+    justify-content: space-around;
+    width: 10rem;
+    height: 12.25rem;
     background-color: var(--color-white);
     border: 1px solid var(--color-borders);
     border-radius: 15px;
   }
 
   .seller-modal__option-btn {
-    width: 4.563rem;
-    height: 1.875rem;
+    width: 6rem;
+    height: 2.063rem;
     border: 1px solid var(--color-borders);
     border-radius: 6.25rem;
   }
 
   .seller-modal__image {
-    width: 5.25rem;
+    width:7.5rem;
   }
+
+  .seller-modal__personal-info-box{
+    display: flex;
+    align-items: flex-end;
+    gap:.3rem;
+  }
+
+  
 
   .top-sellers__form label {
     position: relative;
@@ -176,8 +195,8 @@ body {
   }
 
   .seller-modal__input-field {
-    width: 16.438rem;
-    height: 2.813rem;
+    width: 32.063rem;
+    height: 4.125rem;
     border: 1.5px solid var(--color-borders);
     border-radius: 8px;
     box-shadow: 0px 5.44px 5.44px 0px #00000008;
@@ -187,6 +206,9 @@ body {
     letter-spacing: -0.02rem;
     padding: 0 0.875rem;
   }
+  .seller-modal__personal-info-input{
+    max-width:15.375rem;
+  }
   .seller-modal__input-field::placeholder {
     color: var(--color-input-text);
   }
@@ -195,8 +217,8 @@ body {
   }
   .seller-modal__icon-card {
     position: absolute;
-    top: 2.188rem;
-    right: 0.875rem;
+    top: 2.8rem;
+    right: -90%;
     width: 2rem;
     height: 1.313rem;
   }
@@ -210,7 +232,7 @@ body {
     display: flex;
     gap: 5px;
     position: absolute;
-    top: 2.188rem;
+    top: 2.8rem;
     left: 0.875rem;
     font-size: 0.875rem;
     font-weight: 500;
@@ -234,8 +256,8 @@ body {
 
   .seller-modal__comment-field {
     position: relative;
-    width: 16.438rem;
-    height: 5.688rem;
+    width: 32.063rem;
+    height: 8.6rem;
     border: 1.5px solid var(--color-borders);
     border-radius: 0.5rem;
     padding: 0.875rem;
@@ -255,5 +277,8 @@ body {
     background-color: var(--color-orange);
     border: none;
     align-self: flex-start;
+  }
+  .hide{
+    display: none;
   }
 }
