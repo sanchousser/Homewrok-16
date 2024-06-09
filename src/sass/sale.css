@@ -6,6 +6,8 @@
   display: flex;
   max-width: 100%;
   box-sizing: border-box;
+  margin-left: 132px;
+  margin-right: 132px;
 }
 .sale__section {
   display: flex;
@@ -16,13 +18,16 @@
   font-size: 40px;
   font-weight: 600;
   line-height: 44px;
-  margin: 0;
+  margin-top: 0;
+  margin-left: 0;
   padding-bottom: 80px;
 }
 .sale__part {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  padding-left: 97px;
+  padding-right: 98px;
 }
 .sale__image {
   display: block;
@@ -55,7 +60,7 @@
   font-size: 38px;
   font-weight: 400;
   line-height: 40px;
-  margin: 0;
+  margin-top: 0;
   padding-bottom: 8px;
 }
 .sale__product-tag {
@@ -121,7 +126,7 @@
   bottom: 50px;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
   .sale__section {
     display: flex;
     flex-direction: column;
@@ -129,7 +134,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1280px) {
   .sale__section {
     display: flex;
     max-width: 100%;
