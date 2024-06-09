@@ -1,3 +1,4 @@
+/* <<<<<<< HEAD */
 :root {
   --black: #111111;
   --gray: #1e1823;
@@ -24,6 +25,10 @@ body {
 }
 /* Mobile */
 @media screen and (max-width: 480px) {
+  /* ======= */
+  /* Mobile 320px - 375px */
+
+  /* >>>>>>> 890da8d30544f26bce4020e85b56b5125f554195 */
   /* Header style */
 
   .header__section {
@@ -87,7 +92,7 @@ body {
     z-index: 1000;
   }
 
-  .js-menu-container-header.is-open {
+  .js-menu-container-header.is-open-header {
     display: block;
   }
 
@@ -221,7 +226,7 @@ body {
     margin-left: 20px;
     margin-bottom: 32px;
     display: flex;
-    gap:.875rem;
+    gap: 0.875rem;
     flex-flow: row wrap;
   }
 

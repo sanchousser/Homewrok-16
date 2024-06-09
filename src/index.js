@@ -1,9 +1,13 @@
 (() => {
   const refs = {
     openSellerModalBtn: document.querySelector('[data-modal-seller-open]'),
-    openSellerModalBtnDsk: document.querySelector('[data-modal-seller-open-dsk]'),
+    openSellerModalBtnDsk: document.querySelector(
+      '[data-modal-seller-open-dsk]'
+    ),
     closeSellerModalBtn: document.querySelector('[data-modal-seller-close]'),
-    closeSellerModalBtnDsk: document.querySelector('[data-modal-seller-close-dsk]'),
+    closeSellerModalBtnDsk: document.querySelector(
+      '[data-modal-seller-close-dsk]'
+    ),
     sellerModal: document.querySelector('[data-modal-seller]'),
   };
 
@@ -18,40 +22,32 @@
 })();
 
 /*Header menu*/
-// (() => {
-//   const mobileMenu = document.querySelector('[js-menu-container-header]');
-//   const openMenuBtn = document.querySelector('[js-open-menu-header]');
-//   const closeMenuBtn = document.querySelector('.js-close-menu-header');
+(() => {
+  const mobileMenu = document.querySelector('.js-menu-container-header');
+  const openMenuBtn = document.querySelector('.js-open-menu-header');
+  const closeMenuBtn = document.querySelector('.js-close-menu-header');
 
   const toggleMenu = () => {
     const isMenuOpen =
-      openMenuBtn.getAttribute('aria-expanded-header') === 'true' || false;
-    openMenuBtn.setAttribute('aria-expanded-header', !isMenuOpen);
+      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open-header');
+  };
 
-//     const scrollLockMethod = !isMenuOpen
-//       ? 'disableBodyScroll'
-//       : 'enableBodyScroll';
-//     bodyScrollLock[scrollLockMethod](document.body);
-//   };
-
-//   openMenuBtn.addEventListener('click', toggleMenu);
-//   closeMenuBtn.addEventListener('click', toggleMenu);
-
+  openMenuBtn.addEventListener('click', toggleMenu);
+  closeMenuBtn.addEventListener('click', toggleMenu);
 
   // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
     if (!e.matches) return;
     mobileMenu.classList.remove('is-open-header');
-    openMenuBtn.setAttribute('aria-expanded-header', false);
+    openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
-
 
 // // image overlay video
 // document.querySelector('img').addEventListener('click', function() {
 //   this.className = 'active';
 //   document.querySelector('iframe').src += '?autoplay=1';
 // });
-
