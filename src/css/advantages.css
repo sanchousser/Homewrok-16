@@ -25,6 +25,13 @@ body {
 
 }
 
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
 .benefit_container {
     max-width: 1200px;
     margin: 0 auto;
@@ -92,12 +99,46 @@ body {
     margin: 5px;
 }
 
+@media screen and (max-width: 478px) {
 
-/* img,picture,svg {
-    max-width: 100%;
-    display: block;}
+    .item {
+        flex-basis: calc((100% - 30px)/1);
+        padding: 30px 20px;
+    }
 
-    :root {
+    .card-set .line:after {
+        display: none;
+
+    }
+}
+
+
+@media screen and (min-width:479px) and (max-width:767px) {
+    .card-set {
+        justify-content: flex-start;
+        padding: 25px 25px;
+
+    }
+
+    .item {
+        flex-basis: calc((100% - 30px)/2);
+        padding: 30px 20px;
+    }
+
+    .card-set .box3 {
+        padding: 10px 10px;
+
+    }
+
+    .card-set .line:after {
+        display: none;
+    }
+}
+
+
+
+
+  /*   :root {
         --orange: #FD9222;
         --white: #FFFFFF;
         --black: #111111;
