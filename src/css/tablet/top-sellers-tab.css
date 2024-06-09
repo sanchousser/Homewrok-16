@@ -10,6 +10,7 @@ body {
     display: none;
   }
 
+
   .top-sellers__section {
     padding: 2rem 0;
     position: relative;
@@ -282,4 +283,8 @@ body {
     border: none;
     align-self: flex-start;
   }
+  .top-sellers__tab-hide{
+    display: none;
+  }
+
 }
