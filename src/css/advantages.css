@@ -25,21 +25,13 @@ body {
 
 }
 
-img,
-picture,
-svg {
-    max-width: 100%;
-    display: block;
-}
-
 .benefit_container {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #1E1823;
+    background-color: var(--black);
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 100px;
+
 }
 
 .card-set {
@@ -54,7 +46,7 @@ svg {
 .item {
     flex-basis: calc((100% - 30px) / 3);
     padding: 30px 30px;
-    background-color: #1E1823;
+    background-color: var(--black);
     position: relative;
 
 }
