@@ -1,0 +1,94 @@
+<section class="top-sellers top-sellers-container">
+  <h2  id="top-sellers" class="title"><span>Top</span> Sellers</h2>
+  <div class="seller-images">
+    <ul class="seller-list thumb">
+      <li class="seller">
+        <picture class="seller-img">
+          <source srcset="./images/top-sellers/top-seller-mobile1.jpg" media="(max-width: 768px)" />
+          <source srcset="./images/top-sellers/top-seller-tablet1.jpg" media="(min-width: 769px)" />
+          <source srcset="./images/top-sellers/top-seller-desktop1.jpg" media="(min-width: 1200px)" />
+          <img src="./images/top-sellers/top-seller-mobile1.jpg" "
+          alt="chocolate with coffee" />
+        </picture>
+        
+      </li>
+      <li class="seller">
+        <picture class="seller-img">
+          <source srcset="./images/top-sellers/top-seller-mobile2.jpg" media="(max-width: 767px)" />
+          <source srcset="./images/top-sellers/top-seller-tablet2.jpg" media="(min-width: 768px)" />
+          <source srcset="./images/top-sellers/top-seller-desktop2.jpg" media="(min-width: 1200px)" />
+          <img src="./images/top-sellers/top-seller-mobile2.jpg"
+          alt="chocolate with nuts" />
+        </picture>
+        
+      </li>
+      <li class="seller">
+      <picture class="seller-img">
+    
+        <source srcset="./images/top-sellers/top-seller-desktop3.jpg" media="(min-width: 1200px)" />
+        <img src="./images/TopSellers_img3_Desktop@1x.jpg" alt="tower of chocolate" class="img-hide"/>
+      </picture>
+      </li>
+    </ul>
+  </div>
+  <div class="seller-description">
+    <p>Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been
+      around for thousands of years and was first discovered by the Native American tribe called the Mayans.
+    </p>
+    <div>
+      <div>
+  <button data modal open class="buynow-button" type="button">Buy now</button></div>
+  </div>
+<div data-modal class="is-hidden">
+  <div data-modal-content>
+    <button data-modal-close type="button">X</button>
+    <h2 class="modal_title"><span>buy </span>now</h2>
+    <div class="container_products_list">
+      <ul class="products_list">
+        <li>
+          <img src="./images/modal_pics_icons/chocolate-modal-1.jpg" alt=" kinder chocolate bar" width="120px"
+            height="107" />
+          <button class="grams">100 g</button>
+        </li>
+        <li>
+          <img src="./images/modal_pics_icons/chocolate-modal-2.jpg" alt="kinder praline chocolate bar" width="121px"
+            height="107" />
+          <button class="grams">200 g</button>
+        </li>
+        <li>
+          <img src="./images/modal_pics_icons/chocolate-modal-3.jpg" alt="dark chocolate bar" width="121px"
+            height="107" />
+          <button class="grams">300 g</button>
+        </li>
+      </ul>
+      <form name="modal_form" class="modal_form">
+        <label class="modal_form_position">Personal information
+          <div class="pers_info">
+            <input type="text" name="name" class="modal_form_input" placeholder="Name" />
+            <input type="text" name="surname" placeholder="Surname" class="modal_form_input" />
+          </div>
+        </label>
+        <label class="modal_form_position">Email
+          <input type="email" name="usermail" placeholder="Enter your email" class="modal_form_input" />
+        </label>
+        <label class="modal_form_position">Phone number
+          <input type="tel" name="userphone" placeholder="Phone number" class="modal_form_input phone" />
+          <svg class="phone_icon">
+            <use href="./images/modal_pics_icons/buynow_icons.svg#icon-Frame"></use>
+          </svg>
+        </label>
+        <label class="modal_form_position">
+          Card number
+          <input type="number" name="usercard" placeholder="Enter Card" class="modal_form_input" />
+          <svg class="card_icon">
+            <use href="./images/modal_pics_icons/buynow_icons.svg#icon-Mastercard"></use>
+          </svg>
+        </label>
+        <label class="modal_form_position">Comment
+          <textarea name="Comment" placeholder="Enter text" class="modal_form_comments" rows="6"></textarea>
+          <button type="submit" class="modal_form-btn">Submit</button>
+        </label>
+      </form>
+    </div>
+  </div>
+</div>
