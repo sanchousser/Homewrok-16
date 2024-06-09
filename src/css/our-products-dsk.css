@@ -1,6 +1,10 @@
 @import url(../css/mobile/variabile-temp.css);
 
 @media screen and (min-width:769px) {
+      .container{
+        max-width: 75rem;
+        margin:0 auto
+      }
    
       .our-products {
         padding-top: 1.25rem;
@@ -21,8 +25,8 @@
       }
     
       .our-products__list {
-        padding-right: 2%;
-        margin-left: 2%;
+        padding-right: 2rem;
+        margin-left: 3rem;
         list-style: none;
         display: flex;
         gap: 18px;
