@@ -1,6 +1,10 @@
 @import url(variabile-temp.css);
 
 @media screen and (max-width: 480px) {
+  .container{
+    max-width: 30rem;
+    margin: 0 auto;
+  }
 
   .body{
     padding: 0;
