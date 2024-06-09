@@ -110,10 +110,12 @@
     padding-top: 50px;
     width: 100%;
 }
+
 .top-sellers-container {
     display: flex;
     justify-content: space-between;
 }
+
 
 .top-sellers h2 {
     justify-content: center;

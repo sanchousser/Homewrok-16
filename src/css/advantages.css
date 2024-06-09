@@ -31,6 +31,7 @@ body {
     background-color: var(--black);
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 128px;
 
 }
 
@@ -93,6 +94,10 @@ body {
 
 @media screen and (max-width: 478px) {
 
+    .benefit_container {
+            margin-bottom: 72px;
+        }
+
     .item {
         flex-basis: calc((100% - 30px)/1);
         padding: 30px 20px;
@@ -106,6 +111,10 @@ body {
 
 
 @media screen and (min-width:479px) and (max-width:767px) {
+    .benefit_container {
+        margin-bottom: 100px;
+    }
+    
     .card-set {
         justify-content: flex-start;
         padding: 25px 25px;
