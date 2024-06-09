@@ -1,3 +1,5 @@
+/* <<<<<<< HEAD */
+
 :root {
   --black: #111111;
   --gray: #1e1823;
@@ -22,9 +24,11 @@ ul {
 body {
   font-family: var(--font);
 }
+/* Mobile */
+@media screen and (max-width: 480px) {
+  /* ======= */
+  /* Mobile 320px - 375px */
 
-/* Tablet */
-@media screen and (max-width: 768px) {
   /* Header style */
 
   .header__section {
@@ -32,7 +36,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 24px 32px 24px 32px;
+    margin: 20px 20px 14px 20px;
   }
 
   .header__logo span {
@@ -44,10 +48,10 @@ body {
   .header__logo a {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: italic;
     font-weight: 700;
-    line-height: 18px;
+    line-height: 1.125rem;
     letter-spacing: -0.03em;
     text-align: left;
     color: var(--black);
@@ -55,7 +59,7 @@ body {
     align-items: center;
   }
 
-  .header__logo .icon {
+  .header__logo .icon-logo {
     width: 21px;
     height: 21px;
     stroke: var(--orange);
@@ -64,14 +68,14 @@ body {
   /* Menu style */
 
   .js-open-menu-header {
+    display: block;
     background-color: transparent;
     border: none;
     cursor: pointer;
     padding: 0;
-    display: block;
   }
 
-  .js-open-menu-header .icon-header {
+  .js-open-menu-header .icon-menu-open {
     width: 28px;
     height: 28px;
     stroke: black;
@@ -104,19 +108,19 @@ body {
     height: 28px;
   }
 
-  .js-close-menu-header .icon-header {
+  .js-close-menu-header .icon-menu-close {
     width: 28px;
     height: 28px;
-    stroke: var(--white);
   }
 
-  .js-close-menu-header .icon-header:hover {
+  .js-close-menu-header .icon-menu-close:hover {
     stroke: var(--orange);
+    fill: var(--orange);
     animation: bounce 0.5s ease-in-out;
   }
 
   .header__menu-nav {
-    margin: 136px 46px 560px 50px;
+    margin: 136px 46px 150px 50px;
   }
 
   .header__menu-nav a {
@@ -172,8 +176,8 @@ body {
   }
 
   .header__menu-socials .icon-header {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     stroke: var(--white);
   }
 
@@ -210,24 +214,21 @@ body {
 
   .hero__subtitle {
     color: var(--white);
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 500;
-    line-height: 34px;
+    line-height: 24px;
     letter-spacing: -0.03em;
     text-align: left;
-    margin: 0 180px 0 40px;
-  }
-
-  .hero__buttons-scroll {
-    display: flex;
-    flex-flow: row wrap;
+    margin: 0 20px 0 20px;
   }
 
   .hero__buttons {
-    margin: 32px 40px 40px 40px;
+    margin-top: 32px;
+    margin-left: 20px;
+    margin-bottom: 32px;
     display: flex;
-    flex-direction: row;
-    gap: 14px;
+    gap: 0.875rem;
+    flex-flow: row wrap;
   }
 
   .hero__btn1 {
@@ -241,8 +242,8 @@ body {
     border-radius: 100px;
     cursor: pointer;
     border: 1px solid (var(--orange));
-    width: 144px;
-    height: 45px;
+    width: 120px;
+    height: 41px;
   }
 
   .hero__btn1:hover,
@@ -263,8 +264,8 @@ body {
     border-radius: 100px;
     cursor: pointer;
     border: 1px solid rgba(255, 255, 255, 1);
-    width: 183px;
-    height: 45px;
+    width: 159px;
+    height: 41px;
     text-decoration: none;
     text-transform: none;
   }
@@ -284,14 +285,14 @@ body {
   }
 
   .hero__scroll {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 18px;
+    line-height: 14px;
     letter-spacing: -0.03em;
     text-align: left;
     color: var(--white);
-    margin-left: 100px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 12px;
     text-decoration: none;
     display: flex;
     align-items: center;
