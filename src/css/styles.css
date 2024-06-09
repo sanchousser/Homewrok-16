@@ -1,0 +1,22 @@
+
+:root {
+    --primary-background-color: #FAFAFA;
+    --background-color-hero: #FCF1E0;
+    --border-color-hero: rgba(255, 255, 255, 0.5);
+    --box-shadow-color: rgba(215, 228, 249, 0.25);
+    --accent-color: #FD9222;
+    --primary-color: #1E1823;
+    --primary-text-color: #111111;
+    --first-color: #FFF;
+    --input-text-color: rgba(64, 64, 64, 0.3);
+    --first-text-color: rgba(255, 255, 255, 0.7);
+    --secondary-text-color: rgba(17, 17, 17, 0.7);
+    --helper-color: rgba(17, 17, 17, 0.1);
+    --border-color: rgba(17, 17, 17, 0.05);
+    --transition-text: 250ms cubic-bezier(.17, .67, .54, .42);
+    --transition-btn: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--primary-background-color);
+}

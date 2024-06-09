@@ -1,0 +1,101 @@
+@import url(../mobile/variabile-temp.css);
+
+@media screen and (min-width:481px) and (max-width:768px){
+  .container{
+    max-width: 47.938rem;
+    margin: 0 auto;
+  }
+    .body {
+        padding: 0;
+      }
+      .our-products {
+        padding-top: 1.25rem;
+        margin-bottom: 4.5rem;
+        display: flex;
+        flex-direction: column;
+      }
+      .our-products__title {
+        margin-bottom: 2rem;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: -0.03em;
+        text-align: center;
+      }
+      .our-products__title span {
+        color: var(--color-orange);
+      }
+    
+      .our-products__list {
+        padding-left: 30%;
+        padding-right: 30%;
+        list-style: none;
+        display: flex;
+        gap: 18px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: 0;
+      }
+    
+      .our-products__card {
+        background-color: var(--color-white);
+        width: 16.875rem;
+        height: 22.75rem;
+        border: 1px solid var(--color-borders);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        scroll-snap-align: start;
+      }
+    
+      .our-products__img {
+        width: 14rem;
+        height: auto;
+      }
+    
+      .our-products__card-title {
+        text-transform: uppercase;
+        font-size: 1.125rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+        letter-spacing: -0.02rem;
+        margin: 0 0 2px 0;
+      }
+    
+      .our-products__card-desc {
+        color: var(--color-description);
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 0.875rem;
+        letter-spacing: -0.02rem;
+        margin: 0 0 1.125rem 0;
+      }
+    
+      .our-products__card-btn {
+        width: 5.875rem;
+        height: 2.063rem;
+        border: 1px solid var(--color-borders);
+        border-radius: 6.25rem;
+        background-color: var(--color-pearl);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17.07px;
+        color: var(--color-coal);
+      }
+    
+      .our-products__ico-bar{
+        width: 1.75rem;
+        height: .875rem;
+      }
+      .our-products__ico{
+        fill: var(--color-borders);
+        width: .875rem;
+        height: .875rem;
+      }
+      .our-products__scroll-bar{
+        margin: 1.25rem auto;
+      }
+
+}
