@@ -25,8 +25,8 @@
     }
 }
 
-/*phone*/
-@media screen and (max-width: 320px) {
+/* phone */
+ @media screen and (min-width: 320px) and (max-width:376px) {
     .top-sellers h2 {
         font-size: 24px;
         font-weight: 400;
@@ -42,8 +42,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 20px;
     }
-
+    .seller-description-hide {
+        display: none;
+        }
+    
+    .seller-description button {
+        align-self: center;
+        margin: 0 auto;
+        }
 
 }
 
@@ -53,12 +61,20 @@
         font-size: 24px;
     }
 
+    
+}
+
+@media screen and (max-width:1200px) {
     .img-hide {
         display: none;
     }
-
 }
 
+@media screen and (min-width:376px) and (max-width:767px) {
+    .mobile-p {
+        display: none;
+    }
+}
 /* Adaugat Anca - margine- bottom pe section */
 
 .seller-images .seller-list {
@@ -94,7 +110,7 @@
 .seller-description p {
     flex: 1;
     margin-right: 567px;
-    max-width: 375px;
+    max-width: 376px;
 }
 
 .top-sellers {
