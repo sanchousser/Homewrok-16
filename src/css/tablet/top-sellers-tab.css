@@ -99,10 +99,9 @@ body {
   }
 
   .seller-modal {
-    pointer-events: all;
     position: relative;
     width: 38.063rem;
-    max-height: 66.125rem;
+    height: 66.125rem;
     background-color: var(--color-pearl);
     transition-duration: 150ms;
     overflow: hidden;
@@ -136,7 +135,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 2rem 3rem;
+    padding: 3rem;
   }
 
   .seller-modal__title {
@@ -155,7 +154,7 @@ body {
   .seller-modal__option-container {
     display: flex;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
 
   .seller-modal__option-box {
@@ -185,9 +184,10 @@ body {
   .seller-modal__personal-info-box{
     display: flex;
     align-items: flex-end;
-    gap:1.25rem;
-    width: 73vw;
+    gap:.3rem;
   }
+
+  
 
   .top-sellers__form label {
     position: relative;
@@ -204,7 +204,7 @@ body {
 
   .seller-modal__input-field {
     width: 32.063rem;
-    height: 2.813rem;
+    height: 4.125rem;
     border: 1.5px solid var(--color-borders);
     border-radius: 8px;
     box-shadow: 0px 5.44px 5.44px 0px #00000008;
@@ -214,6 +214,9 @@ body {
     letter-spacing: -0.02rem;
     padding: 0 0.875rem;
   }
+  .seller-modal__personal-info-input{
+    max-width:15.375rem;
+  }
   .seller-modal__input-field::placeholder {
     color: var(--color-input-text);
   }
@@ -222,7 +225,7 @@ body {
   }
   .seller-modal__icon-card {
     position: absolute;
-    top: 2.188rem;
+    top: 2.8rem;
     right: -90%;
     width: 2rem;
     height: 1.313rem;
@@ -237,7 +240,7 @@ body {
     display: flex;
     gap: 5px;
     position: absolute;
-    top: 2.188rem;
+    top: 2.8rem;
     left: 0.875rem;
     font-size: 0.875rem;
     font-weight: 500;
@@ -261,8 +264,8 @@ body {
 
   .seller-modal__comment-field {
     position: relative;
-    width: 16.438rem;
-    height: 5.688rem;
+    width: 32.063rem;
+    height: 8.6rem;
     border: 1.5px solid var(--color-borders);
     border-radius: 0.5rem;
     padding: 0.875rem;
