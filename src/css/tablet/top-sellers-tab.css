@@ -6,6 +6,10 @@ body {
 }
 
 @media screen and (min-width: 481px) and (max-width:768px) {
+  .container{
+    max-width: 47.938rem;
+    margin: 0 auto;
+  }
   .top-sellers__mobile-hide{
     display: none;
   }

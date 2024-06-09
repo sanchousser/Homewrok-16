@@ -6,6 +6,10 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  .container{
+    max-width: 30rem;
+    margin: 0 auto;
+  }
   .tab-dsk{
     display: none;
   }
