@@ -1,7 +1,7 @@
 @import url(../mobile/variabile-temp.css);
 
 @media screen and (min-width:481px) and (max-width:768px){
-  .container{
+  .our-products__container{
     max-width: 47.938rem;
     margin: 0 auto;
   }
