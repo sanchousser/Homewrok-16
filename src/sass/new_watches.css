@@ -1,18 +1,23 @@
 .new_watches_section {
   max-width: 100%;
   font-family: Epilogue;
-  margin:auto;
+  margin: auto;
   box-sizing: border-box;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
+
 .new_watches_div {
   max-width: 1400px;
 }
+
 .new_watches__subtitle {
   font-family: "Epilogue", Calibri, Tahoma;
   font-size: 12px;
   line-height: 14px;
-  color: rgba(20,20,20,0.66);
+  color: rgba(20, 20, 20, 0.66);
 }
+
 .new_watches__main-text {
   font-family: "Epilogue", Calibri, Tahoma;
   font-weight: 600;
@@ -27,42 +32,50 @@
   flex-wrap: wrap;
   gap: 24px;
 }
+
 .new_watches__main_box_image {
   display: block;
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
+
 /*Mobile first*/
 @media screen and (max-width: 768px) {
-.new_watches__main-text {
-  font-size: 32px;
-  text-align: left;
-  padding-left: 50px;
-}
-.new_watches__subtitle {
-padding-left: 50px;
+  .new_watches__main-text {
+    font-size: 32px;
+    text-align: left;
+    padding-left: 50px;
+  }
+
+  .new_watches__subtitle {
+    padding-left: 50px;
   }
 }
+
 /*Tablet*/
 @media screen and (min-width: 768px) and (max-width: 1280px) {
-.new_watches__main-text {
-  font-size: 40px;
-  text-align: left;
-  padding-left: 150px;
+  .new_watches__main-text {
+    font-size: 40px;
+    text-align: left;
+    padding-left: 150px;
+  }
+
+  .new_watches__subtitle {
+    padding-left: 150px;
+  }
 }
-.new_watches__subtitle {
-padding-left: 150px;
-}
-}
+
 /*Desktop*/
 @media screen and (min-width: 1280px) {
-.new_watches__main-text {
+  .new_watches__main-text {
     font-size: 40px;
     text-align: left;
     padding-left: 115px;
   }
-      .new_watches__subtitle {
-        padding-left: 115px;
-      }
+
+  .new_watches__subtitle {
+    padding-left: 115px;
+  }
 }
-  
+
+
