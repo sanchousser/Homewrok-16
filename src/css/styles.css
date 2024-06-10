@@ -17,13 +17,9 @@
     --border-color: rgba(17, 17, 17, 0.05);
     --transition-text: 250ms cubic-bezier(.17, .67, .54, .42);
     --transition-btn: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-<<<<<<< HEAD
-}
-=======
      
   }
 
->>>>>>> 00abd3897b1f927f60107d5eab7ad0b5e2e30fbc
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--primary-background-color);
