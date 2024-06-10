@@ -25,10 +25,7 @@ body {
   font-family: var(--font);
 }
 /* Mobile */
-@media screen and (max-width: 480px) {
-  /* ======= */
-  /* Mobile 320px - 375px */
-
+@media screen and (min-width: 375px) and (max-width: 768px) {
   /* Header style */
 
   .header__section {
