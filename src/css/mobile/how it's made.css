@@ -78,9 +78,6 @@
     margin-left: 14px;
   }
 
-  ::marker {
-    color: var(--marker-color);
-  }
   .img-for-video {
     position: absolute;
     cursor: pointer;
@@ -144,6 +141,12 @@
   .text-mobil {
     display: none;
   }
+
+  .video {
+    width: 614px;
+    height: 400px;
+  }
+
   .img-video {
     width: 614px;
     height: 400px;
