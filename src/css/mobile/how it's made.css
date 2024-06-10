@@ -1,0 +1,259 @@
+/* how it's made */
+* {
+  margin: 0;
+  padding: 0;
+}
+::marker {
+  color: var(--marker-color);
+  font-size: 1rem;
+}
+
+.description {
+  margin-bottom: 0rem;
+}
+.manufacturing__tittle {
+  padding-top: 6.25rem;
+  font-size: 1.25rem;
+  font-weight: 37.5rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: var(--primary-text-color);
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.manufacturing__tittle span {
+  color: var(--accent-color);
+}
+.manufacturing__tittle-product {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  text-align: left;
+  margin-bottom: 1.25rem;
+}
+
+.manufacturing__content ul {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  letter-spacing: -0.02em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+  padding-left: 0.938rem;
+}
+
+/* for mobile: how it's made */
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .manufacturing {
+    width: 20.938rem;
+    height: 64.5rem;
+    margin-left: 1.25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    width: 23.438rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .image-video {
+    width: 335px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .video {
+    width: 335px;
+    height: 500px;
+  }
+
+  .manufacturing__content {
+    margin-top: 40px;
+    margin-left: 14px;
+  }
+
+  ::marker {
+    color: var(--marker-color);
+  }
+  .img-for-video {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 2s;
+    width: 335px;
+    height: 500px;
+  }
+
+  .video {
+    border: 0;
+    border-radius: 5%;
+  }
+  .active {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .mobile-text {
+    display: initial;
+  }
+  .tablet-text {
+    display: none;
+  }
+  .desktop-text {
+    display: none;
+  }
+}
+
+/* for tablet: how it's made */
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .manufacturing {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mobile-text {
+    display: none;
+  }
+  .tablet-text {
+    display: initial;
+  }
+  .desktop-text {
+    display: none;
+  }
+
+  .manufacturing {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tablet-text {
+    display: initial;
+  }
+  .text-mobil {
+    display: none;
+  }
+  .img-video {
+    width: 614px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .manufacturing__content {
+    width: 614px;
+    height: 356px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 32px;
+  }
+  .manufacturing__content ul {
+    padding-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 18px;
+  }
+  .img-for-video {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 2s;
+    width: 614px;
+    height: 400px;
+  }
+
+  .video {
+    border: 0;
+    border-radius: 5%;
+  }
+  .active {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/* for desktop: how it's made */
+@media screen and (min-width: 1200px) {
+  .manufacturing {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .manufacturing__desktop {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1136px;
+  }
+  .img-video {
+    width: 600px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .video {
+    width: 600px;
+    height: 400px;
+  }
+  .manufacturing__content {
+    width: 516px;
+    height: 400px;
+    padding: 32px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .manufacturing__content ul {
+    font-family: Montserrat;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-left: 15px;
+  }
+
+  .desktop-text {
+    display: initial;
+  }
+  .mobile-text {
+    display: none;
+  }
+  .tablet-text {
+    display: none;
+  }
+  .img-for-video {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 3s;
+    width: 600px;
+    height: 400px;
+  }
+
+  iframe {
+    border: 0;
+    border-radius: 5%;
+  }
+
+  .active {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
