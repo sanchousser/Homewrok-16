@@ -1,5 +1,5 @@
 {
-  "name": "parcel-project-template",
+  "name": "echipa-1",
   "version": "0.0.1a",
   "description": "",
   "homepage": "https://pptzz.github.io/team-project/",
@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/PPTZZ/team-project.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Alexandru Poputa <poputa.alex@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/PPTZZ/team-project/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
