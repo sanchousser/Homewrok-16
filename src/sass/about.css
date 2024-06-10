@@ -1,0 +1,126 @@
+:root{
+     --primary-font: "Epilogue" , "sans serif"; 
+     --dark-green: #1E2827; 
+     --black:#141414;
+    
+}
+   
+ .about{
+      max-width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+     margin-bottom: 50px;
+     margin-top: 50px;
+ }
+
+ .div__paragraph {
+   max-width: 100%;
+   display: flex;
+   flex-direction:row;
+   height: auto;
+   gap: 40px;
+}
+
+
+
+ .about__title{ 
+    font-family: "Epilogue"; 
+    color: #1E2827;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 44%;
+ } 
+   
+  .paragraph1, .paragraph2 { 
+   font-family: "Epilogue";
+   font-size: 14px;
+   font-weight: 300;   
+   color: #141414; 
+   line-height: 18px; 
+   letter-spacing: -2%;
+   text-align:normal;
+
+  }
+ 
+   
+  .about-gif {
+       max-width: 100%;
+       display: flex;
+       justify-content: flex-end;
+  }
+.watch__gif {
+max-width: 100%;
+     height: auto;
+}
+
+
+/*Mobile*/
+@media screen and (max-width: 768px) {
+     .div__paragraph {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          margin-bottom: 40px;
+     }
+    .about {
+     margin-left: 20px;
+     margin-right: 20px;
+    }
+}
+
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1280px)
+{
+     .about__title {
+          font-size: 32px;
+     }
+     .about-gif {
+justify-content: center;  
+  }
+.div__paragraph {
+     max-width: 100%;
+     display: flex;
+     flex-direction: row;
+     height: auto;
+     gap: 20px;
+     justify-content: space-around;
+}
+.about {display:flex}
+  .watch__gif {
+       max-width: 100%;
+       height: auto;
+       margin-left: 50px;
+  }
+  .paragraph1,
+  .paragraph2 {
+       max-width: 30%;
+  }
+
+}
+
+
+
+/*Desktop*/
+@media screen and (min-width:1280px) {
+     .paragraph1 {
+          padding-left: 170px;
+     }
+
+     .paragraph1, .paragraph2 {
+          max-width: 30%;
+     }
+     .about {
+          padding: 50px;
+     }
+     .about-gif {
+          position: relative;
+          left: 400px;
+          top: 50px;
+     }
+     .watch__gif {
+          width: 850px;
+     }
+}
