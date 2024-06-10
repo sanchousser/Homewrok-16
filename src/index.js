@@ -30,28 +30,24 @@
 })();
 
 // Top Sellers modal
+function toggleModal() {
+  refs.sellerModal.classList.toggle('is-hidden');
+}
 const refs = {
   openSellerModalBtn: document.querySelector('[data-modal-seller-open]'),
   openSellerModalBtnTab: document.querySelector('[data-modal-seller-open-tab]'),
   openSellerModalBtnDsk: document.querySelector('[data-modal-seller-open-dsk]'),
-  openSellerModalBtnHhDsk: document.querySelector('[data-modal-seller-open-hh-dsk]'),
-  openSellerModalBtnHhTab: document.querySelector('[data-modal-seller-open-hh-tab]'),
-  openSellerModalBtnHh: document.querySelector('[data-modal-seller-open-hh]'),
   closeSellerModalBtn: document.querySelector('[data-modal-seller-close]'),
   sellerModal: document.querySelector('[data-modal-seller]'),
+  sellerModalHh: document.querySelector('[data-modal-seller-hh]'),
 };
 
 refs.openSellerModalBtn.addEventListener('click', toggleModal);
 refs.openSellerModalBtnTab.addEventListener('click', toggleModal);
-refs.openSellerModalBtnHhDsk.addEventListener('click', toggleModal);
-refs.openSellerModalBtnHhTab.addEventListener('click', toggleModal);
-refs.openSellerModalBtnHh.addEventListener('click', toggleModal);
 refs.openSellerModalBtnDsk.addEventListener('click', toggleModal);
 refs.closeSellerModalBtn.addEventListener('click', toggleModal);
 
-function toggleModal() {
-  refs.sellerModal.classList.toggle('is-hidden');
-}
+
 
 // image overlay video
 // document.querySelector('img').addEventListener('click', ()=> {
