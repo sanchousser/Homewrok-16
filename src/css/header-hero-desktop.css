@@ -59,6 +59,14 @@ body {
     stroke: var(--orange);
   }
 
+  .js-open-menu-header {
+    display: none;
+  }
+
+  .js-menu-container-header {
+    display: none;
+  }
+
   .header__navigation {
     display: flex;
     align-items: center;
