@@ -65,6 +65,14 @@ body {
     stroke: var(--orange);
   }
 
+  .header__navigation {
+    display: none;
+  }
+
+  .header__socials {
+    display: none;
+  }
+
   /* Menu style */
 
   .js-open-menu-header {
