@@ -1,0 +1,110 @@
+<!--REVIEW SECTION-->
+<section class="review-section" id="chocolate-is-loved">
+  <div class="container">
+    <h2 class="review-section__title">
+      <span class="review-section__chocolate">Chocolate</span> is loved
+    </h2>
+    <div class="review-section__cards">
+      <div class="review-section__card">
+        <img class="img-card"
+          src="../assets/mobile/victoria@1x.jpg"
+          alt="Photo of Victoria Dobrzhanska"
+          srcset="../assets/mobile/victoria@1x.jpg 1x, ../assets/mobile/victoria@2x.jpg 2x"
+        /> 
+        <h3 class="review-section__subtitle">Victoria Dobrzhanska</h3>
+        <p class="review-section__description">
+          I love this chocolate bar. Perfect combination of light crispy wafer,
+          covered in a thin layer chocolate.
+        </p>
+      </div>
+      <div class="review-section__card">
+        <img  class="img-card" src="../assets/mobile/nazar@1x.jpg" alt="Photo of Nazar Babenko" srcset="../assets/mobile/nazar@1x.jpg 1x, ../assets/mobile/nazar@2x.jpg 2x" />
+        <h3 class="review-section__subtitle">Nazar Babenko</h3>
+        <p class="review-section__description">
+          This chocolate confection is a delight! A delight! The wafer is light
+          and crisp, the hazelnut cream is smooth, and the chocolate is good.
+        </p>
+      </div>
+      <div class="review-section__card">
+        <img class="img-card" src="../assets/mobile/olena@1x.jpg" alt="Photo of Olena Kampusch" srcset="../assets/mobile/olena@1x.jpg 1x, ../assets/mobile/olena@2x.jpg 2x" />
+        <h3 class="review-section__subtitle">Olena Kampusch</h3>
+        <p class="review-section__description">
+          Chocolate is a family favourite treat. Love the delicious smooth
+          chocolate and the creaminess inside. The wafer is soft but crunchy.
+        </p>
+      </div>
+    </div>
+    <button class="review-section__button"  data-modal-review-open type="button">Leave a review</button>
+  </div>
+</section>
+
+<!-- Review MODAL -->
+
+<div class="review-modal is-hidden" data-modal-review>
+    <button type="button" data-modal-review-close class="review-modal__form-close"><svg class="review-close-icon">
+            <use href="../assets/mobile/Icon.svg#Icon"/>
+        </svg>X</button>
+    <form  class="review__form">
+        <h2 class="review__title"><span class="title__span">leave a review 
+about </span>our chocolate</h2>
+            <input type="text"
+                placeholder="Name"
+                id="name">
+            <input
+                type="text"
+                placeholder="Enter your email"
+                id="email">
+            <input
+                type="number"
+                 placeholder="Phone number"
+                id="phone">
+       
+            <textarea
+                name="comments"
+                placeholder="Enter text"
+                id="comments">
+            </textarea>
+       
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+<!--Subscribe section-->
+<section class="subscribe-section">
+  <div class="container">
+   
+    <div class="subscribe">
+      <h3 class="subscribe-section__title">EXPLORE OUR NEW </br>
+        CHOCOLATE FIRST</h3>
+      <p class="subscribe-section__description">
+        From the velvety texture to the rich and complex flavor, our New
+        Chocolate is a true indulgence that will leave you craving more. Made
+        with only the finest ingredients and handcrafted with the utmost care,
+        each piece is a work of art that is sure to please.
+      </p>
+      <button type="button" data-modal-subscribe-open class="subscribe-section__button">Subscribe</button>
+      </div>
+    
+    </div>
+  </div>
+</section>
+
+
+<!-- Subscribe MODAL -->
+<div class="subscribe-modal is-hidden" data-modal-subscribe>
+    <button type="button" data-modal-subscribe-close class="subscribe-modal__form-close"><svg class="subscribe-close-icon">
+            <use href="../assets/mobile/Icon.svg#Icon"/>
+        </svg>X</button>
+    <form  class="subscribe__form">
+      <img class="top-sellers__img" src="../assets/mobile/crm-chocho@1x.jpg" alt="image of caramel chocolate"
+        srcset="../assets/mobile/subscribe@1x.jpg 1x, ../assets/mobile/subscribe@2x.jpg 2x">
+        <h2 class="subscribe-modal__title">Explore our <span class="subscribe-modal__span">new chocolate</span> first!</h2>
+        <div class="subscribe-modal__option-container"> 
+            <input type="text"
+                placeholder="Enter your email"
+                id="email">
+        </label>
+        <button type="submit">Subscribe</button>
+        </div>
+    </form>
+</div>
