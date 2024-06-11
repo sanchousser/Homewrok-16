@@ -6,6 +6,12 @@ body {
 }
 
 @media screen and (min-width: 769px) {
+.top-sellers__container{
+  position: relative;
+  max-width: 75rem;
+  margin:0 auto;
+}
+
   .top-sellers__mobile-hide{
     display: none;
   }
@@ -81,17 +87,19 @@ body {
       rgba(47, 48, 58, 0.6)
     );
     position: absolute;
-    top: 0;
+    top: 100rem;
     left: 0;
     width: 100vw;
     height: 80rem;
     transition: cubic-bezier(0.47, 0, 0.745, 0.715);
     display: flex;
     justify-content: center;
+    z-index: 99;
   }
 
   .seller-modal {
     position: relative;
+    top: 10rem;
     width: 38.063rem;
     height: 66.125rem;
     background-color: var(--color-pearl);

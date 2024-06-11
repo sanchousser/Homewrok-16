@@ -1,6 +1,3 @@
-
-/* <<<<<<< HEAD */
-
 :root {
   --black: #111111;
   --gray: #1e1823;
@@ -25,11 +22,9 @@ ul {
 body {
   font-family: var(--font);
 }
-/* Mobile */
-@media screen and (max-width: 480px) {
-  /* ======= */
-  /* Mobile 320px - 375px */
 
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   /* Header style */
 
   .header__section {
@@ -37,7 +32,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 20px 14px 20px;
+    margin: 24px 32px 24px 32px;
   }
 
   .header__logo span {
@@ -49,10 +44,10 @@ body {
   .header__logo a {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 0.875rem;
+    font-size: 14px;
     font-style: italic;
     font-weight: 700;
-    line-height: 1.125rem;
+    line-height: 18px;
     letter-spacing: -0.03em;
     text-align: left;
     color: var(--black);
@@ -60,15 +55,24 @@ body {
     align-items: center;
   }
 
-  .header__logo .icon-header {
-    width: 0.686rem;
-    height: 0.925rem;
+  .header__logo .icon-logo {
+    width: 21px;
+    height: 21px;
     stroke: var(--orange);
+  }
+
+  .header__navigation {
+    display: none;
+  }
+
+  .header__socials {
+    display: none;
   }
 
   /* Menu style */
 
-  .header-menu-button {
+  .js-open-menu-header {
+    display: block;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -120,7 +124,7 @@ body {
   }
 
   .header__menu-nav {
-    margin: 136px 46px 560px 50px;
+    margin: 136px 46px 250px 50px;
   }
 
   .header__menu-nav a {
@@ -175,13 +179,13 @@ body {
     gap: 18px;
   }
 
-  .header__menu-socials .icon-socials-menu {
-    width: 18px;
-    height: 18px;
+  .header__menu-socials .icon-header {
+    width: 20px;
+    height: 20px;
     stroke: var(--white);
   }
 
-  .header__menu-socials .icon-socials-menu:hover {
+  .header__menu-socials .icon-header:hover {
     stroke: var(--orange);
     transition: color 0.3s ease-in-out;
   }
@@ -189,8 +193,12 @@ body {
   /* Hero section style */
 
   .hero-section {
+    width: calc(100% - 2.5rem);
+    max-width: 100%;
+    height: 90vh;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
     background-color: var(--white);
     overflow: hidden;
     background-image: linear-gradient(
@@ -202,10 +210,13 @@ body {
     border-radius: 1rem;
     background-size: cover;
     background-position: center;
-    width: calc(100% - 2.5rem);
-    max-width: 100%;
-    height: 90vh;
     margin: 0 1.25rem 1.25rem 1.25rem;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   .hero__title {
@@ -214,21 +225,27 @@ body {
 
   .hero__subtitle {
     color: var(--white);
-    font-size: 20px;
+    font-size: 28px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 34px;
     letter-spacing: -0.03em;
     text-align: left;
-    margin: 0 20px 0 20px;
+    margin: 0 180px 0 40px;
+  }
+
+  .hero__buttons-scroll {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 40px 40px 40px;
+    flex-wrap: wrap;
+    gap: 14px;
   }
 
   .hero__buttons {
-    margin-top: 32px;
-    margin-left: 20px;
-    margin-bottom: 32px;
     display: flex;
-    gap: 0.875rem;
-    flex-flow: row wrap;
+    flex-direction: row;
+    gap: 14px;
   }
 
   .hero__btn1 {
@@ -242,8 +259,8 @@ body {
     border-radius: 100px;
     cursor: pointer;
     border: 1px solid (var(--orange));
-    width: 120px;
-    height: 41px;
+    width: 144px;
+    height: 45px;
   }
 
   .hero__btn1:hover,
@@ -264,8 +281,8 @@ body {
     border-radius: 100px;
     cursor: pointer;
     border: 1px solid rgba(255, 255, 255, 1);
-    width: 159px;
-    height: 41px;
+    width: 183px;
+    height: 45px;
     text-decoration: none;
     text-transform: none;
   }
@@ -280,19 +297,17 @@ body {
   .hero__scroll-container {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    margin: 2rem 0;
   }
 
   .hero__scroll {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 14px;
+    line-height: 18px;
     letter-spacing: -0.03em;
     text-align: left;
     color: var(--white);
     margin-left: 20px;
-    margin-right: 12px;
+    margin-right: 10px;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -322,5 +337,4 @@ body {
     fill: var(--white);
     animation: bounce 0.5s ease-in-out;
   }
-
 }
