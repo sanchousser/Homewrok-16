@@ -1,0 +1,627 @@
+:root {
+  --font-main: Montserrat, Arial, sans-serif;
+  --color-orange: #fd9222;
+  --color-white: #ffffff;
+  --color-black: #111111;
+}
+
+/* Stiluri pentru desktop */
+@media (min-width: 75rem) {
+  .container {
+    width: 75rem;
+    margin: auto;
+    padding: auto;
+  }
+
+  .review-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 4.375rem;
+  }
+
+  .review-section__chocolate {
+    color: orange;
+    text-transform: uppercase;
+  }
+
+  .review-section__title {
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    letter-spacing: -0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 4.375rem;
+  }
+
+  .review-section__cards {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .review-section__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    box-shadow: 0px 9.05px 26.57px 0px rgba(215, 228, 249, 0.25);
+    margin-top: 1.875rem;
+    background-color: white;
+    border-radius: 0.938rem;
+    border: 0.063rem solid rgba(17, 17, 17, 0.1);
+  }
+
+  .img-card {
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 0.938rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    position: absolute;
+    top: -1.983rem;
+  }
+
+  .review-section__subtitle {
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  .review-section__description {
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    letter-spacing: -0.02em;
+    text-align: center;
+  }
+
+  .review-section__button {
+    font-family: Montserrat;
+    width: 8rem;
+    height: 2.563rem;
+    border-radius: 6.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.067rem;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border: 0.063rem solid rgba(253, 146, 34, 1);
+    margin-left: 34.375rem;
+    margin-bottom: 8rem;
+    margin-top: 3.75rem;
+  }
+
+  .subscribe {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    padding-left: 1.531rem;
+    padding-right: 1.531rem;
+    background-image: url(../../../assets/mobile/subscribe-desktop@1x.jpg);
+    padding-top: 3.875rem;
+    background-size: cover;
+    height: 23.125rem;
+    padding-left: 18.75rem;
+    padding-right: 18.75rem;
+  }
+
+  .subscribe-section {
+    width: 75rem;
+    margin: auto;
+    padding: auto;
+    height: 23.125rem;
+  }
+
+  .subscribe-section__title {
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-weight: 37.5rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.03em;
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-left: 2.625rem;
+    margin-right: 2.625rem;
+    color: var(--color-white);
+  }
+
+  .subscribe-section__description {
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-weight: 25rem;
+    line-height: 1.125rem;
+    letter-spacing: -0.02em;
+    text-align: center;
+    align-self: center;
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subscribe-section__button {
+    font-family: Montserrat;
+    width: 8rem;
+    height: 2.563rem;
+    border-radius: 6.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.067rem;
+    color: var(--color-white);
+    background-color: var(--color-orange);
+    border: 0.063rem solid rgba(253, 146, 34, 1);
+    margin-left: 1.25rem;
+  }
+}
+
+/* Stiluri pentru tabletă */
+@media (min-width: 48rem) and (max-width: 74.938rem) {
+  .container {
+    width: 75rem;
+    margin: auto;
+    padding: auto;
+  }
+
+  .review-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .review-section__chocolate {
+    color: orange;
+    text-transform: uppercase;
+  }
+
+  .review-section__title {
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    letter-spacing: -0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 3.125rem;
+  }
+
+  .review-section__cards {
+    display: flex;
+    flex-direction: row;
+    gap: 1.875rem;
+    align-items: center;
+  }
+
+  .review-section__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    box-shadow: 0px 9.05px 26.57px 0px rgba(215, 228, 249, 0.25);
+    margin-top: 1.875rem;
+    background-color: white;
+    border-radius: 0.938rem;
+    border: 0.063rem solid rgba(17, 17, 17, 0.1);
+  }
+
+  .img-card {
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 0.938rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    position: absolute;
+    top: -1.9863rem;
+  }
+
+  .review-section__subtitle {
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  .review-section__description {
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    letter-spacing: -0.02em;
+    text-align: center;
+  }
+
+  .review-section__button {
+    font-family: Montserrat;
+    width: 8rem;
+    height: 2.563rem;
+    border-radius: 6.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.067rem;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border: 0.063rem solid rgba(253, 146, 34, 1);
+    margin-left: 34.375rem;
+    margin-bottom: 8rem;
+    margin-top: 3.75rem;
+  }
+
+  .subscribe-section {
+    width: 75rem;
+    margin: auto;
+    padding: auto;
+    height: 23.125rem;
+  }
+
+  .subscribe-section__title {
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-weight: 37.5rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.03em;
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-left: 2.625rem;
+    margin-right: 2.625rem;
+    color: var(--color-white);
+  }
+
+  .subscribe-section__description {
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-weight: 25rem;
+    line-height: 1.125rem;
+    letter-spacing: -0.02em;
+    text-align: center;
+    align-self: center;
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subscribe-section__button {
+    font-family: Montserrat;
+    width: 8rem;
+    height: 2.563rem;
+    border-radius: 6.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.067rem;
+    color: var(--color-white);
+    background-color: var(--color-orange);
+    border: 0.063rem solid rgba(253, 146, 34, 1);
+    margin-left: 1.25rem;
+    margin-bottom: 4.5rem;
+  }
+
+  .subscribe {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    padding-left: 1.531rem;
+    padding-right: 1.531rem;
+    background-image: url(../../../assets/mobile/subscribe-tableta@1x.jpg);
+    padding-top: 3.875rem;
+    background-size: cover;
+    padding-left: 18.75rem;
+    padding-right: 18.75rem;
+  }
+}
+
+/* Stiluri pentru mobil */
+@media (max-width: 47.938rem) {
+  .review-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 2.5rem;
+  }
+
+  .review-section__title {
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: -0.03em;
+    text-align: center;
+    padding-bottom: 3.125rem;
+  }
+
+  .review-section__chocolate {
+    color: var(--color-orange);
+  }
+
+  .review-section__subtitle {
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  .review-section__description {
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    letter-spacing: -0.02em;
+    text-align: center;
+  }
+
+  .review-section__button {
+    width: 10.313rem;
+    height: 2.563rem;
+    border-radius: 6.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.067rem;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border: 0.063rem solid rgba(253, 146, 34, 1);
+    margin-top: 3.875rem;
+    align-items: center;
+    margin-left: 6.563rem;
+  }
+
+  .review-section__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    align-items: center;
+    border-radius: 0.313rem;
+  }
+
+  .review-section__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.03rem solid rgba(17, 17, 17, 0.1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.938rem;
+  }
+
+  .image-card {
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+
+  .image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /*Subscribe section*/
+
+  .subscribe-section {
+    width: 23.438rem;
+    height: 23.125rem;
+    top: 399.75rem;
+    padding-top: 4.5rem;
+  }
+
+  .subscribe {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    padding-left: 1.531rem;
+    padding-right: 1.531rem;
+    background-image: url(../../../assets/mobile/ciocolata@1x.jpg);
+    padding-top: 3.875rem;
+    background-size: cover;
+  }
+
+  .subscribe-section__title {
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-weight: 37.5rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.03em;
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-left: 2.625rem;
+    margin-right: 2.625rem;
+    color: var(--color-white);
+  }
+
+  .subscribe-section__description {
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-weight: 25rem;
+    line-height: 1.125rem;
+    letter-spacing: -0.02em;
+    text-align: center;
+    align-self: flex-start;
+    color: var(--color-white);
+  }
+
+  .subscribe-section__button {
+    font-family: Montserrat;
+    width: 8rem;
+    height: 2.563rem;
+    border-radius: 6.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.067rem;
+    color: var(--color-white);
+    background-color: var(--color-orange);
+    border: 0.063rem solid rgba(253, 146, 34, 1);
+    margin-left: 1.25rem;
+  }
+}
+
+.is-hidden {
+  display: none;
+}
+
+/*Review modal*/
+
+.review-close-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: var(--color-coal);
+  stroke: var(--color-coal);
+}
+
+.review-modal__form-close {
+  border: none;
+  background-color: var(--color-white);
+  position: absolute;
+  padding: 0;
+  top: 0.625rem;
+  right: 0.625rem;
+}
+
+.review__title {
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: var(--color-orange);
+  text-transform: uppercase;
+}
+
+.title__span {
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: var(--color-black);
+  text-transform: uppercase;
+}
+
+/* Pentru fereastra modală de review */
+.review-modal {
+  background-color: var(--color-white);
+  border-radius: 0.938rem;
+  padding: 1.25rem;
+}
+
+.review__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+/* Pentru fereastra modală de abonare */
+.subscribe-modal {
+  background-color: var(--color-white);
+  border-radius: 15px;
+  padding: 1.25rem;
+}
+
+.subscribe__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+.review-modal,
+.review-modal,
+.subscribe-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2000;
+}
+/* Stilurile pentru butonul Send */
+button[type='submit'] {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  border-radius: 1.5rem;
+  width: 10rem;
+  height: 2.563rem;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.067rem;
+  border: none;
+  cursor: pointer;
+}
+
+/*Subscribe modal*/
+
+.subscribe-close-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: var(--color-coal);
+  stroke: var(--color-coal);
+}
+
+.subscribe-modal__form-close {
+  border: none;
+  background-color: var(--color-pearl);
+  position: absolute;
+  padding: 0;
+  top: 0.625rem;
+  right: 0.625rem;
+}
+
+.subscribe-modal__title {
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: var(--color-black);
+  text-transform: uppercase;
+}
+.subscribe-modal__span {
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: var(--color-orange);
+  text-transform: uppercase;
+}
