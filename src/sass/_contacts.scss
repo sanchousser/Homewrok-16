@@ -1,0 +1,379 @@
+/* Style reset */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+address {
+  font-style: normal;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.list,
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+input {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* End style reset */
+
+body {
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ----- Mobile container width ----- */
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ----- Bigger screen mobile ----- */
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding: 0 100px;
+  }
+}
+
+/* ----- Tablet container width ----- */
+
+@media (min-width: 768px) {
+  .container {
+    min-width: 768px;
+    padding: 0 16px;
+  }
+}
+
+/* ----- Laptop container width ----- */
+
+@media (min-width: 1200px) {
+  .container {
+    min-width: 1200px;
+    padding: 0 16px;
+  }
+}
+
+/* ----- Contact section ----- */
+
+.section-contact {
+  background-color: #84a178;
+}
+
+.contact-container {
+  padding-bottom: 60px;
+}
+
+.contact-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  margin-bottom: 20px;
+}
+
+.contact-card-item {
+  width: 280px;
+  background-color: #fff;
+  padding: 40px 36px 20px 32px;
+  border-radius: 24px;
+}
+
+.card-location-type {
+  width: 80px;
+  padding: 4px 22px;
+  text-align: center;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: #f8d24e;
+}
+
+.card-foodtruck {
+  width: 130px;
+}
+
+.card-title {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.4px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-location-list,
+.card-week-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.card-location-text:hover {
+  text-decoration: underline;
+  color: #d6936d;
+  cursor: context-menu;
+}
+
+.card-location-text,
+.card-week,
+.address-link {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22.32px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+
+.street > .card-location-text {
+  color: #d6936d;
+}
+
+.horizontal-line {
+  width: 216px;
+  border-radius: 1px;
+  margin-bottom: 24px;
+}
+
+.hours {
+  color: #ababab;
+}
+
+.card-address {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.address-link {
+  line-height: 19.2px;
+}
+
+.contact-btn-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.location-btn,
+.franchise-btn {
+  display: flex;
+  align-items: center;
+  width: 196px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: #f8d24e;
+
+  margin-bottom: 16px;
+  padding: 12px 0px 12px 40px;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
+}
+
+.location-btn svg,
+.franchise-btn svg {
+  margin-left: 4px;
+}
+
+.franchise-btn {
+  padding-left: 55px;
+  background-color: #84a178;
+  border: 2px solid #f8d24e;
+}
+
+.location-btn:hover {
+  background-color: #0a8817;
+}
+
+.location-btn:focus,
+.location-btn:active {
+  background-color: #0a8817;
+  color: #fff;
+}
+
+.franchise-btn:hover {
+  border-color: #0a8817;
+}
+
+.franchise-btn:focus,
+.franchise-btn:active {
+  border-color: #0a8817;
+  color: #fff;
+}
+
+.location-btn:focus,
+.location-btn:active,
+.franchise-btn:focus svg,
+.franchise-btn:active svg {
+  fill: #fff;
+}
+
+.location-btn:disabled,
+.franchise-btn:disabled {
+  background-color: #ababab;
+}
+
+@media (min-width: 768px) {
+  .contact-card-list {
+    margin-bottom: 40px;
+  }
+  .contact-card-item {
+    flex-basis: calc((100% - 32px) / 3);
+    padding-right: 41px;
+  }
+
+  .contact-btn-box {
+    flex-direction: row;
+  }
+
+  .card-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    letter-spacing: 0.04em;
+    text-align: center;
+
+    padding: 4px 13px;
+  }
+
+  .card-foodtruck {
+    width: 138px;
+  }
+
+  .card-location-text,
+  .card-week,
+  .address-link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26.04px;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
+
+  .horizontal-line {
+    width: 176px;
+  }
+
+  .location-btn,
+  .franchise-btn {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-card-list {
+    gap: 32px;
+    margin-bottom: 60px;
+  }
+
+  .contact-card-item {
+    flex-basis: calc((100% - 64px) / 3);
+  }
+
+  .card-location-text,
+  .card-week,
+  .address-link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 29.76px;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
+
+  .horizontal-line {
+    width: 288px;
+  }
+}
+
+/* .gallery-container {
+  background-color: #84a178;
+} */
+
+.contact-container {
+  position: relative;
+}
+
+.modal-locations {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 28px;
+  background-color: #fff;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal-locations.is-open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.google-map {
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.google-map iframe {
+  height: 199px;
+  width: 224px;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.open-map-btn {
+  margin-top: 24px;
+}
