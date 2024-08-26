@@ -1,6 +1,94 @@
-.sale-section{
-    padding:80px 20px;
-}
-.sale-title{
-    color: aquamarine;
-}
+.sale-section {
+    padding: 80px 20px;
+  }
+  .sale-container {
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .sale-title {
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+  }
+  /* .sale-item{}*/ 
+  .watch-images {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  .list-images {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+  }
+  .item-images{
+    width: 80;
+    margin-bottom: 10px;
+  }
+  .big-watch {
+    width: 235;
+  }
+  /*.watch-information{}*/
+  .watch-title {
+    margin-bottom: 40px;
+  }
+  .watch-name {
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+  .watch-text {
+    font-size: 14px;
+    letter-spacing: -0.01em;
+  }
+  .watch-price {
+    margin-top: 16px;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+  }
+  .watch-discount {
+    margin-left: 8px;
+    font-size: 12px;
+    text-decoration-line: line-through;
+    letter-spacing: -0.02em;
+  }
+  .watch-description {
+    margin-bottom: 40px;
+  }
+  .watch-description-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 9px;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    padding: 8px 0;
+    border-top: 1px solid;
+  }
+  .watch-description-text {
+    font-size: 14px;
+    letter-spacing: -0.02em;
+  }
+  /*.watch-details{}*/
+  .watch-details-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 9px;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    padding: 8px 0;
+    border-top: 1px solid;
+  }
+  .watch-details-text {
+    font-size: 14px;
+    letter-spacing: -0.02em;
+  }
+  
