@@ -1,2 +1,43 @@
-@import './common';
-@import './example';
+@import './header';
+@import './hero';
+@import './about-us';
+@import './our-yachts';
+@import './advantages';
+@import './rent-yachts';
+@import './reviews';
+@import './footer';
+
+:root {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    --bluenavy: #0e1823;
+    --darkblue: #040306;
+    --primary-text-color:#FBFBFB;
+    --bluegreenish: #1b414b;
+    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --font-family--: 'Inter', 'sans-serif';
+}
+
+body {
+  scroll-behavior: smooth;
+  color: var(--primary-text-color);
+  background-color: var(--bluenavy);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
