@@ -1,0 +1,109 @@
+.reviews-section {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .reviews-title {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: -0.02em;
+        text-align: center;
+        min-width: 335px;
+        margin-bottom: 25px;
+    }
+
+    .reviews-paragraph {
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: -0.02em;
+        text-align: center;
+        min-width: 335px;
+        color: rgba(251, 251, 251, 0.4);
+        margin-bottom: 40px;
+    }
+
+    .reviews-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reviews-list li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        list-style: none;
+        width: 335px;
+        height: 282px;
+        padding: 32px 8px 32px 8px;
+        border-radius: 24px;
+        background-color: rgba(251, 251, 251, 1);
+
+        .client-name {
+            color: var(--darkblue);
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 19.8px;
+            letter-spacing: -0.02em;
+            text-align: center;
+            margin-top: 24px;
+            margin-bottom: 8px;
+
+        }
+
+        .client-review {
+            font-size: 16px;
+            line-height: 22.4px;
+            letter-spacing: -0.02em;
+            text-align: center;
+            color: #04030666;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .reviews-list li:nth-last-child(-n + 2) {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+    .reviews-list li:last-child {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .reviews-section {
+
+        .reviews-title {
+            font-size: 48px;
+            min-width: 704px;
+            line-height: 48px;
+        }
+
+        .reviews-paragraph {
+            font-size: 14px;
+            line-height: 18px;
+            min-width: 571px;
+        }
+    }
+
+    .reviews-list {
+        gap: 32px;
+    }
+
+}
+
+@media only screen and (min-width: 1280px) {
+    .reviews-section {
+        .reviews-title {
+            min-width: 854px;
+        }
+
+    }
+}
