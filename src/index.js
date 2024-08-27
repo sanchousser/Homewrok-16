@@ -49,4 +49,3 @@ function toggleLocationModal() {
   document
     .querySelector('.contact-container')
     .scrollIntoView({ behavior: 'smooth' });
-}
