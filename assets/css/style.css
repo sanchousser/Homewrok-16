@@ -184,6 +184,7 @@ h6 {
   line-height: 129%;
   letter-spacing: -0.02em;
 }
+
 .order-button {
   width: Hug (179px) px;
   height: Hug (52px) px;
@@ -199,6 +200,7 @@ h6 {
   box-shadow: 5px 6px 25px 4px rgba(27, 65, 75, 1);
   transition: box-shadow 250ms ease-in-out;
 }
+
 .icon {
   display: inline-block;
   width: 1em;
