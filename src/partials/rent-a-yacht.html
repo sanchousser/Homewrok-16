@@ -1,0 +1,36 @@
+<!-- Rent a yacht section -->
+
+<section class="rent-a-yacht-sect">
+  <div class="yacht-renting-container">
+    <h2 class="form-title">Rent a yacht now</h2>
+    <form class="rent-form">
+      <input class="input-form" type="text" placeholder="Full Name" />
+      <input
+        class="input-form"
+        type="email"
+        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+        placeholder="Email"
+      />
+      <input
+        class="input-form"
+        type="tel"
+        pattern="^\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$"
+        placeholder="Phone number"
+      />
+      <textarea
+        class="form-comment"
+        name="comment"
+        id="user-comment"
+        rows="4"
+        placeholder="Comment"
+      ></textarea>
+      <button class="form-btn" type="submit">Send</button>
+    </form>
+    <img
+      class="yacht-pic"
+      src="./images/yacht-image.jpg"
+      alt="Yacht image"
+      width="335px"
+    />
+  </div>
+</section>
