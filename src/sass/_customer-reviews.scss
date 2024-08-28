@@ -4,3 +4,31 @@
   font-weight: weight;
   font-style: normal;
 }
+
+body {
+  margin: 0 auto;
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ----- Mobile container width ----- */
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* ----- Mobile container width ----- */
+
+.customer-review-container {
+  padding-bottom: 60px;
+  width: 320px;
+  height: auto;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.customer-section {
+  background-image: url(/src/images/ice-cream-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
