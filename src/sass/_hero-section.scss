@@ -1,0 +1,109 @@
+.hero-secion {
+  max-width: 320px;
+  height: 502px;
+  gap: 0px;
+  opacity: 0px;
+  background-color: #84a178;
+  padding-top: 50px;
+}
+
+.hero-secion-header {
+  width: 247px;
+  height: 97px;
+  top: 99px;
+  left: 20px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Seymour One;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 32.68px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #fcfcfc;
+}
+
+.hero-header-span {
+  font-family: Seymour One;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 32.81px;
+  text-align: left;
+}
+
+.hero-secion-button:hover {
+  border: 2px solid #0a8817;
+}
+
+.hero-secion-button:focus {
+  border: 2px solid #0a8817;
+  color: #fcfcfc;
+}
+
+.hero-secion-button2:hover {
+  color: #0a8817;
+}
+
+.hero-secion-button2:focus {
+  color: #fcfcfc;
+}
+
+.hero-secion-button {
+  width: 108px;
+  height: 38px;
+  top: 228px;
+  left: 20px;
+  gap: 0px;
+  opacity: 0px;
+  margin-top: 32px;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14.63px;
+  text-align: center;
+  width: 108px;
+  height: 38px;
+  gap: 0px;
+  border: 2px solid #f8d24e;
+  border-radius: 8px;
+  background-color: #84a178;
+}
+
+.hero-secion-button2 {
+  width: 108px;
+  height: 24px;
+  top: 235px;
+  left: 140px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14.63px;
+  text-align: center;
+  margin-top: 39px;
+  margin-left: 12px;
+  background-color: #84a178;
+  color: #f8d24e;
+  text-decoration: underline;
+}
+
+.icecream-mobile {
+  width: 177px;
+  height: 217px;
+  top: 285px;
+  left: 83px;
+  gap: 0px;
+  opacity: 0px;
+  position: absolute;
+}
+
+.icecream-effect {
+  position: absolute;
+  width: 320px;
+  height: 50px;
+  top: 452px;
+  left: 0%;
+  gap: 0px;
+  opacity: 0px;
+}
