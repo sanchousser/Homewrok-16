@@ -1,12 +1,68 @@
 <article class="customer-review-gallery">
   <section class="customer-section">
     <div class="container customer-review-container">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eos
-        alias consectetur, maxime cum adipisci magni mollitia molestias
-        voluptate maiores eaque fugiat dolorum omnis natus praesentium esse,
-        perferendis iusto nemo!
-      </p>
+      <div class="first-image-container">
+        <img
+          src="/src/images/ice-cream-overlap-picture.jpg"
+          alt="picture with many icecreams"
+          class="icecream-top-picture"
+        />
+      </div>
+
+      <div class="carousel">
+        <div class="carousel-inner">
+          <div class="review-item active">
+            <img
+              src="/src/images/1st-review-img.jpg"
+              alt="review photo"
+              class="review-image"
+            />
+            <p class="review-paragraph">
+              I love visiting your cafe. You prepare the most delicious ice
+              cream in Los Angeles! In addition, you have beautiful serving,
+              cozy atmosphere and polite staff.
+            </p>
+            <p class="review-location">Emily, Los Angeles</p>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/src/images/2nd-review-img.jpg"
+              alt="review photo"
+              class="review-image"
+            />
+            <p class="review-paragraph">
+              Every day we come to you with friends after classes in college. We
+              love your ice cream and casual atmosphere!
+            </p>
+            <p class="review-location">Bryan, New-York</p>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/src/images/3rd-review-img.jpg"
+              alt="review photo"
+              class="review-image"
+            />
+            <p class="review-paragraph">
+              Ice cream is my passion! I love your chocolate hazelnut ice cream!
+              And I really like the excellent service - always served politely
+              and quickly!
+            </p>
+            <p class="review-location">Diana, Chicago</p>
+          </div>
+        </div>
+
+        <!---------- Navigation Controls ---------->
+        <button class="prev-btn" onclick="prevSlide()"></button>
+        <button class="next-btn" onclick="nextSlide()"></button>
+
+        <!---------- Dots for Slide Navigation ---------->
+
+        <div class="carousel-dots">
+          <span class="dot active" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+      </div>
     </div>
   </section>
 </article>

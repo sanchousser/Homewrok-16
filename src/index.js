@@ -49,3 +49,48 @@ function toggleLocationModal() {
   document
     .querySelector('.contact-container')
     .scrollIntoView({ behavior: 'smooth' });
+}
+
+//<--------------Customer Review JS----------->
+
+ document.addEventListener('DOMContentLoaded', () => {
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-item');
+    const dots = document.querySelectorAll('.dot');
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        dots[i].classList.remove('active');
+        if (i === index) {
+          slide.classList.add('active');
+          dots[i].classList.add('active');
+        }
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    function currentSlide(index) {
+      currentSlide = index;
+      showSlide(currentSlide);
+    }
+
+    // Initialize the first slide
+    showSlide(currentSlide);
+
+    // Assign event listeners to buttons
+    document.querySelector('.prev-btn').addEventListener('click', prevSlide);
+    document.querySelector('.next-btn').addEventListener('click', nextSlide);
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => currentSlide(index));
+    });
+  });
