@@ -26,35 +26,41 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   align-items: center;
   max-width: 335px;
   height: 42px;
-  margin-top: 16px;
-  margin-left: 20px;
   border-radius: 8px;
   border: 1px solid #fbfbfb;
   background-color: #fbfbfb;
+  margin-top: 16px;
+  margin-bottom: auto;
+  margin-left: 20px;
 }
 
 .mobile-logo{
-  margin-top: 12px;
+  padding: 4px 6px;
   margin-left: 20px;
   font-size: 14px;
   font-weight: 500;
-  line-height: 16.94px;
+  line-height: normal;
   letter-spacing: -0.03em;
-  text-align: left;
   color: #1B414B;
 }
 
 .mobile-menu-exit{
-  color: #055545;
-  background-color: transparent;
-  width: 28px;
-  height: 28px;
+background-color: transparent;
   border: 0 solid transparent;
+  border-radius: 8px;
+  padding: 0;
+  line-height: 0;
+  fill: #055545;
+  margin-right: 20px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 .mobile-menu-nav{
-  width: 91px;
-  height: 128px;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
 
 }
 
@@ -63,11 +69,12 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   flex-direction: column;
   gap: 4px;
 }
+
  .mobile-menu-item{
   width: 91px;
   height: 40px;
   border-radius: 8px;
-  color: rgba(27, 65, 75, 0.5);
+  background-color: rgba(27, 65, 75, 0.5);
   text-align: center;
   flex-shrink: 0;
  }
@@ -75,6 +82,8 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
  .mobile-menu-link{
   display: block;
   text-transform: uppercase;
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-align: center;
   font-size: 9px;
   font-weight: 400;
@@ -85,9 +94,13 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
+.about-link {
+  background-color: #1b414b;
+}
 .mobile-menu-link:hover,
 .mobile-menu-link:focus {
   color: #1b414b;
+ 
 }
 
 .mobile-social-links-list{
