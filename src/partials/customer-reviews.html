@@ -1,12 +1,80 @@
 <article class="customer-review-gallery">
-  <section>
-    <div>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+  <section class="customer-section">
+    <div class="container customer-review-container">
+      <div class="first-image-container">
+        <img
+          src="/src/images/ice-cream-overlap-picture.jpg"
+          alt="picture with many icecreams"
+          class="icecream-top-picture"
+        />
+      </div>
+
+      <!-- carousel part -->
+
+      <div class="slider">
+        <div class="slides">
+          <!-- Slide 1 -->
+          <div class="slide">
+            <div class="review-wrapper">
+              <img
+                src="/src/images/1st-review-img.jpg"
+                alt="Reviewer"
+                class="reviewer-image"
+              />
+              <div class="review-container">
+                <p class="review-text">
+                  I love visiting your cafe. You prepare the most delicious ice
+                  cream in Los Angeles! In addition, you have beautiful serving,
+                  a cozy atmosphere, and polite staff.
+                </p>
+              </div>
+              <p class="reviewer-details">Emily, Los Angeles</p>
+            </div>
+
+            <div class="review-wrapper">
+              <img
+                src="/src/images/2nd-review-img.jpg"
+                alt="Reviewer"
+                class="reviewer-image"
+              />
+              <div class="review-container">
+                <p class="review-text">
+                  I love visiting your cafe. You prepare the most delicious ice
+                  cream in Los Angeles! In addition, you have beautiful serving,
+                  a cozy atmosphere, and polite staff.
+                </p>
+              </div>
+              <p class="reviewer-details">Emily, Los Angeles</p>
+            </div>
+
+            <div class="review-wrapper">
+              <img
+                src="/src/images/3rd-review-img.jpg"
+                alt="Reviewer"
+                class="reviewer-image"
+              />
+              <div class="review-container">
+                <p class="review-text">
+                  I love visiting your cafe. You prepare the most delicious ice
+                  cream in Los Angeles! In addition, you have beautiful serving,
+                  a cozy atmosphere, and polite staff.
+                </p>
+              </div>
+              <p class="reviewer-details">Emily, Los Angeles</p>
+            </div>
+          </div>
+
+          <!-- Additional slides go here -->
+        </div>
+
+        <!-- Navigation dots -->
+        <div class="navigation-dots">
+          <span class="dot" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+      </div>
     </div>
   </section>
+  <script type="module" src="/src/carousel.js"></script>
 </article>
