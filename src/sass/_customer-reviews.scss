@@ -1,36 +1,43 @@
 body {
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
   background-color: #fff;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.customer-review-gallery {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  position: relative;
-}
-
-/* ----- Mobile container width ----- */
-.container {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-/* ----- Mobile container width ----- */
-
-.customer-review-container {
-  width: 320px;
-  height: 1069px;
-  left: 0px;
-  top: 4027px;
-}
-
-.customer-section {
-  background-image: url(/src/images/ice-cream-background.jpg);
+  background-image: url('/src/images/ice-cream-background.jpg'); /* Replace with your actual background image path */
   background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 200px;
+  background-position: center;
+  font-family: 'Montserrat', sans-serif;
 }
+
+// .customer-review-gallery {
+//   font-family: 'Montserrat', sans-serif;
+//   font-style: normal;
+//   position: relative;
+// }
+
+// /* ----- Mobile container width ----- */
+// .container {
+//   width: 320px;
+//   margin: 0 auto;
+//   padding: 0 20px;
+// }
+// /* ----- Mobile container width ----- */
+
+// .customer-review-container {
+//   width: 320px;
+//   height: 1069px;
+//   left: 0px;
+//   top: 4027px;
+// }
+
+// .customer-section {
+//   background-image: url(/src/images/ice-cream-background.jpg);
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   padding-top: 200px;
+// }
 
 .icecream-top-picture {
   position: absolute;
@@ -43,109 +50,76 @@ body {
 
 // <------Carousel part------->
 
-.carousel {
+.slider {
   position: relative;
-  width: 80%;
-  margin: 0 auto;
-  overflow: hidden;
+  width: 100%;
+  max-width: 400px; /* Adjust for mobile view */
+  overflow: hidden; /* Prevent content overflow */
+  text-align: center;
 }
 
-.carousel-inner {
+.slides {
   display: flex;
   transition: transform 0.5s ease;
+  width: 300%; /* Assuming 3 slides; adjust accordingly */
 }
 
-.review-item {
+.slide {
   min-width: 100%;
-  text-align: center;
-  padding: 20px;
   box-sizing: border-box;
-  display: none;
+  padding: 20px;
 }
 
-.review-item.active {
-  display: block;
+.review-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.review-image {
-  width: 85px;
-  height: 85px;
-  top: 210px;
-  left: 118px;
-  gap: 0px;
-  opacity: 0px;
+.reviewer-image {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  border: 3px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.review-paragraph {
-  position: absolute;
-  width: 202px;
-  height: 186px;
-  left: 59px;
-  top: 362px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 255%;
+.review-container {
+  background-color: #7ca27d;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 16px;
+  width: 90%;
+  max-width: 300px;
+  line-height: 1.6;
   text-align: center;
-  color: #fcfcfc;
 }
 
-.review-location {
-  position: absolute;
-  width: 189px;
-  height: 37px;
-  left: 66px;
-  top: 615px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 186%;
+.reviewer-details {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.navigation-dots {
   text-align: center;
-  color: #131313;
-}
-
-.prev-btn,
-.next-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #fff;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  padding: 10px;
-  z-index: 10;
-}
-
-.prev-btn {
-  left: 10px;
-}
-
-.next-btn {
-  right: 10px;
-}
-
-.carousel-dots {
-  text-align: center;
-  padding: 10px 0;
+  margin-top: 20px;
 }
 
 .dot {
-  height: 10px;
-  width: 10px;
-  margin: 0 5px;
-  background-color: #bbb;
-  border-radius: 50%;
   display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .dot.active {
-  background-color: #84a178;
+  background-color: #7ca27d;
 }
