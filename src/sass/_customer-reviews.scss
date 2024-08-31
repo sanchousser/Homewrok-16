@@ -1,125 +1,187 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+  margin: 0 auto;
   background-color: #fff;
-  background-image: url('/src/images/ice-cream-background.jpg'); /* Replace with your actual background image path */
-  background-size: cover;
-  background-position: center;
   font-family: 'Montserrat', sans-serif;
 }
 
-// .customer-review-gallery {
-//   font-family: 'Montserrat', sans-serif;
-//   font-style: normal;
-//   position: relative;
-// }
+/* ----- Mobile container width ----- */
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-// /* ----- Mobile container width ----- */
-// .container {
-//   width: 320px;
-//   margin: 0 auto;
-//   padding: 0 20px;
-// }
-// /* ----- Mobile container width ----- */
+.customer-review-article {
+  position: relative;
+  z-index: 1;
+}
 
-// .customer-review-container {
-//   width: 320px;
-//   height: 1069px;
-//   left: 0px;
-//   top: 4027px;
-// }
-
-// .customer-section {
-//   background-image: url(/src/images/ice-cream-background.jpg);
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   padding-top: 200px;
-// }
-
-.icecream-top-picture {
+.top-image-container {
   position: absolute;
-  width: 280px;
-  height: 130px;
-  left: 20px;
-  top: 0px;
-  border-radius: 8px;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  text-align: center;
+}
+
+.top-image {
+  z-index: 2;
+
+  gap: 0px;
+  border-radius: 8px 0px 0px 0px;
+  opacity: 0px;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding: 0 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    min-width: 768px;
+    padding: 0 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    min-width: 1200px;
+    padding: 0 16px;
+  }
+}
+/* ----- Mobile container width ----- */
+
+.customer-review-container {
+  padding-bottom: 60px;
+}
+
+.customer-section {
+  background-image: url(/src/images/ice-cream-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 100%;
 }
 
 // <------Carousel part------->
 
-.slider {
+.carousel {
   position: relative;
   width: 100%;
-  max-width: 400px; /* Adjust for mobile view */
-  overflow: hidden; /* Prevent content overflow */
-  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
 }
 
-.slides {
+.carousel-inner {
   display: flex;
   transition: transform 0.5s ease;
-  width: 300%; /* Assuming 3 slides; adjust accordingly */
 }
 
-.slide {
+.carousel-item {
   min-width: 100%;
-  box-sizing: border-box;
+  text-align: center;
   padding: 20px;
-}
-
-.review-wrapper {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  display: none;
 }
 
-.reviewer-image {
-  width: 100px;
-  height: 100px;
+.carousel-item.active {
+  display: flex;
+}
+
+.review-image {
+  width: 85px;
+  height: 85px;
   border-radius: 50%;
-  margin-bottom: 15px;
-  border: 3px solid white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 32px;
+}
+
+.review-paragraph {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30.6px;
+  text-align: center;
+  padding: 35px 39px 35px 39px;
 }
 
 .review-container {
-  background-color: #7ca27d;
-  padding: 15px;
-  margin: 15px 0;
-  border-radius: 15px;
-  color: #fff;
-  font-size: 16px;
-  width: 90%;
-  max-width: 300px;
-  line-height: 1.6;
+  width: 280px;
+  height: 256px;
+  left: 20px;
+  top: 327px;
+  background: #84a178;
+  border-radius: 10px;
+  color: #fcfcfc;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30.6px;
   text-align: center;
 }
 
-.reviewer-details {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-  margin-top: 10px;
+.location-paragraph {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 37.2px;
+  text-align: center;
+  padding-top: 32px;
+}
+p {
+  margin: 0;
 }
 
-.navigation-dots {
+/* Navigation Buttons */
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 10;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.prev-btn {
+  left: 5px;
+}
+
+.next-btn {
+  right: 5px;
+}
+
+/* Dots Navigation */
+.carousel-dots {
   text-align: center;
-  margin-top: 20px;
+  padding: 10px 0;
 }
 
 .dot {
-  display: inline-block;
-  width: 8px;
   height: 8px;
-  margin: 0 5px;
-  background-color: #ccc;
+  width: 8px;
+  margin: 0 4px;
+  background-color: #bbb;
   border-radius: 50%;
+  display: inline-block;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .dot.active {
-  background-color: #7ca27d;
+  background-color: #333;
 }
