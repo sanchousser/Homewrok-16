@@ -28,12 +28,12 @@
 
 .item-images {
   width: 80px;
-height: 80px;
+  height: 80px;
   margin-bottom: 10px;
 }
 .big-watch {
   width: 235px;
-height: 350px;
+  height: 350px;
   padding-left: 20px;
 }
 .watch-title {
@@ -84,7 +84,6 @@ height: 350px;
   height: 0;
   border: 1px solid black;
 }
-
 .watch-description-text {
   font-size: 14px;
   letter-spacing: -0.02em;
@@ -129,13 +128,13 @@ height: 350px;
   .list-images {
     margin-bottom: 10px;
   }
-  .item-images{
+  .item-images {
     width: 146px;
-height: 146px;
+    height: 146px;
   }
-  .big-watch{
+  .big-watch {
     width: 406px;
-height: 614px;
+    height: 614px;
   }
   .watch-information {
     margin-left: 66px;
@@ -143,8 +142,8 @@ height: 614px;
   }
 }
 // laptop
-@media screen and (min-width: 1280px){
-  .sale-section{
+@media screen and (min-width: 1280px) {
+  .sale-section {
     padding-top: 80px;
     padding-bottom: 160px;
   }
@@ -152,50 +151,53 @@ height: 614px;
     width: 100%;
     padding: 0 12px;
   }
-  .sale-title{
+  .sale-title {
     margin-bottom: 80px;
   }
-  .sale-item{
+  .sale-item {
     display: flex;
   }
-  .watch-images{
+  .watch-images {
     width: 572px;
     margin-bottom: 0;
   }
-  .item-images{
+  .item-images {
     width: 146px;
-height: 146px;
+    height: 146px;
   }
-  .big-watch{
+  .big-watch {
     width: 406px;
-height: 614px;
-left: 166px;
+    height: 614px;
+    left: 166px;
   }
-  .watch-information{
+  .watch-information {
     width: 369px;
     margin-left: 0;
   }
-  .watch-title{
+  .watch-title {
     margin-left: 0;
     margin-right: 0;
   }
-  .watch-name{
+  .watch-name {
     font-size: 38px;
     line-height: 40px;
-  } 
-  .watch-description{
+  }
+  .watch-description {
     margin-bottom: 20px;
     margin-left: 0;
     margin-right: 0;
   }
-  .watch-description-title{
+  .watch-description-title {
     margin-bottom: 17px;
   }
-  .watch-details{
+  .svg-sale:hover + .watch-description-text {
+    display: none;
+  }
+  .watch-details {
     margin-left: 0;
     margin-right: 0;
   }
-  .watch-details-title{
+  .watch-details-title {
     margin-bottom: 17px;
   }
 }
