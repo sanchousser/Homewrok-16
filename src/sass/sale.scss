@@ -28,9 +28,12 @@
 
 .item-images {
   width: 80px;
+height: 80px;
   margin-bottom: 10px;
 }
 .big-watch {
+  width: 235px;
+height: 350px;
   padding-left: 20px;
 }
 .watch-title {
@@ -128,6 +131,11 @@
   }
   .item-images{
     width: 146px;
+height: 146px;
+  }
+  .big-watch{
+    width: 406px;
+height: 614px;
   }
   .watch-information {
     margin-left: 66px;
@@ -156,6 +164,12 @@
   }
   .item-images{
     width: 146px;
+height: 146px;
+  }
+  .big-watch{
+    width: 406px;
+height: 614px;
+left: 166px;
   }
   .watch-information{
     width: 369px;
