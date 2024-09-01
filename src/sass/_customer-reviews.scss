@@ -1,6 +1,187 @@
-.customer-review-gallery {
+body {
+  margin: 0 auto;
+  background-color: #fff;
   font-family: 'Montserrat', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
+}
+
+/* ----- Mobile container width ----- */
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.customer-review-article {
+  position: relative;
+  z-index: 1;
+}
+
+.top-image-container {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  text-align: center;
+}
+
+.top-image {
+  z-index: 2;
+
+  gap: 0px;
+  border-radius: 8px 0px 0px 0px;
+  opacity: 0px;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding: 0 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    min-width: 768px;
+    padding: 0 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    min-width: 1200px;
+    padding: 0 16px;
+  }
+}
+/* ----- Mobile container width ----- */
+
+.customer-review-container {
+  padding-bottom: 60px;
+}
+
+.customer-section {
+  background-image: url(/src/images/ice-cream-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 100%;
+}
+
+// <------Carousel part------->
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.carousel-item.active {
+  display: flex;
+}
+
+.review-image {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 32px;
+}
+
+.review-paragraph {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30.6px;
+  text-align: center;
+  padding: 35px 39px 35px 39px;
+}
+
+.review-container {
+  width: 280px;
+  height: 256px;
+  left: 20px;
+  top: 327px;
+  background: #84a178;
+  border-radius: 10px;
+  color: #fcfcfc;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30.6px;
+  text-align: center;
+}
+
+.location-paragraph {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 37.2px;
+  text-align: center;
+  padding-top: 32px;
+}
+p {
+  margin: 0;
+}
+
+/* Navigation Buttons */
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 10;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.prev-btn {
+  left: 5px;
+}
+
+.next-btn {
+  right: 5px;
+}
+
+/* Dots Navigation */
+.carousel-dots {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #333;
 }
