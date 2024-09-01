@@ -37,6 +37,7 @@ body {
   .section-products {
     background-image: url(../images/ice-cream-background-mobile.jpg);
     background-position: 535px -120px;
+    position: relative;
   }
 
   .section-products-header {
@@ -216,6 +217,152 @@ body {
     position: absolute;
     transform: translateX(136%);
   }
+
+/* ----- Modal window Ingredients ----- */
+
+  .modal-window-ingredients {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 968px;
+    width: 280px;
+    padding: 4px 28px 28px;
+    background-color: #FCFCFC;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+    cursor: pointer;
+
+    /*visibility: hidden;
+    opacity: 0;*/
+  }
+
+  .modal-window-ingredients.is-open {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .modal-close-button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: transparent;
+  }
+
+  .modal-close-icon {
+    fill: #131313;
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-title-ingredients {
+    font-family: 'Seymour One', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 28px;
+    color: #131313;
+    width: 142px;
+  }
+
+  .modal-window-ingredients-img {
+    display: flex;
+    justify-content: center;
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    position: relative; 
+  }
+
+  .modal-window-ingredients-img::after {
+    content: '';
+    position: absolute;
+    width: 132px;
+    height: 132px;
+    background: linear-gradient(0deg, #D9D9D9, #D9D9D9),
+linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+    border-radius: 50%;
+    top: 7px;
+    left: 0;
+    z-index: -1;
+    box-shadow: 0px 5.26px 19.73px 0px #0A881740;
+  }
+
+  .modal-window-quantities-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 9px;
+    padding-top: 22px;
+  }
+
+  .modal-window-quantities-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+  padding-top: 21.5px; 
+  }
+  
+  .modal-window-quantities-circle {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background-color: #9CBE8F;
+    border: 2px solid #9CBE8F;
+    box-shadow: 0px 6px 20px 0px #0A881740;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 10px;
+    color: #131313;
+    line-height: 2.8;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  .modal-window-quantities-label {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.219;
+    color: #131313;
+    border: 2px solid #9CBE8F;
+    width: 53px;
+    height: 72px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 8px;
+    margin-top: -22px;
+  }
+
+  .modal-window-ingredients-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: center;
+    color: #131313;
+    padding-top: 40px;
+  }
+
+  .modal-window-ingredients-list {
+    padding-top: 24px;
+  }
+
+/* ----- End Modal window Ingredients ----- */
 
   @media (min-width: 480px) {
     .section-products {
