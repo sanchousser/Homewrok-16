@@ -1,11 +1,8 @@
-// .hero-container {
-//   min-width: 320px;
-//   margin: 0 auto;
-//   padding: 0 20px;
-// }
-
 .hero-container {
-  margin-left: 20px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 99px;
 }
 
 .hero-section {
@@ -13,7 +10,6 @@
   gap: 0px;
   opacity: 0px;
   background-color: #84a178;
-  padding: 0 20px;
 }
 
 .hero-section-header {
@@ -224,6 +220,13 @@
 // Tablet Resolution //
 
 @media (min-width: 768px) {
+  .hero-container {
+    min-width: 768px;
+    margin: 0 auto;
+    padding: 0 32px;
+    padding-top: 80px;
+  }
+
   .hero-section {
     min-width: 768px;
     height: 415px;
@@ -317,9 +320,12 @@
   .icon-tablet-effect {
     display: inherit;
     position: absolute;
+    width: 768px;
+    height: 67.79px;
     top: 345.95px;
     gap: 0px;
     opacity: 0px;
+    right: 0.5%;
   }
 
   .icon-arrow {
@@ -390,7 +396,14 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
+  .hero-container {
+    min-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    padding-top: 118px;
+  }
+
   .hero-section {
     min-width: 1200px;
     height: 664px;
@@ -448,6 +461,7 @@
     font-weight: 600;
     line-height: 18px;
     text-align: center;
+    margin-top: 18px;
 
     z-index: 1;
   }
@@ -465,6 +479,7 @@
     font-weight: 600;
     line-height: 17.07px;
     text-align: center;
+    margin-top: 20px;
     z-index: 2;
   }
 
@@ -521,10 +536,12 @@
   .icon-desktop-effect {
     display: inherit;
     position: absolute;
-right: 3%;
+    width: 1200px;
+    height: 383.46px;
     top: 279.49px;
     gap: 0px;
     opacity: 0px;
+    
   }
 
   .icon-16 {
