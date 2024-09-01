@@ -1,3 +1,5 @@
+@import url(styles.scss);
+
 .new-watches{
     width: 1440px;
     height: 772px;
@@ -18,7 +20,7 @@
     line-height: 14px;
     letter-spacing: 0.06em;
     text-align: left;
-    background: rgba(20, 20, 20, 0.4);
+    color: rgba(20, 20, 20, 0.4);
     opacity: 40%;
     display: inline-block;
 }
@@ -26,43 +28,54 @@
 .section-title{
     width: 448px;
     height: 88px;
-    gap: 0px;
     opacity: 0px;
-    font-family: Epilogue;
+    font-family: Epilogue sans-serif;
     font-size: 40px;
     font-weight: 600;
     line-height: 44px;
     letter-spacing: -0.02em;
     text-align: left;
-    background: #1E2827;
+    color: #1E2827;
     display: flex;
+    margin-bottom: 50px;
 }
 
-.paragraph{
+.images{
     width: 1176px;
     height: 422px;
-    gap: 24px;
+    //gap: 24px;
+    opacity: 0px;
+}
+.paragraph{
+    width: 1176px;
+    height: 590px;
+    gap: 80px;
     opacity: 0px;
     flex-wrap: wrap;
 }
 
 .watches-img{
     width: 576px;
-    height: 422px;
-    gap: 0px;
-    opacity: 0px;
-    display: inline-block;
+    max-height: 422px;
+    gap:24px;
+    display: inline;
+    justify-content: space-around;
+    align-items: center;
+    padding-right :20px;
 }
-
 
 @media (max-width: 600px) {
     .section-title {
-        font-size: 24px;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 40px;
+        letter-spacing: -0.02em;
+        text-align: left;
     }
 
     .watches-img {
-        width: 100%;
-        max-width: 100%;
+        width: 85%;
+        max-width: 85%;
         margin-bottom: 10px;
     }
 
@@ -73,7 +86,7 @@
 
 @media (min-width: 601px) and (max-width: 1024px) {
     .section-title {
-        font-size: 32px;
+        font-size: 40px;
     }
 
     .new-watches {
@@ -91,7 +104,7 @@
 
 @media (min-width: 1025px) and (max-width: 1440px) {
     .section-title {
-        font-size: 36px;
+        font-size: 40px;
     }
 
     .new-watches {
@@ -107,16 +120,3 @@
     }
 }
 
-@media (min-width: 1441px) {
-    .section-title {
-        font-size: 40px;
-    }
-
-    .new-watches {
-        padding: 100px 200px;
-    }
-
-    .watches-img {
-        max-width: 40%;
-    }
-}
