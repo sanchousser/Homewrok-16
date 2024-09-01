@@ -1,47 +1,4 @@
-/*Project style reset */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-
-body {
-  font-family: 'Epilogue', sans-serif;
-  background-color: var(--white);
-}
-
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-:root {
-  --white: #ffffff;
-  --darkgreen: #1e2827;
-  --black: #141414;
-}
-
-/* End style reset */
-
 @import './common';
-@import './example';
+@import './style.scss';
 @import './header.scss';
 @import './hero.scss';

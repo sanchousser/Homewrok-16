@@ -1,0 +1,70 @@
+<!--Hero Section-->
+
+<section class="hero section">
+  <div class="hero-container container">
+    <h1 class="hero-title">Welcome to our collection of premium watches</h1>
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/watch1.png" alt="Watch 1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/watch2.png" alt="Watch 2" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/watch3.png" alt="Watch 3" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/watch4.png" alt="Watch 4" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/watch5.png" alt="Watch 5" />
+        </div>
+      </div>
+      <div class="swiper-buttons">
+        <div class="swiper-button-next">
+          <svg class="next-svg">
+            <use href="./images/icons.svg#icon-next" />
+          </svg>
+        </div>
+        <div class="swiper-button-prev">
+          <svg class="prev-svg">
+            <use href="./images/icons.svg#icon-prev" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <p class="hero-text">
+      Our watches are not just timepieces, but also an expression of your
+      personality and lifestyle. From classic designs to modern ones, we have a
+      watch to suit every taste and occasion.
+    </p>
+    <img class="hero-img" src="./images/watch.png" alt="#" />
+  </div>
+</section>
+
+<!-- Swiper Script -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.mySwiper', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    centeredSlides: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    keyboard: { enabled: true },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
