@@ -1,0 +1,51 @@
+.new-watches{
+    width: 1440px;
+    height: 772px;
+    top: 3230px;
+    left: -1px;
+    padding: 80px 132px 80px 132px;
+    gap: 8px;
+}
+
+.mini-title{
+    width: 85px;
+    height: 14px;
+    gap: 0px;
+    font-family:Epilogue;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    background: rgba(20, 20, 20, 0.4);
+}
+
+.section-title{
+    width: 448px;
+    height: 88px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Epilogue;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    background: #1E2827;
+    display: flex;
+}
+
+.paragraph{
+    width: 1176px;
+    height: 422px;
+    gap: 24px;
+    opacity: 0px;
+}
+
+.watches-img{
+    width: 576px;
+    height: 422px;
+    gap: 0px;
+    opacity: 0px;
+    display: inline;
+}
