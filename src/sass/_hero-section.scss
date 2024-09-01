@@ -1,7 +1,11 @@
+// .hero-container {
+//   min-width: 320px;
+//   margin: 0 auto;
+//   padding: 0 20px;
+// }
+
 .hero-container {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin-left: 20px;
 }
 
 .hero-section {
@@ -9,7 +13,7 @@
   gap: 0px;
   opacity: 0px;
   background-color: #84a178;
-  padding-top: 50px;
+  padding: 0 20px;
 }
 
 .hero-section-header {
@@ -91,6 +95,22 @@
   text-decoration: underline;
 }
 
+.hero-paragraph {
+  width: 165px;
+  height: 68px;
+  top: 278px;
+  left: 216px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  color: #ffffff;
+  display: none;
+}
+
 .icecream-mobile {
   height: 217px;
   top: 285px;
@@ -100,9 +120,16 @@
   position: absolute;
 }
 
+.icecream-tabletrez {
+  display: none;
+}
+
+.icecream-plate {
+  display: none;
+}
+
 .icecream-effect {
   position: absolute;
-
   height: 50px;
   top: 452px;
   left: 0%;
@@ -114,8 +141,47 @@
   display: none;
 }
 
+.icon-arrow {
+  display: none;
+}
+
+.icon-16 {
+  display: none;
+}
+
+.icon-23 {
+  display: none;
+}
+
+.icon-tablet-effect {
+  display: none;
+}
+
+.icon-desktop-effect {
+  display: none;
+}
+
+.icon16-text {
+  display: none;
+}
+
+.icon23-text {
+  display: none;
+}
+
+.icecream-desktop {
+  display: none;
+}
+
+.icecream-plate-desktop {
+  display: none;
+}
+
+// 480 Resolution  //
+
 @media (min-width: 480px) {
   .hero-section {
+    min-width: 480px;
     height: 415px;
     gap: 0px;
     opacity: 0px;
@@ -145,6 +211,7 @@
   }
 
   .icecream-effect {
+    width: 330px;
     height: 52px;
     top: 363px;
     left: 150px;
@@ -155,3 +222,350 @@
 }
 
 // Tablet Resolution //
+
+@media (min-width: 768px) {
+  .hero-section {
+    min-width: 768px;
+    height: 415px;
+    gap: 0px;
+    opacity: 0px;
+  }
+
+  .hero-section-header {
+    height: 97px;
+    top: 80px;
+    left: 32px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Seymour One;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32.68px;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
+
+  .hero-header-span {
+    font-family: Seymour One;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 32.81px;
+    text-align: left;
+  }
+
+  .hero-section-button {
+    height: 38px;
+    top: 201px;
+    left: 32px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14.63px;
+    text-align: center;
+  }
+
+  .hero-section-button2 {
+    height: 24px;
+    top: 208px;
+    left: 152px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14.63px;
+    text-align: center;
+  }
+
+  .hero-paragraph {
+    display: inherit;
+    position: absolute;
+  }
+  .icecream-480rez {
+    display: none;
+  }
+
+  .icecream-plate {
+    display: inherit;
+    position: absolute;
+    width: 152px;
+    height: 152px;
+    top: 251px;
+    left: 32px;
+    gap: 0px;
+    opacity: 0px;
+    z-index: 1;
+  }
+
+  .icecream-tabletrez {
+    display: inherit;
+    position: absolute;
+    width: 268px;
+    height: 329px;
+    top: 86px;
+    left: 408px;
+    gap: 0px;
+    opacity: 0px;
+  }
+
+  .icecream-effect {
+    display: none;
+  }
+
+  .icon-tablet-effect {
+    display: inherit;
+    position: absolute;
+    top: 345.95px;
+    gap: 0px;
+    opacity: 0px;
+  }
+
+  .icon-arrow {
+    display: inherit;
+    position: absolute;
+    width: 40px;
+    height: 16px;
+    top: 375px;
+    left: 216px;
+    gap: 0px;
+    opacity: 0px;
+  }
+
+  .icon-16 {
+    display: inherit;
+    position: absolute;
+    width: 32px;
+    height: 34px;
+    top: 94px;
+    left: 704px;
+    gap: 0px;
+    opacity: 0px;
+  }
+
+  .icon-23 {
+    display: inherit;
+    position: absolute;
+    width: 36px;
+    height: 34px;
+    top: 162px;
+    left: 700px;
+    gap: 0px;
+    opacity: 0px;
+  }
+
+  .icon16-text {
+    display: inherit;
+    position: absolute;
+    width: 21px;
+    height: 10px;
+    top: 132px;
+    left: 715px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 9.75px;
+    text-align: right;
+    color: #fcfcfc;
+  }
+
+  .icon23-text {
+    display: inherit;
+    position: absolute;
+    width: 46px;
+    height: 10px;
+    top: 200px;
+    left: 690px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 9.75px;
+    text-align: right;
+    color: #fcfcfc;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-section {
+    min-width: 1200px;
+    height: 664px;
+    gap: 0px;
+    opacity: 0px;
+  }
+
+  .icecream-tabletrez {
+    display: none;
+  }
+
+  .icecream-plate {
+    display: none;
+  }
+
+  .icon-tablet-effect {
+    display: none;
+  }
+
+  .hero-section-header {
+    position: absolute;
+    width: 367px;
+    height: 144px;
+    top: 118px;
+    left: 16px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Seymour One;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 47.76px;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
+
+  .hero-header-span {
+    font-family: Seymour One;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 47.76px;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
+
+  .hero-section-button {
+    position: absolute;
+    width: 134px;
+    height: 42px;
+    top: 290px;
+    left: 16px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+
+    z-index: 1;
+  }
+
+  .hero-section-button2 {
+    position: absolute;
+    width: 154px;
+    height: 40px;
+    top: 290px;
+    left: 162px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.07px;
+    text-align: center;
+    z-index: 2;
+  }
+
+  .hero-paragraph {
+    position: absolute;
+    width: 200px;
+    height: 80px;
+    top: 450px;
+    left: 257px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  .icecream-desktop {
+    display: inherit;
+    position: absolute;
+    width: 456px;
+    height: 560px;
+    top: 104px;
+    left: 652px;
+    gap: 0px;
+    opacity: 0px;
+
+    z-index: 2;
+  }
+
+  .icecream-plate-desktop {
+    display: inherit;
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    top: 374px;
+    left: 16px;
+    gap: 0px;
+    opacity: 0px;
+  }
+
+  .icon-arrow {
+    position: absolute;
+    width: 40px;
+    height: 16px;
+    top: 545px;
+    left: 257px;
+    gap: 0px;
+    opacity: 0px;
+  }
+
+  .icon-desktop-effect {
+    display: inherit;
+    position: absolute;
+right: 3%;
+    top: 279.49px;
+    gap: 0px;
+    opacity: 0px;
+  }
+
+  .icon-16 {
+    position: absolute;
+    width: 52px;
+    height: 56px;
+    top: 126px;
+    left: 1132px;
+    gap: 0px;
+    opacity: 0px;
+  }
+
+  .icon-23 {
+    position: absolute;
+    width: 59px;
+    height: 56px;
+    top: 219px;
+    left: 1125px;
+    gap: 0px;
+    opacity: 0px;
+  }
+
+  .icon16-text {
+    position: absolute;
+    width: 37px;
+    height: 17px;
+    top: 186px;
+    left: 1147px;
+    gap: 0px;
+    opacity: 0px;
+    color: #fcfcfc;
+  }
+
+  .icon23-text {
+    position: absolute;
+    width: 79px;
+    height: 17px;
+    top: 279px;
+    left: 1105px;
+    gap: 0px;
+    opacity: 0px;
+    color: #fcfcfc;
+  }
+}
