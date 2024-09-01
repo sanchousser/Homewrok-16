@@ -1,44 +1,37 @@
-
-
-.header-container{
-    background-color: #84A178;
-    width: 280px;
-    margin: 0 auto;
+.header-container {
+  background-color: #84a178;
+  width: 280px;
+  margin: 0 auto;
 }
 
-.header-nav{
-    background-color: #84A178;
+.header-nav {
+  background-color: #84a178;
 }
 
-.header-nav-list{
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 39px;
-    text-align: center;
+.header-nav-list {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
 }
 
-.home{
-    
+.home {
 }
 
-.buy-now-image-box{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    outline: 2px solid #96AF8C;
-    border-radius: 15px;
-    margin-top: 72px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 72px;
+.buy-now-image-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  outline: 2px solid #96af8c;
+  border-radius: 15px;
+  margin-top: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 72px;
 }
 
-.buy-now-image-box .box-ice-coffee{
-    background-color: #EFD478;
-  outline-color: #EFD478;
+.buy-now-image-box .box-ice-coffee {
+  background-color: #efd478;
+  outline-color: #efd478;
 }
-
-
-
-

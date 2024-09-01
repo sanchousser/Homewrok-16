@@ -2,24 +2,21 @@
 // opens modal window for franchise button
 
 const button = document.querySelector('.franchise-btn');
-const backdrop = document.querySelector('.franchise');
+const franchiseBackdrop = document.querySelector('.franchise');
 
-button.addEventListener('click', toggleModal);
-button.addEventListener('click', function () {
-  console.log(13);
-});
+button.addEventListener('click', toggleFranchiseModal);
 
-backdrop.addEventListener('click', e => {
-  const target = e.target.closest('.modal-close-btn');
+franchiseBackdrop.addEventListener('click', e => {
+  const target = e.target.closest('.modal-close-btn-contacts');
   if (!target) {
     return;
   }
-  toggleModal();
+  toggleFranchiseModal();
 });
 
-function toggleModal() {
-  backdrop.classList.toggle('is-open');
-  document.querySelector('.container').classList.toggle('opaq-bg');
+function toggleFranchiseModal() {
+  franchiseBackdrop.classList.toggle('is-open');
+  document.querySelector('.contact-container').classList.toggle('opaq-bg');
   document
     .querySelector('.contact-container')
     .scrollIntoView({ behavior: 'smooth' });
@@ -36,7 +33,7 @@ locationBtn.addEventListener('click', function () {
 });
 
 locationBackdrop.addEventListener('click', e => {
-  const target = e.target.closest('.modal-close-btn');
+  const target = e.target.closest('.modal-close-btn-contacts');
   if (!target) {
     return;
   }
@@ -45,7 +42,7 @@ locationBackdrop.addEventListener('click', e => {
 
 function toggleLocationModal() {
   locationBackdrop.classList.toggle('is-open');
-  document.querySelector('.container').classList.toggle('opaq-bg');
+  document.querySelector('.contact-container').classList.toggle('opaq-bg');
   document
     .querySelector('.contact-container')
     .scrollIntoView({ behavior: 'smooth' });
@@ -95,3 +92,25 @@ document.addEventListener('DOMContentLoaded', () => {
     dot.addEventListener('click', () => goToSlide(index));
   });
 });
+
+// About section JS
+// opens modal window for read more button
+
+const aboutButton = document.querySelector('.read-more-btn');
+const aboutBackdrop = document.querySelector('.modal-backdrop');
+aboutButton.addEventListener('click', toggleModal);
+
+aboutButton.addEventListener('click', function () {
+  console.log(230924928);
+});
+
+aboutBackdrop.addEventListener('click', e => {
+  const target = e.target.closest('.close-modal-box');
+  if (!target) {
+    return;
+  }
+  toggleModal();
+});
+function toggleModal() {
+  aboutBackdrop.classList.toggle('is-open');
+}

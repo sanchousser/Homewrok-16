@@ -281,14 +281,14 @@ body {
   position: relative;
 }
 
-.container.opaq-bg {
+.contact-container.opaq-bg {
   filter: blur(5px);
   opacity: 0.4;
 }
 
 .modal-window {
   position: absolute;
-  top: 50%;
+  top: 480%;
   left: 50%;
 
   transform: translate(-50%, -50%);
@@ -315,7 +315,7 @@ body {
   opacity: 1;
 }
 
-.modal-close-btn {
+.modal-close-btn-contacts {
   position: absolute;
   top: 2%;
   right: 5%;
@@ -363,7 +363,7 @@ body {
   margin-top: 24px;
 }
 
-.modal-title {
+.modal-title-contacts {
   font-family: 'Seymour One', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -438,7 +438,7 @@ body {
     line-height: 17.07px;
     text-align: center;
   }
-  .modal-title {
+  .modal-title-contacts {
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
