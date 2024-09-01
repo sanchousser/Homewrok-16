@@ -50,3 +50,48 @@ function toggleLocationModal() {
     .querySelector('.contact-container')
     .scrollIntoView({ behavior: 'smooth' });
 }
+
+//<--------------Customer Review JS----------->
+
+document.addEventListener('DOMContentLoaded', () => {
+  let currentSlideIndex = 0;
+  const slides = document.querySelectorAll('.carousel-item');
+  const dots = document.querySelectorAll('.dot');
+
+  function showSlide(index) {
+    // Hide all slides and deactivate dots
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      dots[i].classList.remove('active');
+    });
+
+    // Show the selected slide and activate the dot
+    slides[index].classList.add('active');
+    dots[index].classList.add('active');
+  }
+
+  function nextSlide() {
+    currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+    showSlide(currentSlideIndex);
+  }
+
+  function prevSlide() {
+    currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+    showSlide(currentSlideIndex);
+  }
+
+  function goToSlide(index) {
+    currentSlideIndex = index;
+    showSlide(currentSlideIndex);
+  }
+
+  // Initialize the first slide
+  showSlide(currentSlideIndex);
+
+  // Assign event listeners to buttons
+  document.querySelector('.prev-btn').addEventListener('click', prevSlide);
+  document.querySelector('.next-btn').addEventListener('click', nextSlide);
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => goToSlide(index));
+  });
+});
