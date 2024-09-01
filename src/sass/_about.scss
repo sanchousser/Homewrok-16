@@ -18,7 +18,7 @@ section.about-container {
 @media (min-width: 768px) {
   .about-container {
     min-width: 768px;
-    width: 80%;
+    width: 100%;
   }
 }
 /*----- Desktop screen width  -------*/
@@ -26,7 +26,7 @@ section.about-container {
 @media (min-width: 1200px) {
   .about-container {
     min-width: 1200px;
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -172,8 +172,8 @@ section.about-container {
 
 .modal-box {
   display: none;
-  width: 568px;
-  height: 449px;
+  width: 280px;
+  height: 459px;
   gap: 0px;
   border-radius: 10px 0px 0px 0px;
   border: 2px 0px 0px 0px;
@@ -193,6 +193,16 @@ section.about-container {
   justify-content: left;
   align-items: center;
   text-align: center;
+}
+
+.modal-backdrop {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal-backdrop.is-open {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal-title {
@@ -264,19 +274,149 @@ section.about-container {
 @media (min-width: 768px) {
   .content-box {
     display: flex;
-    flex-basis: calc((100% - 4px) /2);
-    gap: 4px;
-    justify-content: space-between;
+    flex-basis: calc((100% - 8px) / 2);
+    gap: 8px;
     // flex-direction: column;
-    align-items: center;
     margin-top: 82px;
   }
 
+  .tradition {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 26.82px;
+    letter-spacing: 0.04em;
+    text-align: center;
+  }
+
+  .how-is-title {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 42.73px;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+
+  .first-paragraph,
+  .second-paragraph {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21.12px;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
+
+  .special-paragraph {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21.12px;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
+
   .advantages-list {
-    justify-content: space-between;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 60px;
+    margin-left: 75px;
+  }
+
+  .advantages-svg {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: rgba(248, 210, 78, 1);
+    margin-bottom: 32px;
+  }
+
+  .advantages-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.88px;
+    letter-spacing: 0.04em;
+    text-align: center;
+  }
+
+  .advantages-list:last-child {
+    gap: 22px;
+  }
+
+  .advantages-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.51px;
+    letter-spacing: 0.04em;
+    text-align: center;
+  }
+
+  .advantages-paragraph {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24.36px;
+    text-align: center;
   }
 }
 
 @media (min-width: 1200px) {
+  .tradition {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 26.82px;
+    letter-spacing: 0.04em;
+    text-align: center;
+  }
+
+  .how-is-title {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 42.73px;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+
+  .content-box {
+    margin-left: 16px;
+    margin-top: 45px;
+    text-align: center;
+  }
+
+  .all-paragraphs {
+    margin-top: 135px;
+    margin-right: 121px;
+  }
+
+  .first-paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28.16px;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
+
+  .second-paragraph {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27.16px;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
+
+  .advantages-title {
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 70.7px;
+    letter-spacing: 0.04em;
+    text-align: center;
+  }
+
+  .advantages-paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28.16px;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
 }
