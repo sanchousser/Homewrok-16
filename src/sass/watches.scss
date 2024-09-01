@@ -53,3 +53,70 @@
     opacity: 0px;
     display: inline-block;
 }
+
+
+@media (max-width: 600px) {
+    .section-title {
+        font-size: 24px;
+    }
+
+    .watches-img {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .paragraph {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .section-title {
+        font-size: 32px;
+    }
+
+    .new-watches {
+        padding: 60px 40px;
+    }
+
+    .paragraph {
+        justify-content: space-around;
+    }
+
+    .watches-img {
+        max-width: 48%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .section-title {
+        font-size: 36px;
+    }
+
+    .new-watches {
+        padding: 80px 132px;
+    }
+
+    .paragraph {
+        justify-content: center;
+    }
+
+    .watches-img {
+        max-width: 45%;
+    }
+}
+
+@media (min-width: 1441px) {
+    .section-title {
+        font-size: 40px;
+    }
+
+    .new-watches {
+        padding: 100px 200px;
+    }
+
+    .watches-img {
+        max-width: 40%;
+    }
+}
