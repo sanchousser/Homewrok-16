@@ -17,20 +17,21 @@ body {
 }
 
 .top-image-container {
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 280px;
+  height: 130px;
+  left: 20px;
+  gap: 0px;
+  border-radius: 8px 0px 0px 0px;
+  opacity: 0px;
+  transform: translateY(-75%);
   z-index: 2;
   text-align: center;
 }
 
 .top-image {
   z-index: 2;
-
   gap: 0px;
   border-radius: 8px 0px 0px 0px;
-  opacity: 0px;
 }
 
 @media (min-width: 480px) {
@@ -155,6 +156,7 @@ p {
   z-index: 10;
   border-radius: 50%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  display: none;
 }
 
 .prev-btn {
@@ -167,15 +169,18 @@ p {
 
 /* Dots Navigation */
 .carousel-dots {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
   padding: 10px 0;
+  padding-top: 12px;
 }
 
 .dot {
-  height: 8px;
-  width: 8px;
+  height: 12px;
+  width: 12px;
   margin: 0 4px;
-  background-color: #bbb;
+  background-color: #d9d9d9;
   border-radius: 50%;
   display: inline-block;
   cursor: pointer;
@@ -183,5 +188,5 @@ p {
 }
 
 .dot.active {
-  background-color: #333;
+  background-color: #84a178;
 }
