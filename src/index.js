@@ -15,10 +15,25 @@ menuBackdrop.addEventListener('click', e => {
 
 function toggleMenu() {
   menuBackdrop.classList.toggle('is-open');
-  // document.querySelector('.contact-container').classList.toggle('opaq-bg');
-  // document
-  //   .querySelector('.contact-container')
-  //   .scrollIntoView({ behavior: 'smooth' });
+}
+
+//opens Buy Now modal window for Buy button
+
+const buyButton = document.querySelector('.buy-now-btn');
+const buyBackdrop = document.querySelector('.modal-buy-now');
+
+buyButton.addEventListener('click', toggleBuyModal);
+
+buyBackdrop.addEventListener('click', e => {
+  const target = e.target.closest('.menu-close-btn');
+  if (!target) {
+    return;
+  }
+  toggleBuyModal();
+});
+
+function toggleBuyModal() {
+  buyBackdrop.classList.toggle('is-open');
 }
 
 // Section Contacts JS
@@ -120,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // opens modal window for read more button
 
 const aboutButton = document.querySelector('.read-more-btn');
-const aboutBackdrop = document.querySelector('.modal-backdrop');
+const aboutBackdrop = document.querySelector('.modal-box');
 aboutButton.addEventListener('click', toggleModal);
 
 aboutButton.addEventListener('click', function () {
@@ -136,4 +151,8 @@ aboutBackdrop.addEventListener('click', e => {
 });
 function toggleModal() {
   aboutBackdrop.classList.toggle('is-open');
+  document.querySelector('.about-container-box').classList.toggle('opaq-bg');
+  document
+    .querySelector('.about-container-box')
+    .scrollIntoView({ behavior: 'smooth' });
 }

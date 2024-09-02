@@ -7,11 +7,19 @@
             <use href="./images/symbol-defs.svg#icon-logo" />
           </svg>
         </a>
-        <button class="menu-open-btn" type="button">
-          <svg width="32" height="32">
-            <use href="./images/symbol-defs.svg#icon-hamburger-menu" />
-          </svg>
-        </button>
+        <div class="menu-buttons">
+          <button class="menu-open-btn" type="button">
+            <svg width="32" height="32">
+              <use href="./images/symbol-defs.svg#icon-hamburger-menu" />
+            </svg>
+          </button>
+          <button class="buy-now-btn tablet-btn" type="button">
+            <span>Buy now</span>
+            <svg class="" width="15" height="12">
+              <use href="./images/symbol-defs.svg#icon-arrow-right" />
+            </svg>
+          </button>
+        </div>
         <div class="hamburger-menu">
           <div class="hamburger-menu-bar">
             <a href="./index.html">
@@ -24,6 +32,7 @@
                 <use href="./images/symbol-defs.svg#icon-close" />
               </svg>
             </button>
+            
           </div>
           <nav class="nav-bar">
             <ul class="nav-bar-list">
@@ -51,7 +60,12 @@
         </div>
       </div>
 
-        <div class="modal-buy-now is-open">
+        <div class="modal-buy-now">
+          <button class="menu-close-btn" type="button">
+            <svg width="11" height="11">
+              <use href="./images/symbol-defs.svg#icon-close" />
+            </svg>
+          </button>
           <h2 class="modal-title">Buy now</h2>
           <ul class="product-card-list">
             <li>
@@ -85,6 +99,36 @@
               </div>
             </li>
           </ul>
+          
+          <div class="buy-now-form">
+            <form
+              class="modal-reusable-form"
+              name="franchise-form"
+              autocomplete="off"
+              novalidate
+            >
+              <input
+                class="reusable-form-input"
+                type="text"
+                name="username"
+                placeholder="Name"
+              />
+              <input
+                class="reusable-form-input"
+                type="number"
+                name="telephone"
+                placeholder="Phone"
+              />
+              <textarea
+                class="reusable-form-textarea"
+                name="comment"
+                rows="3"
+                placeholder="Comment"
+              ></textarea>
+
+              <button class="reusable-form-btn" type="submit">Submit</button>
+            </form>
+          </div>
         </div>
      
     

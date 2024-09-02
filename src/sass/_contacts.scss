@@ -287,7 +287,7 @@ body {
 
 .modal-window {
   position: absolute;
-  top: 480%;
+  top: 420%;
   left: 50%;
 
   transform: translate(-50%, -50%);
@@ -306,6 +306,7 @@ body {
 .modal-window.location {
   /* height: 45%; */
   height: 365px;
+  top: 400%;
 }
 
 .modal-window.franchise.is-open,
@@ -352,7 +353,8 @@ body {
   line-height: 14.63px;
 }
 
-.modal-franchise-form {
+.modal-franchise-form,
+.modal-reusable-form {
   /* max-width: 224px; */
   margin: 0 auto;
   display: flex;
@@ -380,7 +382,9 @@ body {
 }
 
 .franchise-form-input,
-.franchise-form-textarea {
+.franchise-form-textarea,
+.reusable-form-input,
+.reusable-form-textarea {
   background-color: #f8d24e1a;
   border: 1px solid #84a178;
   border-radius: 10px;
@@ -401,7 +405,8 @@ body {
   opacity: 1;
 }
 
-.franchise-form-btn {
+.franchise-form-btn,
+.reusable-form-btn {
   width: 55%;
   margin-top: 24px;
   background-color: #f8d24e;
@@ -414,7 +419,19 @@ body {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .modal-window{
+    top: 380%;
+  }
+  .modal-window.location {
+    top: 380%;
+  }
+}
+
 @media (min-width: 1200px) {
+  .modal-window {
+    top: 300%;
+  }
   .modal-window.franchise {
     height: 668px;
     width: 568px;
@@ -422,6 +439,7 @@ body {
     padding: 4px 60px 32px;
   }
   .modal-window.location {
+
     height: 458px;
     width: 568px;
 
