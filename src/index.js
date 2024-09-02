@@ -1,8 +1,52 @@
+// Header hamburger menu
+
+const menuButton = document.querySelector('.menu-open-btn');
+const menuBackdrop = document.querySelector('.hamburger-menu');
+
+menuButton.addEventListener('click', toggleMenu);
+
+menuBackdrop.addEventListener('click', e => {
+  const target = e.target.closest('.menu-close-btn');
+  if (!target) {
+    return;
+  }
+  toggleMenu();
+});
+
+function toggleMenu() {
+  menuBackdrop.classList.toggle('is-open');
+}
+
+//opens Buy Now modal window for Buy button
+
+const buyButton = document.querySelector('.buy-now-btn');
+const buyBackdrop = document.querySelector('.modal-buy-now');
+
+buyButton.addEventListener('click', toggleBuyModal);
+
+buyBackdrop.addEventListener('click', e => {
+  const target = e.target.closest('.menu-close-btn');
+  if (!target) {
+    return;
+  }
+  toggleBuyModal();
+});
+
+function toggleBuyModal() {
+  buyBackdrop.classList.toggle('is-open');
+}
+
 // Section Contacts JS
 // opens modal window for franchise button
 const button = document.querySelector('.franchise-btn');
 const franchiseBackdrop = document.querySelector('.franchise');
+
+
 button.addEventListener('click', toggleFranchiseModal);
+
+
+button.addEventListener('click', toggleFranchiseModal);
+
 franchiseBackdrop.addEventListener('click', e => {
   const target = e.target.closest('.modal-close-btn-contacts');
   if (!target) {
@@ -10,6 +54,8 @@ franchiseBackdrop.addEventListener('click', e => {
   }
   toggleFranchiseModal();
 });
+
+
 function toggleFranchiseModal() {
   franchiseBackdrop.classList.toggle('is-open');
   document.querySelector('.contact-container').classList.toggle('opaq-bg');
@@ -38,6 +84,8 @@ function toggleLocationModal() {
     .querySelector('.contact-container')
     .scrollIntoView({ behavior: 'smooth' });
 }
+
+
 //<--------------Customer Review JS----------->
 document.addEventListener('DOMContentLoaded', () => {
   let currentSlideIndex = 0;
@@ -77,6 +125,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // About section JS
 // opens modal window for read more button
+
+
+const aboutButton = document.querySelector('.read-more-btn');
+const aboutBackdrop = document.querySelector('.modal-box');
+aboutButton.addEventListener('click', toggleModal);
+
+aboutButton.addEventListener('click', function () {
+  console.log(230924928);
+});
+
+
 const aboutButton = document.querySelector('.read-more-btn');
 const aboutBackdrop = document.querySelector('.modal-box');
 aboutButton.addEventListener('click', toggleModal);
@@ -97,6 +156,7 @@ function toggleModal() {
     .querySelector('.about-container-box')
     .scrollIntoView({ behavior: 'smooth' });
 }
+
 
 
 
@@ -122,4 +182,5 @@ ingredientsBackdrop.addEventListener('click', (e) => {
 function toggleIngredientsModal() {
   ingredientsBackdrop.classList.toggle("is-open");
 }
+
 
