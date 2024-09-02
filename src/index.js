@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // About section JS
 // opens modal window for read more button
 const aboutButton = document.querySelector('.read-more-btn');
-const aboutBackdrop = document.querySelector('.modal-backdrop');
+const aboutBackdrop = document.querySelector('.modal-box');
 aboutButton.addEventListener('click', toggleModal);
 aboutButton.addEventListener('click', function () {
   console.log(230924928);
@@ -91,4 +91,8 @@ aboutBackdrop.addEventListener('click', e => {
 });
 function toggleModal() {
   aboutBackdrop.classList.toggle('is-open');
+  document.querySelector('.about-container-box').classList.toggle('opaq-bg');
+  document
+    .querySelector('.about-container-box')
+    .scrollIntoView({ behavior: 'smooth' });
 }

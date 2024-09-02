@@ -269,15 +269,16 @@ section.about-container {
   .read-btn-container {
     padding-left: 28px;
   }
+
+
 }
 
 @media (min-width: 768px) {
   .content-box {
     display: flex;
-    flex-basis: calc((100% - 8px) / 2);
-    gap: 8px;
-    // flex-direction: column;
-    margin-top: 82px;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
   }
 
   .tradition {
@@ -316,11 +317,8 @@ section.about-container {
   }
 
   .advantages-list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    margin-top: 60px;
-    margin-left: 75px;
+    justify-content: space-between;
+    flex-direction: row;
   }
 
   .advantages-svg {
@@ -358,6 +356,30 @@ section.about-container {
     line-height: 24.36px;
     text-align: center;
   }
+
+  .close-modal-svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .modal-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .black-box {
+    width: 448px;
+    height: 205px;
+  }
+
+  .modal-paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -378,9 +400,10 @@ section.about-container {
   }
 
   .content-box {
-    margin-left: 16px;
-    margin-top: 45px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
   }
 
   .all-paragraphs {
@@ -419,4 +442,5 @@ section.about-container {
     letter-spacing: 0.02em;
     text-align: center;
   }
+
 }
