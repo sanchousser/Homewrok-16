@@ -1,6 +1,6 @@
 .header-container {
   background-color: #84a178;
-  width: 280px;
+  min-width: 320px;
   margin: 0 auto;
 }
 
@@ -15,7 +15,37 @@
   text-align: center;
 }
 
-.home {
+.nav-bar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 110px;
+}
+
+.nav-bar-list .how-its-made {
+  color: #fff;
+}
+
+.menu-open-btn,
+.menu-close-btn {
+  background-color: inherit;
+}
+
+.buy-now-btn {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17.07px;
+  text-align: center;
+  padding: 12px 51px 12px 36px;
+
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+
+  border-radius: 10px;
+  background-color: #f8d24e;
 }
 
 .buy-now-image-box {
@@ -34,4 +64,100 @@
 .buy-now-image-box .box-ice-coffee {
   background-color: #efd478;
   outline-color: #efd478;
+}
+
+.hamburger-menu {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 100vh;
+  background-color: #84a178;
+  padding: 16px 16px 40px 16px;
+
+  transform: translateY(-100%);
+  z-index: 999;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hamburger-menu.is-open {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+.hamburger-menu-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.mobile-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px 0;
+}
+.buy-button {
+  display: none;
+}
+
+@media (min-width: 480px) {
+  .logo-icon {
+    width: 48px;
+    height: 44px;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+.modal-buy-now {
+  width: 280px;
+  margin: 0 auto;
+
+  visibility: hidden;
+  opacity: 0;
+}
+.image-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  outline: 2px solid #96af8c;
+  border-radius: 15px;
+  margin-top: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 72px;
+}
+.image-box.box-ice-coffee {
+  background-color: #efd478;
+  outline-color: #efd478;
+}
+.image-box.box-milkshake {
+  outline-color: #d6936d;
+}
+.product-image {
+  /* width: 132px; */
+  border-radius: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  box-shadow: 0px 10px 0px #9cbe8fb2, 0px 15px 20px 0px #0a881740;
+}
+.product-image.ice-coffee {
+  box-shadow: 0px 10px 0px #f8d24eb2, 0px 15px 20px 0px #99721740;
+}
+.product-image.milkshake {
+  box-shadow: 0px 10px 0px #d5753fb2, 0px 15px 20px 0px #00000040;
+}
+.product-card-title {
+  position: absolute;
+  bottom: 20px;
+  align-self: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }

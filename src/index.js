@@ -1,3 +1,26 @@
+// Header hamburger menu
+
+const menuButton = document.querySelector('.menu-open-btn');
+const menuBackdrop = document.querySelector('.hamburger-menu');
+
+menuButton.addEventListener('click', toggleMenu);
+
+menuBackdrop.addEventListener('click', e => {
+  const target = e.target.closest('.menu-close-btn');
+  if (!target) {
+    return;
+  }
+  toggleMenu();
+});
+
+function toggleMenu() {
+  menuBackdrop.classList.toggle('is-open');
+  // document.querySelector('.contact-container').classList.toggle('opaq-bg');
+  // document
+  //   .querySelector('.contact-container')
+  //   .scrollIntoView({ behavior: 'smooth' });
+}
+
 // Section Contacts JS
 // opens modal window for franchise button
 
