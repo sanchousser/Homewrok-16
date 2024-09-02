@@ -96,3 +96,27 @@ document.addEventListener('DOMContentLoaded', () => {
     dot.addEventListener('click', () => goToSlide(index));
   });
 });
+
+
+//<-------------- Section Products JS ----------->
+// opens/closes modal window for products ingredients
+ 
+const ingredientsButtons = document.querySelectorAll('.product-card-arrow-button');
+const ingredientsBackdrop = document.querySelector('.modal-window-ingredients');
+
+ingredientsButtons.forEach(button => {
+  button.addEventListener('click', toggleIngredientsModal);
+});
+
+ingredientsBackdrop.addEventListener('click', (e) => {
+  const closeButton = e.target.closest(".modal-close-button");
+  const submitButton = e.target.closest(".modal-window-ingredients-submit-button");
+
+  if (closeButton || submitButton) {
+    toggleIngredientsModal();
+  }
+});
+
+function toggleIngredientsModal() {
+  ingredientsBackdrop.classList.toggle("is-open");
+}
