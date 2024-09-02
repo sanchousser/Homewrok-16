@@ -1,7 +1,6 @@
 /*----- Mobile screen width(320px)  -------*/
 section.about-container {
   background: rgba(132, 161, 120, 1);
-  width: 90%;
   min-width: 320px;
   margin: 0 auto;
 }
@@ -10,7 +9,6 @@ section.about-container {
 @media (min-width: 480px) {
   .about-container {
     min-width: 480px;
-    width: 85%;
   }
 }
 
@@ -18,7 +16,6 @@ section.about-container {
 @media (min-width: 768px) {
   .about-container {
     min-width: 768px;
-    width: 100%;
   }
 }
 /*----- Desktop screen width  -------*/
@@ -26,7 +23,6 @@ section.about-container {
 @media (min-width: 1200px) {
   .about-container {
     min-width: 1200px;
-    width: 100%;
   }
 }
 
@@ -130,7 +126,7 @@ section.about-container {
 
 .advantages-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   margin: 50px 0 68px 0;
   gap: 16px;
@@ -168,10 +164,13 @@ section.about-container {
   font-weight: 400;
   line-height: 20.4px;
   text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 
 .modal-box {
-  display: none;
   width: 280px;
   height: 459px;
   gap: 0px;
@@ -195,10 +194,10 @@ section.about-container {
   text-align: center;
 }
 
-.modal-backdrop {
-  visibility: hidden;
-  opacity: 0;
-}
+ .modal-backdrop {
+   visibility: hidden;
+   opacity: 0;
+ }
 
 .modal-backdrop.is-open {
   visibility: visible;
@@ -263,24 +262,26 @@ section.about-container {
 
   .advantages-paragraph {
     text-align: center;
-    margin: auto 80px;
+    margin: auto 125px;
   }
 
   .read-btn-container {
     padding-left: 28px;
   }
-
-
 }
 
 @media (min-width: 768px) {
   .content-box {
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    margin-left: 38px;
   }
 
+  .cow-image {
+    margin-right: 32px;
+  }
   .tradition {
     font-size: 22px;
     font-weight: 800;
@@ -355,6 +356,11 @@ section.about-container {
     font-weight: 400;
     line-height: 24.36px;
     text-align: center;
+    margin: auto 70px;
+  }
+
+  .read-btn-container {
+    margin-left: 36px;
   }
 
   .close-modal-svg {
@@ -383,6 +389,13 @@ section.about-container {
 }
 
 @media (min-width: 1200px) {
+  .content-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 109px;
+  }
+
   .tradition {
     font-size: 22px;
     font-weight: 800;
@@ -397,13 +410,6 @@ section.about-container {
     line-height: 42.73px;
     letter-spacing: 0.06em;
     text-align: center;
-  }
-
-  .content-box {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
   }
 
   .all-paragraphs {
@@ -441,6 +447,7 @@ section.about-container {
     line-height: 28.16px;
     letter-spacing: 0.02em;
     text-align: center;
+    margin: auto 16px;
   }
 
-}
+  }
