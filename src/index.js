@@ -101,29 +101,22 @@ document.addEventListener('DOMContentLoaded', () => {
 //<-------------- Section Products JS ----------->
 // opens/closes modal window for products ingredients
  
-const ingredientsButton = document.querySelector('.product-card-arrow-button');
+const ingredientsButtons = document.querySelectorAll('.product-card-arrow-button');
 const ingredientsBackdrop = document.querySelector('.modal-window-ingredients');
 
-ingredientsButton.addEventListener('click', toggleIngredientsModal);
-
-ingredientsBackdrop.addEventListener('click', (e) => {
-  const target = e.target.closest(".modal-close-button");
-
-  if(!target) {
-    return
-  }
-  toggleIngredientsModal();
+ingredientsButtons.forEach(button => {
+  button.addEventListener('click', toggleIngredientsModal);
 });
 
 ingredientsBackdrop.addEventListener('click', (e) => {
-  const target = e.target.closest(".modal-window-ingredients-submit-button");
+  const closeButton = e.target.closest(".modal-close-button");
+  const submitButton = e.target.closest(".modal-window-ingredients-submit-button");
 
-  if(!target) {
-    return
+  if (closeButton || submitButton) {
+    toggleIngredientsModal();
   }
-  toggleIngredientsModal();
 });
 
-function toggleIngredientsModal () {
+function toggleIngredientsModal() {
   ingredientsBackdrop.classList.toggle("is-open");
 }
