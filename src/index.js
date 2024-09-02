@@ -135,13 +135,6 @@ aboutButton.addEventListener('click', function () {
   console.log(230924928);
 });
 
-
-const aboutButton = document.querySelector('.read-more-btn');
-const aboutBackdrop = document.querySelector('.modal-box');
-aboutButton.addEventListener('click', toggleModal);
-aboutButton.addEventListener('click', function () {
-  console.log(230924928);
-});
 aboutBackdrop.addEventListener('click', e => {
   const target = e.target.closest('.close-modal-box');
   if (!target) {
