@@ -1,0 +1,224 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container and Layout */
+.our-yacht {
+    display: flex;
+    justify-content: center;
+    background: #0e1823;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+}
+
+.our-yacht-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.our-yacht .title-div {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    min-width: 319px;
+    margin-bottom: 25px;
+}
+
+/* Yachts Box */
+.yachts-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 335px;
+    max-width: 335px;
+    margin-top: 40px;
+}
+
+.card-list {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    display: none;
+    width: 335px;
+    height: auto;
+    margin: 20px 0;
+    background: #ffffff;
+    border-radius: 24px;
+}
+
+.card-1 {
+    display: block;
+}
+
+.photo-card {
+    width: 302px;
+    height: 240px;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-top: 16px;
+    background-color: #FBFBFB;
+    border-radius: 35px;
+}
+
+/* Card Content */
+.card-content-upper {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 32px 16px;
+    /* 32px top/bottom, 16px below */
+    margin-bottom: 16px;
+}
+
+.card-content-lower {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px 32px;
+}
+
+.card-content-upper .left,
+.card-content-lower .left {
+    text-transform: uppercase;
+    color: #1B414B;
+    text-align: left;
+}
+
+.card-content-upper .right,
+.card-content-lower .right {
+    color: #040306;
+    opacity: 0.4;
+    text-align: right;
+}
+
+/* Line between content */
+.line {
+    width: 272px;
+    margin: 0 auto;
+    border: 1px solid rgba(4, 3, 6, 0.1);
+}
+
+/* Orders Button */
+.orders-button {
+    width: 141px;
+    height: 46px;
+    border: 1px solid rgba(251, 251, 251, 0.35);
+    border-radius: 15px;
+    background-color: #0e1823;
+    color: #fbfbfb;
+}
+
+.orders-button:hover {
+    background: #FBFBFB;
+    color: #1B414B;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+
+    .our-yacht {
+        margin-top: 75px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .our-yacht .title-div {
+        min-width: 645px;
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .yachts-box {
+        width: 704px;
+        max-width: 704px;
+        margin-top: 75px;
+    }
+
+    .card-list {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 50px;
+        gap: 32px;
+    }
+
+    .card-1,
+    .card-2 {
+        display: inline-block;
+        width: 336px;
+        margin: 0;
+    }
+
+    .photo-card {
+        width: 304px;
+        height: 268px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+
+    .our-yacht {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .our-yacht .title-div {
+        width: 714px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .yachts-box {
+        width: 1181px;
+        max-width: 1181px;
+    }
+
+    .card-list {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 50px;
+        gap: 25px;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        display: inline-block;
+        width: 377px;
+        margin: 0;
+    }
+
+    .photo-card {
+        width: 345px;
+    }
+}
+
+/* Large Screens */
+@media screen and (min-width: 1440px) {
+    .yachts-box {
+        width: 1240px;
+        max-width: 1240px;
+    }
+
+    .card-list {
+        gap: 32px;
+    }
+}
