@@ -1,8 +1,9 @@
 .contact-container {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 150px;
+    gap: 50px;
 }
 
 .contact-form .input-form {
