@@ -252,9 +252,6 @@ section.about-container {
     gap: 38px;
     align-items: start;
   }
-  .content-box .images .cow-image{
-    width: 330px;
-  }
 
   .paragraph-btn-box, 
   .images {
@@ -338,4 +335,10 @@ section.about-container {
   }
 }
 @media (min-width: 1200px) {
+  .content-box {
+    margin-top: 72px;
+  }
+  .images {
+    margin: 0;
+  }
 }
