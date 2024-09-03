@@ -6,7 +6,7 @@
 }
 
 .hero-section {
-  height: 502px;
+  height: 448px;
   gap: 0px;
   opacity: 0px;
   background-color: #84a178;
@@ -176,9 +176,12 @@
 // 480 Resolution  //
 
 @media (min-width: 480px) {
+  .hero-container {
+    padding-top: 40px;
+  }
   .hero-section {
     min-width: 480px;
-    height: 415px;
+    height: 346px;
     gap: 0px;
     opacity: 0px;
     background-color: #84a178;
@@ -224,12 +227,12 @@
     min-width: 768px;
     margin: 0 auto;
     padding: 0 32px;
-    padding-top: 80px;
+    padding-top: 14px;
   }
 
   .hero-section {
     min-width: 768px;
-    height: 415px;
+    height: 346px;
     gap: 0px;
     opacity: 0px;
   }
@@ -345,7 +348,8 @@
     width: 32px;
     height: 34px;
     top: 94px;
-    left: 704px;
+    right: 32px;
+    // left: 704px;
     gap: 0px;
     opacity: 0px;
   }
@@ -356,7 +360,8 @@
     width: 36px;
     height: 34px;
     top: 162px;
-    left: 700px;
+    // left: 700px;
+    right: 32px;
     gap: 0px;
     opacity: 0px;
   }
@@ -367,7 +372,8 @@
     width: 21px;
     height: 10px;
     top: 132px;
-    left: 715px;
+    // left: 715px;
+    right: 32px;
     gap: 0px;
     opacity: 0px;
     font-family: Montserrat;
@@ -384,7 +390,8 @@
     width: 46px;
     height: 10px;
     top: 200px;
-    left: 690px;
+    // left: 690px;
+    right: 32px;
     gap: 0px;
     opacity: 0px;
     font-family: Montserrat;
@@ -401,12 +408,12 @@
     min-width: 1200px;
     margin: 0 auto;
     padding: 0 16px;
-    padding-top: 118px;
+    padding-top: 45px;
   }
 
   .hero-section {
     min-width: 1200px;
-    height: 664px;
+    height: 586px;
     gap: 0px;
     opacity: 0px;
   }
@@ -541,7 +548,8 @@
     top: 279.49px;
     gap: 0px;
     opacity: 0px;
-    right: 0.5%;
+    // right: 0.5%;
+    left: 0;
   }
 
   .icon-16 {
@@ -549,7 +557,8 @@
     width: 52px;
     height: 56px;
     top: 126px;
-    left: 1132px;
+    // left: 1132px;
+    right: 16px;
     gap: 0px;
     opacity: 0px;
   }
@@ -559,7 +568,8 @@
     width: 59px;
     height: 56px;
     top: 219px;
-    left: 1125px;
+    // left: 1125px;
+    right: 16px;
     gap: 0px;
     opacity: 0px;
   }
@@ -569,7 +579,8 @@
     width: 37px;
     height: 17px;
     top: 186px;
-    left: 1147px;
+    // left: 1147px;
+    right: 16px;
     gap: 0px;
     opacity: 0px;
     color: #fcfcfc;
@@ -580,7 +591,8 @@
     width: 79px;
     height: 17px;
     top: 279px;
-    left: 1105px;
+    // left: 1105px;
+    right: 16px;
     gap: 0px;
     opacity: 0px;
     color: #fcfcfc;

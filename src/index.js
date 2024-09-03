@@ -13,6 +13,8 @@ function toggleMenu() {
   menuBackdrop.classList.toggle('is-open');
 }
 //opens Buy Now modal window for Buy button
+
+
 const buyButton = document.querySelector('.buy-now-btn.mobile-btn');
 const buyBackdrop = document.querySelector('.modal-buy-now');
 buyButton.addEventListener('click', toggleBuyModal);
@@ -26,9 +28,12 @@ buyBackdrop.addEventListener('click', e => {
 function toggleBuyModal() {
   buyBackdrop.classList.toggle('is-open');
 }
+
 const buyTabletButton = document.querySelector('.buy-now-btn.tablet-btn');
 const buyTabletBackdrop = document.querySelector('.modal-buy-now');
+
 buyTabletButton.addEventListener('click', toggleBuyTabletModal);
+
 buyTabletBackdrop.addEventListener('click', e => {
   const target = e.target.closest('.menu-close-btn');
   if (!target) {
@@ -36,9 +41,11 @@ buyTabletBackdrop.addEventListener('click', e => {
   }
   toggleBuyTabletModal();
 });
+
 function toggleBuyTabletModal() {
   buyTabletBackdrop.classList.toggle('is-open');
 }
+
 // Section Contacts JS
 // opens modal window for franchise button
 const button = document.querySelector('.franchise-btn');
@@ -51,6 +58,7 @@ franchiseBackdrop.addEventListener('click', e => {
   }
   toggleFranchiseModal();
 });
+
 function toggleFranchiseModal() {
   franchiseBackdrop.classList.toggle('is-open');
   document.querySelector('.contact-container').classList.toggle('opaq-bg');
@@ -58,10 +66,13 @@ function toggleFranchiseModal() {
     .querySelector('.contact-container')
     .scrollIntoView({ behavior: 'smooth' });
 }
+
 // opens modal window for locations button
+
 const locationBtn = document.querySelector('.location-btn');
 const locationBackdrop = document.querySelector('.location');
 locationBtn.addEventListener('click', toggleLocationModal);
+
 locationBackdrop.addEventListener('click', e => {
   const target = e.target.closest('.modal-close-btn-contacts');
   if (!target) {
@@ -69,6 +80,7 @@ locationBackdrop.addEventListener('click', e => {
   }
   toggleLocationModal();
 });
+
 function toggleLocationModal() {
   locationBackdrop.classList.toggle('is-open');
   document.querySelector('.contact-container').classList.toggle('opaq-bg');
@@ -76,35 +88,44 @@ function toggleLocationModal() {
     .querySelector('.contact-container')
     .scrollIntoView({ behavior: 'smooth' });
 }
+
 //<--------------Customer Review JS----------->
+
 document.addEventListener('DOMContentLoaded', () => {
-  let currentSlideIndex = 0;
+  let currentSlideIndex = 0; 
   const slides = document.querySelectorAll('.carousel-item');
   const dots = document.querySelectorAll('.dot');
+
   function showSlide(index) {
     // Hide all slides and deactivate dots
     slides.forEach((slide, i) => {
       slide.classList.remove('active');
       dots[i].classList.remove('active');
     });
+
     // Show the selected slide and activate the dot
     slides[index].classList.add('active');
     dots[index].classList.add('active');
   }
+
   function nextSlide() {
     currentSlideIndex = (currentSlideIndex + 1) % slides.length;
     showSlide(currentSlideIndex);
   }
+
   function prevSlide() {
     currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
     showSlide(currentSlideIndex);
   }
+
   function goToSlide(index) {
     currentSlideIndex = index;
     showSlide(currentSlideIndex);
   }
+
   // Initialize the first slide
   showSlide(currentSlideIndex);
+
   // Assign event listeners to buttons
   document.querySelector('.prev-btn').addEventListener('click', prevSlide);
   document.querySelector('.next-btn').addEventListener('click', nextSlide);
@@ -137,14 +158,19 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initial setup to show the first slide
   updateSlide(currentIndex);
 });
+
+
 // About section JS
 // opens modal window for read more button
+
 const aboutButton = document.querySelector('.read-more-btn');
 const aboutBackdrop = document.querySelector('.modal-box');
 aboutButton.addEventListener('click', toggleModal);
+
 aboutButton.addEventListener('click', function () {
   console.log(230924928);
 });
+
 aboutBackdrop.addEventListener('click', e => {
   const target = e.target.closest('.close-modal-box');
   if (!target) {
@@ -159,15 +185,3 @@ function toggleModal() {
     .querySelector('.about-container-box')
     .scrollIntoView({ behavior: 'smooth' });
 }
-
-
-
-
-
-
-
-
-
-
-
-
