@@ -156,6 +156,9 @@
     width: 60px;
     height: 65px;
   }
+  .mobile-menu {
+    padding: 8px 16px 0;
+  }
   .menu-open-btn {
     display: none;
   }
@@ -180,6 +183,7 @@
   .header-nav-list:active {
     color: #F8D24E;
   }
+
 }
 
 .modal-buy-now {
