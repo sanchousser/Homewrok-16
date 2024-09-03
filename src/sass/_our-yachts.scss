@@ -5,6 +5,7 @@
 ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .our-yacht {
@@ -18,32 +19,21 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 375px;
     width: 100%;
     margin: 0 auto;
 }
 
+/* Mobile First (default) */
 .title-div {
-margin-top: 80px;
-margin-left: 28px;
-margin-right: 28px;
-margin-bottom: 40px;
-width: 319px;
-font-weight: 500px;
-font-size: 28px;
-line-height: 1;
-letter-spacing: -0,02em;
-text-align: center;
-color: #fbfbfb;
-}
-
-.title {
-    margin: 0 28px;
+    font-family: Inter;
+    font-size: 24px; 
     font-weight: 500;
-    font-size: 28px;
     line-height: 28px;
-    text-align: center;
     letter-spacing: -0.02em;
+    width: 319px;
+    height: 84px;
+    margin: 0 auto 40px;
+    text-align: center;
     color: #fbfbfb;
 }
 
@@ -51,17 +41,18 @@ color: #fbfbfb;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 20px;
-    margin-left: 20px;
-    width: 100%;
-    margin-top: 40px;
-  
-
+    width: 335px; 
+    max-width: 335px;
+    margin-top: 75px; 
 }
 
-.card-1,.card-2,.card-3 {
-    padding-left: 1px;
-    padding-top: 0px;
+.card-list {
+    width: 100%;
+    margin-bottom: 40px; 
+}
+
+.card-1, .card-2, .card-3 {
+    display: none;
     width: 335px;
     height: 478px;
     margin: 20px 0;
@@ -69,67 +60,55 @@ color: #fbfbfb;
     border-radius: 10px;
 }
 
+.card-1 {
+    display: block; 
+}
+
 .photo-card {
-        display: flex;
-        position: relative;
-        width: 302px;
-        height: 240px;
-        left: calc(50% - 302px/2);
-        padding-top: 16px;
-        padding-left: 16px;
-        padding-right: 16px;
-        padding-bottom: 32px;
-        background: url(image.png);
-        border-radius: 24px;
+    width: 302px;
+    height: 240px;
+    margin: 16px auto 0;
+    padding-top: 16px; 
+    background-color: #FBFBFB;
+    border-radius: 24px;
 }
 
 .line {
-        width: 272px;
-        height: 0px;
-        left: calc(50% - 272px/2 + 1px);
-        top: 321px;
-        padding-left: 32px;
-        border: 1px solid rgba(4, 3, 6, 0.1);
+    width: 272px;
+    margin: 16px auto;
+    border: 1px solid rgba(4, 3, 6, 0.1);
 }
+
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
 .card-content-left {
-        width: 50px;
-        height: 17px;
-        font-weight: 500;
-        font-size: 14px;
-        padding-left: 32px;
-        line-height: 118%;
-        letter-spacing: -0.045em;
-        text-transform: uppercase;
-        color: #1B414B;
+    text-transform: uppercase;
+    color: #1B414B;
 }
 
 .card-content-right {
-        width: 95px;
-        height: 14px;
-        font-weight: 400;
-        font-size: 12px;
-        padding-left: 175px;
-        line-height: 14px;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #040306;
-        opacity: 0.4;
-        flex: none;
-        order: 1;
-        flex-grow: 0;
+    color: #040306;
+    opacity: 0.4;
+    text-align: right;
+}
+
+.card-content-lower {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-top: 16px;
 }
 
 .orders-button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 14px 32px;
-    gap: 10px;
     width: 141px;
     height: 46px;
-    left: calc(50% - 141px/2 + 0.5px);
-    margin-top: 40px;
-    margin-left: 96px;
+    margin: 40px auto 0;
     border: 1px solid rgba(251, 251, 251, 0.35);
     border-radius: 15px;
     background-color: #0e1823;
@@ -137,16 +116,92 @@ color: #fbfbfb;
 }
 
 .orders-button:hover {
+    background: #FBFBFB;
+    color: #1B414B;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .title-div {
+        font-family: Inter;
+        font-size: 36px; 
+        font-weight: 500;
+        line-height: 48px;
+        letter-spacing: -0.02em;
+        width: 645px;
+        height: 96px;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .yachts-box {
+        flex-direction: column;
+        width: 704px; 
+        max-width: 704px;
+        margin-top: 75px; 
+    }
+
+    .card-list {
         display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 14px 32px;
-        gap: 10px;
-        width: 141px;
-        height: 46px;
-        left: 20px;
-        top: 91px;
-        background: #FBFBFB;
-        color:#1B414B;;
-        border-radius: 15px;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 50px;
+        gap: 32px; 
+    }
+
+    .card-1, .card-2 {
+        display: inline-block; 
+        width: 336px;
+        height: 508px;
+        margin: 0;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+    .title-div {
+        font-family: Inter;
+        font-size: 42px; 
+        font-weight: 500;
+        line-height: 48px;
+        letter-spacing: -0.02em;
+        width: 714px;
+        height: 96px;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .yachts-box {
+        flex-direction: column;
+        width: 1181px; 
+        max-width: 1181px;
+        margin-top: 75px; 
+    }
+
+    .card-list {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 50px; 
+        gap: 25px; 
+    }
+
+    .card-1, .card-2, .card-3 {
+        display: inline-block; /* Show all three cards */
+        width: 377px;
+        height: 508px;
+        margin: 0;
+    }
+}
+
+/* Desktop (large screens) */
+@media screen and (min-width: 1440px) {
+    .yachts-box {
+        width: 1240px; 
+        max-width: 1240px;
+    }
+
+    .card-list {
+        gap: 32px; 
+    }
 }
