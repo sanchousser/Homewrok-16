@@ -1,0 +1,64 @@
+/* Style reset */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Epilogue', sans-serif;
+  background-color: var(--white);
+}
+
+img {
+  display: block;
+}
+
+.section {
+  min-width: 375px;
+  width: 100%;
+}
+
+.container {
+  max-width: 335px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    min-width: 768px;
+  }
+
+  .container {
+    max-width: 704px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section {
+    min-width: 1280px;
+  }
+
+  .container {
+    max-width: 1176px;
+  }
+}
+
+/* End style reset */
