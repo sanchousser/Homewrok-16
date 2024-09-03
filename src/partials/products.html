@@ -1,0 +1,145 @@
+<section class="section-products">
+  <div class="products-container">
+    <div class="section-products-header">
+      <span class="section-products-header-span">100% natural</span>
+      <h1 class="section-products-header-title">products</h1>
+    </div>
+
+    <div class="products-grid container">
+      <ul class="products-grid-list">
+        <li class="product-card-item ice-cream-container">
+          <div class="product-card-container">
+            <h2 class="product-card-title">ice cream</h2>
+            <p class="product-card-paragraph">
+              Soft ice cream with a delicate taste. Made with milk, cream, sugar
+              and natural stabilizer
+            </p>
+            <button class="product-card-arrow-button" type="button">
+              <svg class="product-card-icon" width="40" height="16">
+                <use href="./images/icons-products.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+        <li class="product-card-item ice-coffee-container">
+          <div class="product-card-container">
+            <h2 class="product-card-title">ice coffee</h2>
+            <p class="product-card-paragraph">
+              Fragrant invigorating drink created from 100% natural ingredients
+              without the use of preservatives and flavor enhancers
+            </p>
+            <button class="product-card-arrow-button" type="button">
+              <svg class="product-card-icon" width="40" height="16">
+                <use href="./images/icons-products.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+        <li class="product-card-item milkshakes-container">
+          <div class="product-card-container">
+            <h2 class="product-card-title">milkshakes</h2>
+            <p class="product-card-paragraph">
+              Sweet drinks based on milk and ice cream, supplemented with
+              syrups, fruits, berries and other sweets of your choice
+            </p>
+            <button class="product-card-arrow-button" type="button">
+              <svg class="product-card-icon" width="40" height="16">
+                <use href="./images/icons-products.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="modal-window-ingredients">
+    <button class="modal-close-button" type="button">
+      <svg class="modal-close-icon" width="11" height="11">
+        <use href="./images/icons-products.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal-content">
+      <h2 class="modal-title-ingredients">Chololate icecream</h2>
+      <img
+        class="modal-window-ingredients-img"
+        src="./images/modal-products-ice-cream.jpg"
+        srcset="
+          ./images/modal-products-ice-cream.jpg    1x,
+          ./images/modal-products-ice-cream@2x.jpg 2x
+        "
+        alt="ice-cream"
+      />
+      <div class="modal-window-quantities-container">
+        <div class="modal-window-quantities-item">
+          <div class="modal-window-quantities-circle">320</div>
+          <div class="modal-window-quantities-label">kcal</div>
+        </div>
+        <div class="modal-window-quantities-item">
+          <div class="modal-window-quantities-circle">4g</div>
+          <div class="modal-window-quantities-label">Prote...</div>
+        </div>
+        <div class="modal-window-quantities-item">
+          <div class="modal-window-quantities-circle">8,2g</div>
+          <div class="modal-window-quantities-label">Fats</div>
+        </div>
+        <div class="modal-window-quantities-item">
+          <div class="modal-window-quantities-circle">40,4g</div>
+          <div class="modal-window-quantities-label">Carbs</div>
+        </div>
+      </div>
+      <h4 class="modal-window-ingredients-subtitle">Ingredients</h4>
+      <ul class="modal-window-ingredients-list">
+        <li class="modal-window-ingredients-list-item">
+          <span class="ingredient-name">Milk</span>
+          <span class="ingredient-amount">100ml</span>
+        </li>
+        <li class="modal-window-ingredients-list-item">
+          <span class="ingredient-name">Belgian chocolate</span>
+          <span class="ingredient-amount">20g</span>
+        </li>
+        <li class="modal-window-ingredients-list-item">
+          <span class="ingredient-name">Cream</span>
+          <span class="ingredient-amount">150 ml</span>
+        </li>
+        <li class="modal-window-ingredients-list-item">
+          <span class="ingredient-name">Cocoa powder</span>
+          <span class="ingredient-amount">30g</span>
+        </li>
+        <li class="modal-window-ingredients-list-item">
+          <span class="ingredient-name">Sugar</span>
+          <span class="ingredient-amount">40g</span>
+        </li>
+        <li class="modal-window-ingredients-list-item">
+          <span class="ingredient-name">Vanilla sugar</span>
+          <span class="ingredient-amount">10g</span>
+        </li>
+      </ul>
+      <form class="modal-window-ingredients-form">
+        <input
+          id="user-name"
+          name="user-name"
+          type="text"
+          placeholder="Name"
+          class="modal-window-ingredients-form-element"
+        />
+        <input
+          id="phone"
+          name="phone"
+          type="text"
+          placeholder="Phone"
+          class="modal-window-ingredients-form-element"
+        />
+        <textarea
+          id="comment"
+          name="user-comment"
+          placeholder="Comment"
+          class="modal-window-ingredients-form-element"
+        ></textarea>
+        <button class="modal-window-ingredients-submit-button" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
