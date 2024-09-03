@@ -254,8 +254,9 @@ section.about-container {
     align-items: center;
   }
   .advantages-list {
-    justify-content: space-between;
+    // justify-content: space-between;
     flex-direction: row;
+    // flex-basis: calc(100%-)
   }
 
   .advantages-svg {
@@ -303,10 +304,6 @@ section.about-container {
     font-weight: 400;
     line-height: 28px;
     text-align: center;
-<<<<<<<<< Temporary merge branch 1
-
-=========
->>>>>>>>> Temporary merge branch 2
   }
   .black-box {
     width: 448px;

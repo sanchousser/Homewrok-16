@@ -194,7 +194,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 280px;
-  height: 135vh;
+  height: 1000px;
   background-color: #fff;
   border: 2px solid #f8d24e;
   border-radius: 10px;
@@ -314,6 +314,18 @@
 
 .buy-now-form .modal-reusable-form {
   margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .buy-now .product-card-title { 
+    top: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .buy-now .product-card-title { 
+    top: -20px;
+  }
 }
 
 
