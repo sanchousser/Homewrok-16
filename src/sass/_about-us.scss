@@ -2,13 +2,15 @@
     margin-top: -50px;
     padding-bottom: 40px;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .about-us-container {
-    max-width: 365px;
-    width: 100%; 
+    min-width: 365px;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -56,14 +58,14 @@
 }
 
 .about-us-picture {
-    width: 100%; 
+    width: 100%;
 }
 
 .about-us-photo {
-    width: 100%; 
-    height: auto; 
-    object-fit: cover; 
-    display: block; 
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
 }
 
 /* Tablet (from 768px) */
@@ -72,10 +74,12 @@
 
     .about-us-section {
         padding-bottom: 75px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 
     .about-us-container {
-        max-width: 734px;
+        min-width: 734px;
     }
 
     .about-us-section-section-one {
@@ -103,8 +107,13 @@
 @media screen and (min-width: 1280px) {
     /* Styles for desktop here */
 
+    .about-us-section {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
     .about-us-container {
-        max-width: 1210px;
+        min-width: 1210px;
     }
 
     .about-us-section-section-one {
@@ -121,5 +130,3 @@
         max-width: 354px;
     }
 }
-
-
