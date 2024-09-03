@@ -21,12 +21,6 @@ a {
   font-style: normal;
 }
 
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-
 body {
   font-family: 'Epilogue', sans-serif;
   background-color: var(--white);
