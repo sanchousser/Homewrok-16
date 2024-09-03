@@ -71,9 +71,12 @@
 
 /* --tablet-- */
 @media (min-width:768px) {
+    .reviews_section {
+        padding-left: 50px;
+    }
     .reviews-container {
         min-width: 768px;
-        padding-left: 32px;
+        padding-left: 50px;
         padding-right: 32px;
     }
     .reviews-section-title {
@@ -99,23 +102,29 @@
         display: flex;
         gap:26px;
         margin-top: 75px;
+        margin-left: 50px;
 
     }
          .review-list-item {
-             padding:30x 16px;
+             padding:30px 16px;
+    
          }
+   
    
 
 }
 
 @media (min-width:768px) and (max-width:1279px){
- ul li:nth-child(3) {
-     display: none;
- }
+.review-type-last {
+        display: none;
+    }
  }
 
 /* --desktop-- */
 @media (min-width:1280px) {
+    .reviews_section {
+            padding-left: 70px;
+        }
     .reviews-container {
         min-width: 1280px;
         padding-left: 50px;
