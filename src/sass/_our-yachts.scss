@@ -1,3 +1,4 @@
+/* General Reset */
 * {
     box-sizing: border-box;
 }
@@ -8,6 +9,7 @@ ul {
     margin: 0;
 }
 
+/* Container and Layout */
 .our-yacht {
     display: flex;
     justify-content: center;
@@ -23,20 +25,17 @@ ul {
     margin: 0 auto;
 }
 
-/* Mobile First (default) */
-.title-div {
-    font-family: Inter;
-    font-size: 24px; 
+.our-yacht .title-div {
+    letter-spacing: -.02em;
+    text-align: center;
+    min-width: 335px;
+    margin-bottom: 25px;
+    font-size: 28px;
     font-weight: 500;
     line-height: 28px;
-    letter-spacing: -0.02em;
-    width: 319px;
-    height: 84px;
-    margin: 0 auto 40px;
-    text-align: center;
-    color: #fbfbfb;
 }
 
+/* Yachts Box */
 .yachts-box {
     display: flex;
     flex-direction: column;
@@ -54,7 +53,7 @@ ul {
 .card-1, .card-2, .card-3 {
     display: none;
     width: 335px;
-    height: 478px;
+    height: auto;
     margin: 20px 0;
     background: #ffffff;
     border-radius: 10px;
@@ -73,38 +72,42 @@ ul {
     border-radius: 24px;
 }
 
-.line {
-    width: 272px;
-    margin: 16px auto;
-    border: 1px solid rgba(4, 3, 6, 0.1);
-}
-
-.card-content {
+/* Card Content */
+.card-content-upper {
     display: flex;
     justify-content: space-between;
-    padding-left: 32px;
-    padding-right: 32px;
-}
-
-.card-content-left {
-    text-transform: uppercase;
-    color: #1B414B;
-}
-
-.card-content-right {
-    color: #040306;
-    opacity: 0.4;
-    text-align: right;
+    padding: 32px 32px 16px; /* 32px top/bottom, 16px below */
+    margin-bottom: 16px;
 }
 
 .card-content-lower {
     display: flex;
     justify-content: space-between;
-    padding-left: 32px;
-    padding-right: 32px;
-    margin-top: 16px;
+    padding: 16px 32px;
 }
 
+.card-content-upper .left,
+.card-content-lower .left {
+    text-transform: uppercase;
+    color: #1B414B;
+    text-align: left;
+}
+
+.card-content-upper .right,
+.card-content-lower .right {
+    color: #040306;
+    opacity: 0.4;
+    text-align: right;
+}
+
+/* Line between content */
+.line {
+    width: 272px;
+    margin: 0 auto;
+    border: 1px solid rgba(4, 3, 6, 0.1);
+}
+
+/* Orders Button */
 .orders-button {
     width: 141px;
     height: 46px;
@@ -122,20 +125,13 @@ ul {
 
 /* Tablet */
 @media screen and (min-width: 768px) {
-    .title-div {
-        font-family: Inter;
-        font-size: 36px; 
-        font-weight: 500;
+    .our-yacht .title-div {
+        min-width: 704px;
+        font-size: 48px;
         line-height: 48px;
-        letter-spacing: -0.02em;
-        width: 645px;
-        height: 96px;
-        margin-top: 80px;
-        text-align: center;
     }
 
     .yachts-box {
-        flex-direction: column;
         width: 704px; 
         max-width: 704px;
         margin-top: 75px; 
@@ -152,27 +148,21 @@ ul {
     .card-1, .card-2 {
         display: inline-block; 
         width: 336px;
-        height: 508px;
         margin: 0;
     }
 }
 
 /* Desktop */
 @media screen and (min-width: 1280px) {
-    .title-div {
-        font-family: Inter;
-        font-size: 42px; 
-        font-weight: 500;
+    .our-yacht .title-div {
+        width: 779px; 
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 48px; 
         line-height: 48px;
-        letter-spacing: -0.02em;
-        width: 714px;
-        height: 96px;
-        margin-top: 80px;
-        text-align: center;
     }
 
     .yachts-box {
-        flex-direction: column;
         width: 1181px; 
         max-width: 1181px;
         margin-top: 75px; 
@@ -187,14 +177,13 @@ ul {
     }
 
     .card-1, .card-2, .card-3 {
-        display: inline-block; /* Show all three cards */
+        display: inline-block;
         width: 377px;
-        height: 508px;
         margin: 0;
     }
 }
 
-/* Desktop (large screens) */
+/* Large Screens */
 @media screen and (min-width: 1440px) {
     .yachts-box {
         width: 1240px; 
