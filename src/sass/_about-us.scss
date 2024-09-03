@@ -1,10 +1,16 @@
 .about-us-section {
     margin-top: -50px;
     padding-bottom: 40px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
 
 .about-us-container {
     max-width: 365px;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
 }
 
 .about-us-section-section-one {
@@ -46,11 +52,19 @@
     border-radius: 26px;
     overflow: hidden;
     margin-top: -25px;
+    width: 100%;
 }
 
-/*.about-us-photo {
-    background: url(<path-to-image>), lightgray -181.984px -4.244px / 182.464% 109.429% no-repeat;
-}*/
+.about-us-picture {
+    width: 100%; 
+}
+
+.about-us-photo {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    display: block; 
+}
 
 /* Tablet (from 768px) */
 @media screen and (min-width: 768px) {
@@ -107,3 +121,5 @@
         max-width: 354px;
     }
 }
+
+
