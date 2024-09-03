@@ -1,12 +1,7 @@
-// .aboutus-section {
-//   height: 801px;
-// }
-.container {
+.aboutus-section {
   padding-top: 40px;
 }
 
-.text {
-}
 .aboutus-title {
   padding-bottom: 40px;
   font-size: 32px;
@@ -16,7 +11,6 @@
   text-align: left;
   color: var(--darkgreen);
 }
-
 
 .aboutus-paragraph {
   font-size: 14px;
@@ -51,7 +45,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .aboutus-section {
     padding-top: 64px;
   }
 
@@ -88,7 +82,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
+  .aboutus-section {
     padding-top: 80px;
   }
 
