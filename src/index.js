@@ -77,40 +77,34 @@ function toggleLocationModal() {
     .scrollIntoView({ behavior: 'smooth' });
 }
 //<--------------Customer Review JS----------->
-document.addEventListener('DOMContentLoaded', () => {
-  let currentSlideIndex = 0;
-  const slides = document.querySelectorAll('.carousel-item');
-  const dots = document.querySelectorAll('.dot');
-  function showSlide(index) {
-    // Hide all slides and deactivate dots
-    slides.forEach((slide, i) => {
-      slide.classList.remove('active');
-      dots[i].classList.remove('active');
+document.addEventListener("DOMContentLoaded", function () {
+  const carouselItems = document.querySelectorAll(".carousel-item");
+  const dots = document.querySelectorAll(".dot");
+
+  let currentIndex = 0;
+
+  function updateSlide(index) {
+    // Update active class on slides
+    carouselItems.forEach((item, i) => {
+      item.classList.toggle("active", i === index);
     });
-    // Show the selected slide and activate the dot
-    slides[index].classList.add('active');
-    dots[index].classList.add('active');
+
+    // Update active class on dots
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
+    });
   }
-  function nextSlide() {
-    currentSlideIndex = (currentSlideIndex + 1) % slides.length;
-    showSlide(currentSlideIndex);
-  }
-  function prevSlide() {
-    currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
-    showSlide(currentSlideIndex);
-  }
-  function goToSlide(index) {
-    currentSlideIndex = index;
-    showSlide(currentSlideIndex);
-  }
-  // Initialize the first slide
-  showSlide(currentSlideIndex);
-  // Assign event listeners to buttons
-  document.querySelector('.prev-btn').addEventListener('click', prevSlide);
-  document.querySelector('.next-btn').addEventListener('click', nextSlide);
-  dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => goToSlide(index));
+
+  // Change slide on dot click
+  dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+      currentIndex = i;
+      updateSlide(currentIndex);
+    });
   });
+
+  // Initial setup to show the first slide
+  updateSlide(currentIndex);
 });
 //<--------------Customer Review JS----------->
 document.addEventListener("DOMContentLoaded", function () {
