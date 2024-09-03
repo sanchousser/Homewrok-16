@@ -370,19 +370,7 @@ body {
   text-align: center;
 }
 
-@media (min-width: 768px) {
-  .modal-window{
-    // top: 380%;
-  }
-  .modal-window.location {
-    // top: 380%;
-  }
-}
-
 @media (min-width: 1200px) {
-  .modal-window {
-    // top: 300%;
-  }
   .modal-window.franchise {
     height: 668px;
     width: 568px;

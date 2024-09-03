@@ -1,6 +1,5 @@
 section.about-container {
   background: rgba(132, 161, 120, 1);
-  // width: 90%;
   min-width: 320px;
   margin: 0 auto;
 }
@@ -215,11 +214,7 @@ section.about-container {
   align-items: center;
 }
 .modal-paragraph {
-  // width: 448px;
-  // height: 88px;
   margin-top: 20px;
-  // margin-top: 32px;
-  // margin-left: 60px;
   font-size: 14px;
   font-weight: 400;
   line-height: 19.6px;
@@ -262,6 +257,43 @@ section.about-container {
     justify-content: space-between;
     flex-direction: row;
   }
+
+  .advantages-svg {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: rgba(248, 210, 78, 1);
+    margin-bottom: 32px;
+  }
+
+  .advantages-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.88px;
+    letter-spacing: 0.04em;
+    text-align: center;
+  }
+
+  .advantages-list:last-child {
+    gap: 22px;
+  }
+
+  .advantages-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.51px;
+    letter-spacing: 0.04em;
+    text-align: center;
+  }
+
+  .advantages-paragraph {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24.36px;
+    text-align: center;
+  }
+
   .close-modal-svg {
     width: 24px;
     height: 24px;
@@ -271,6 +303,10 @@ section.about-container {
     font-weight: 400;
     line-height: 28px;
     text-align: center;
+<<<<<<<<< Temporary merge branch 1
+
+=========
+>>>>>>>>> Temporary merge branch 2
   }
   .black-box {
     width: 448px;
@@ -285,11 +321,3 @@ section.about-container {
 }
 @media (min-width: 1200px) {
 }
-// .modal-backdrop {
-//   visibility: hidden;
-//   opacity: 0;
-// }
-// .modal-backdrop.is-open {
-//   visibility: visible;
-//   opacity: 1;
-// }
