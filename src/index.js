@@ -1,10 +1,7 @@
 // Header hamburger menu
-
 const menuButton = document.querySelector('.menu-open-btn');
 const menuBackdrop = document.querySelector('.hamburger-menu');
-
 menuButton.addEventListener('click', toggleMenu);
-
 menuBackdrop.addEventListener('click', e => {
   const target = e.target.closest('.menu-close-btn');
   if (!target) {
@@ -12,18 +9,15 @@ menuBackdrop.addEventListener('click', e => {
   }
   toggleMenu();
 });
-
 function toggleMenu() {
   menuBackdrop.classList.toggle('is-open');
 }
-
 //opens Buy Now modal window for Buy button
+
 
 const buyButton = document.querySelector('.buy-now-btn.mobile-btn');
 const buyBackdrop = document.querySelector('.modal-buy-now');
-
 buyButton.addEventListener('click', toggleBuyModal);
-
 buyBackdrop.addEventListener('click', e => {
   const target = e.target.closest('.menu-close-btn');
   if (!target) {
@@ -31,7 +25,6 @@ buyBackdrop.addEventListener('click', e => {
   }
   toggleBuyModal();
 });
-
 function toggleBuyModal() {
   buyBackdrop.classList.toggle('is-open');
 }
@@ -58,7 +51,6 @@ function toggleBuyTabletModal() {
 const button = document.querySelector('.franchise-btn');
 const franchiseBackdrop = document.querySelector('.franchise');
 button.addEventListener('click', toggleFranchiseModal);
-
 franchiseBackdrop.addEventListener('click', e => {
   const target = e.target.closest('.modal-close-btn-contacts');
   if (!target) {
@@ -141,7 +133,6 @@ document.addEventListener('DOMContentLoaded', () => {
     dot.addEventListener('click', () => goToSlide(index));
   });
 });
-
 //<--------------Customer Review JS----------->
 document.addEventListener("DOMContentLoaded", function () {
   const carouselItems = document.querySelectorAll(".carousel-item");

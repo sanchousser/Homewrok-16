@@ -29,13 +29,13 @@ body {
 }
 /* ----- Contact section ----- */
 .section-contact {
-  background-color: #84A178;
+  background-color: #84a178;
 }
 .contact-container {
   padding-bottom: 60px;
   position: relative;
   top: -350px; /* Adjust the value to move the image up */
-  margin-bottom: -410px; 
+  margin-bottom: -410px;
 }
 
 @media (min-width: 768px) {
@@ -70,7 +70,7 @@ body {
   text-align: center;
   border-radius: 4px;
   text-transform: uppercase;
-  background-color: #F8D24E;
+  background-color: #f8d24e;
 }
 .card-foodtruck {
   width: 130px;
@@ -92,7 +92,7 @@ body {
 }
 .card-location-text:hover {
   text-decoration: underline;
-  color: #D6936D;
+  color: #d6936d;
   cursor: context-menu;
 }
 .card-location-text,
@@ -105,7 +105,7 @@ body {
   text-align: left;
 }
 .street > .card-location-text {
-  color: #D6936D;
+  color: #d6936d;
 }
 .horizontal-line {
   width: 216px;
@@ -113,7 +113,7 @@ body {
   margin-bottom: 24px;
 }
 .hours {
-  color: #ABABAB;
+  color: #ababab;
 }
 .card-address {
   display: flex;
@@ -136,7 +136,7 @@ body {
   align-items: center;
   width: 196px;
   border-radius: 10px;
-  background-color: #F8D24E;
+  background-color: #f8d24e;
   margin-bottom: 16px;
   padding: 12px 0px 12px 40px;
   font-family: inherit;
@@ -151,23 +151,23 @@ body {
 }
 .franchise-btn {
   padding-left: 55px;
-  background-color: #84A178;
-  border: 2px solid #F8D24E;
+  background-color: #84a178;
+  border: 2px solid #f8d24e;
 }
 .location-btn:hover {
-  background-color: #0A8817;
+  background-color: #0a8817;
 }
 .location-btn:focus,
 .location-btn:active {
-  background-color: #0A8817;
+  background-color: #0a8817;
   color: #fff;
 }
 .franchise-btn:hover {
-  border-color: #0A8817;
+  border-color: #0a8817;
 }
 .franchise-btn:focus,
 .franchise-btn:active {
-  border-color: #0A8817;
+  border-color: #0a8817;
   color: #fff;
 }
 .location-btn:focus,
@@ -178,7 +178,7 @@ body {
 }
 .location-btn:disabled,
 .franchise-btn:disabled {
-  background-color: #ABABAB;
+  background-color: #ababab;
 }
 @media (min-width: 768px) {
   .contact-card-list {
@@ -263,7 +263,7 @@ body {
   width: 280px;
   padding: 4px 28px 28px;
   background-color: #fff;
-  border: 2px solid #F8D24E;
+  border: 2px solid #f8d24e;
   border-radius: 10px;
   visibility: hidden;
   opacity: 0;
@@ -302,7 +302,7 @@ body {
 .open-map-btn {
   display: inline-block;
   margin-top: 24px;
-  background-color: #F8D24E;
+  background-color: #f8d24e;
   padding: 12px 34px;
   border-radius: 10px;
   font-size: 12px;
@@ -339,7 +339,7 @@ body {
 .reusable-form-input,
 .reusable-form-textarea {
   background-color: #f8d24e1a;
-  border: 1px solid #84A178;
+  border: 1px solid #84a178;
   border-radius: 10px;
   padding: 8px 12px 7px;
   font-size: 12px;
@@ -360,7 +360,7 @@ body {
 .reusable-form-btn {
   width: 55%;
   margin-top: 24px;
-  background-color: #F8D24E;
+  background-color: #f8d24e;
   padding: 12px 34px;
   border-radius: 10px;
   align-self: center;
@@ -377,7 +377,6 @@ body {
     padding: 4px 60px 32px;
   }
   .modal-window.location {
-
     height: 458px;
     width: 568px;
     padding: 4px 60px 32px;
