@@ -1,6 +1,6 @@
 body {
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #84a178;
   font-family: 'Montserrat', sans-serif;
 }
 /* ----- Mobile container width ----- */
@@ -29,7 +29,7 @@ body {
 }
 /* ----- Contact section ----- */
 .section-contact {
-  background-color: #84A178;
+  background-color: #84a178;
 }
 .contact-container {
   padding-bottom: 60px;
@@ -52,7 +52,7 @@ body {
   text-align: center;
   border-radius: 4px;
   text-transform: uppercase;
-  background-color: #F8D24E;
+  background-color: #f8d24e;
 }
 .card-foodtruck {
   width: 130px;
@@ -74,7 +74,7 @@ body {
 }
 .card-location-text:hover {
   text-decoration: underline;
-  color: #D6936D;
+  color: #d6936d;
   cursor: context-menu;
 }
 .card-location-text,
@@ -87,7 +87,7 @@ body {
   text-align: left;
 }
 .street > .card-location-text {
-  color: #D6936D;
+  color: #d6936d;
 }
 .horizontal-line {
   width: 216px;
@@ -95,7 +95,7 @@ body {
   margin-bottom: 24px;
 }
 .hours {
-  color: #ABABAB;
+  color: #ababab;
 }
 .card-address {
   display: flex;
@@ -117,9 +117,8 @@ body {
   display: flex;
   align-items: center;
   width: 196px;
-  height: 42px;
   border-radius: 10px;
-  background-color: #F8D24E;
+  background-color: #f8d24e;
   margin-bottom: 16px;
   padding: 12px 0px 12px 40px;
   font-family: inherit;
@@ -134,23 +133,23 @@ body {
 }
 .franchise-btn {
   padding-left: 55px;
-  background-color: #84A178;
-  border: 2px solid #F8D24E;
+  background-color: #84a178;
+  border: 2px solid #f8d24e;
 }
 .location-btn:hover {
-  background-color: #0A8817;
+  background-color: #0a8817;
 }
 .location-btn:focus,
 .location-btn:active {
-  background-color: #0A8817;
+  background-color: #0a8817;
   color: #fff;
 }
 .franchise-btn:hover {
-  border-color: #0A8817;
+  border-color: #0a8817;
 }
 .franchise-btn:focus,
 .franchise-btn:active {
-  border-color: #0A8817;
+  border-color: #0a8817;
   color: #fff;
 }
 .location-btn:focus,
@@ -161,7 +160,7 @@ body {
 }
 .location-btn:disabled,
 .franchise-btn:disabled {
-  background-color: #ABABAB;
+  background-color: #ababab;
 }
 @media (min-width: 768px) {
   .contact-card-list {
@@ -238,14 +237,14 @@ body {
 }
 .modal-window {
   position: absolute;
-  top: 480%;
-  left: 50%;
+  top: 420%;
+  top: 480 left 50%;
   transform: translate(-50%, -50%);
   height: 674px;
   width: 280px;
   padding: 4px 28px 28px;
   background-color: #fff;
-  border: 2px solid #F8D24E;
+  border: 2px solid #f8d24e;
   border-radius: 10px;
   visibility: hidden;
   opacity: 0;
@@ -253,13 +252,15 @@ body {
 .modal-window.location {
   /* height: 45%; */
   height: 365px;
+  top: 400%;
 }
 .modal-window.franchise.is-open,
 .modal-window.location.is-open {
   visibility: visible;
   opacity: 1;
 }
-.modal-close-btn {
+
+.modal-close-btn-contacts {
   position: absolute;
   top: 2%;
   right: 5%;
@@ -284,14 +285,16 @@ body {
 .open-map-btn {
   display: inline-block;
   margin-top: 24px;
-  background-color: #F8D24E;
+  background-color: #f8d24e;
   padding: 12px 34px;
   border-radius: 10px;
   font-size: 12px;
   font-weight: 600;
   line-height: 14.63px;
 }
-.modal-franchise-form {
+
+.modal-franchise-form,
+.modal-reusable-form {
   /* max-width: 224px; */
   margin: 0 auto;
   display: flex;
@@ -299,6 +302,7 @@ body {
   gap: 12px;
   margin-top: 24px;
 }
+
 .modal-title-contacts {
   font-family: 'Seymour One', sans-serif;
   font-size: 16px;
@@ -315,9 +319,11 @@ body {
   text-align: left;
 }
 .franchise-form-input,
-.franchise-form-textarea {
+.franchise-form-textarea,
+.reusable-form-input,
+.reusable-form-textarea {
   background-color: #f8d24e1a;
-  border: 1px solid #84A178;
+  border: 1px solid #84a178;
   border-radius: 10px;
   padding: 8px 12px 7px;
   font-size: 12px;
@@ -333,10 +339,12 @@ body {
   color: #131313;
   opacity: 1;
 }
-.franchise-form-btn {
+
+.franchise-form-btn,
+.reusable-form-btn {
   width: 55%;
   margin-top: 24px;
-  background-color: #F8D24E;
+  background-color: #f8d24e;
   padding: 12px 34px;
   border-radius: 10px;
   align-self: center;
@@ -345,7 +353,20 @@ body {
   line-height: 14.63px;
   text-align: center;
 }
+
+@media (min-width: 768px) {
+  .modal-window {
+    top: 380%;
+  }
+  .modal-window.location {
+    top: 380%;
+  }
+}
+
 @media (min-width: 1200px) {
+  .modal-window {
+    top: 300%;
+  }
   .modal-window.franchise {
     height: 668px;
     width: 568px;
