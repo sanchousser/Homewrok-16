@@ -28,8 +28,6 @@ body {
 
 img {
   display: block;
-  width: 100%;
-  height: auto;
 }
 
 :root {
@@ -41,7 +39,6 @@ img {
 /* End style reset */
 
 @import './common';
-@import './example';
 @import './header.scss';
 @import './hero.scss';
 @import './sale.scss';
