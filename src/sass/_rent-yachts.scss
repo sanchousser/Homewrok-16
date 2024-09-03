@@ -1,0 +1,57 @@
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 150px;
+}
+
+.contact-form .input-form {
+    display: flex;
+    gap: 18px;
+    flex-direction: column;
+}
+
+.input-form {
+    margin-top: 11px;
+}
+
+.contact-form-title {
+    color: var(--primary-text-color);
+    width: 381px;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2%;
+    font-weight: 500;
+}
+
+.label-text {
+    width: 472px;
+    border-radius: 12px;
+    border: 1px solid rgba(251, 251, 251, 0.40);
+    padding: 18px 388px 18px 18px;
+    gap: 18px;
+    margin-top: 11px;
+
+}
+
+.btn-yacht-form {
+    background-color: var(--bluegreenish);
+    width: 194px;
+    border-radius: 15px;
+    gap: 10px;
+    padding: 18px 75px;
+    border: none;
+    color: var(--primary-text-color);
+    margin-top: 50px;
+}
+
+/* Mobile size */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+
+}
