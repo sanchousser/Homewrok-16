@@ -9,6 +9,7 @@
 .header {
   background-color: var(--black);
   display: flex;
+  align-items: center;
 }
 
 .header-container {
@@ -17,21 +18,33 @@
   justify-content: space-between;
   width: 100%;
   margin-top: 29px;
-  padding: 0;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
 }
 
 .logo-text {
+  display: flex;
+  align-items: center;
+  line-height: 1;
   font-size: 12px;
   font-weight: 400;
-  line-height: 12.3px;
   letter-spacing: -0.03em;
 }
 
 .logo-link {
   display: flex;
+  justify-content: center;
   align-items: center;
   color: white;
   gap: 4px;
+}
+
+.logo-link img {
+  display: flex;
+  align-items: center;
 }
 
 .menu {
@@ -56,6 +69,7 @@
   display: flex;
   flex-direction: column;
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 50%;
   height: 100vh;
@@ -101,6 +115,7 @@
 .modal-menu {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 14px;
   margin-bottom: 300px;
 }
@@ -108,6 +123,7 @@
 .modal-menu-link {
   color: var(--white);
   font-weight: 400;
+  text-align: center;
 }
 
 .modal-social-media-container {
@@ -155,19 +171,23 @@
 
 @media screen and (min-width: 768px) {
   .header-container {
-    margin-top: 34px;
+    margin-top: 20px;
     color: white;
   }
 
+  .logo-link img {
+    width: 19px;
+    height: 19px;
+  }
+
   .logo-text {
+    box-sizing: border-box;
     font-size: 15px;
     line-height: 15.37px;
   }
 
   .header-nav {
-    display: flex;
     gap: 80px;
-    align-items: center;
   }
 
   .menu {
@@ -175,11 +195,17 @@
     gap: 40px;
     font-size: 9px;
     line-height: 12px;
-    text-align: center;
+  }
+
+  .menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .menu-link {
     color: white;
+    margin: 0;
   }
 
   .header-address-container {
@@ -194,9 +220,10 @@
 
   .header-address {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 40px;
     font-size: 9px;
-    line-height: 12px;
   }
 
   .address-link {
@@ -209,6 +236,10 @@
   }
 
   .menu-btn {
+    display: none;
+  }
+
+  .modal-menu-window {
     display: none;
   }
 }
