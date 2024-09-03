@@ -53,7 +53,7 @@ section.about-container {
 }
 .cow-image {
   margin-top: 35px;
-  max-width: 279px;
+  min-width: 279px;
   height: 278px;
   top: 263px;
   left: 21px;
@@ -114,9 +114,10 @@ section.about-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 50px 0 68px 0;
-  gap: 16px;
+  margin: 50px 0 130px 0;
+  gap: 28px;
   color: rgba(252, 252, 252, 1);
+  padding: 0 45px;
 }
 .advantages-icon-list {
   text-align: center;
@@ -126,7 +127,7 @@ section.about-container {
   height: 50px;
   border-radius: 25px;
   background: rgba(248, 210, 78, 1);
-  margin-bottom: 32px;
+  margin-bottom: 12px;
 }
 .advantages-title {
   font-family: 'Montserrat', sans-serif;
@@ -135,10 +136,11 @@ section.about-container {
   line-height: 43.88px;
   letter-spacing: 0.04em;
   text-align: center;
+  margin-bottom: 16px;
 }
-.advantages-list:last-child {
-  gap: 22px;
-}
+// .advantages-list:last-child {
+//   gap: 22px;
+// }
 .advantages-paragraph {
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
@@ -178,7 +180,6 @@ section.about-container {
   position: absolute;
   top: 12px;
   right: 12px;
-  // opacity: 0px;
   background: rgba(252, 252, 252, 1);
   display: flex;
   justify-content: left;
@@ -186,11 +187,6 @@ section.about-container {
   text-align: center;
 }
 .modal-title {
-  // width: 322px;
-  // height: 28px;
-  // margin-left: 123px;
-  // gap: 0px;
-  // opacity: 0px;
   font-family: 'Seymour One', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -231,32 +227,49 @@ section.about-container {
   .first-paragraph,
   .second-paragraph {
     text-align: center;
-    padding-left: 30px;
-    margin: auto 80px;
+    padding: 0 80px;
   }
   .advantages-paragraph {
     text-align: center;
-    margin: auto 80px;
+    // margin: auto 80px;
   }
   .read-btn-container {
     padding-left: 28px;
   }
 }
 @media (min-width: 768px) {
+  .advantages-list-box {
+    padding-left: 76px;
+    padding-right: 76px;
+  }
   .modal-box {
     width: 568px;
     padding: 32px 60px;
   }
   .content-box {
+    padding: 0 32px;
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
+    gap: 38px;
+    align-items: start;
   }
+  .content-box .images .cow-image{
+    width: 330px;
+  }
+
+  .paragraph-btn-box, 
+  .images {
+    flex-basis: calc((100% - 38px) / 2);
+  }
+
   .advantages-list {
-    // justify-content: space-between;
     flex-direction: row;
-    // flex-basis: calc(100%-)
+    flex-wrap: nowrap;
+    gap: 80px;
+  }
+
+  .advantages-icon-list {
+    flex-basis: calc((100% - 250px) / 3);
+    // 160px gap + 90px padding left and right
   }
 
   .advantages-svg {
@@ -276,10 +289,6 @@ section.about-container {
     text-align: center;
   }
 
-  .advantages-list:last-child {
-    gap: 22px;
-  }
-
   .advantages-title {
     font-size: 48px;
     font-weight: 700;
@@ -293,6 +302,18 @@ section.about-container {
     font-weight: 400;
     line-height: 24.36px;
     text-align: center;
+  }
+
+  .first-paragraph,
+  .second-paragraph {
+    text-align: left;
+    padding: 0;
+    margin: auto 0;
+  }
+
+  .read-btn-container {
+    padding-left: 0;
+    justify-content: flex-start;
   }
 
   .close-modal-svg {

@@ -142,28 +142,32 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-//<-------------- Section Products JS ----------->
-// opens/closes modal window for products ingredients
- 
-const ingredientsButtons = document.querySelectorAll('.product-card-arrow-button');
-const ingredientsBackdrop = document.querySelector('.modal-window-ingredients');
-
-ingredientsButtons.forEach(button => {
-  button.addEventListener('click', toggleIngredientsModal);
-});
-
-ingredientsBackdrop.addEventListener('click', (e) => {
-  const closeButton = e.target.closest(".modal-close-button");
-  const submitButton = e.target.closest(".modal-window-ingredients-submit-button");
-
-  if (closeButton || submitButton) {
-    toggleIngredientsModal();
+//<--------------Customer Review JS----------->
+document.addEventListener("DOMContentLoaded", function () {
+  const carouselItems = document.querySelectorAll(".carousel-item");
+  const dots = document.querySelectorAll(".dot");
+  let currentIndex = 0;
+  function updateSlide(index) {
+    // Update active class on slides
+    carouselItems.forEach((item, i) => {
+      item.classList.toggle("active", i === index);
+    });
+    // Update active class on dots
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
+    });
   }
+  // Change slide on dot click
+  dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+      currentIndex = i;
+      updateSlide(currentIndex);
+    });
+  });
+  // Initial setup to show the first slide
+  updateSlide(currentIndex);
 });
 
-function toggleIngredientsModal() {
-  ingredientsBackdrop.classList.toggle("is-open");
-}
 
 // About section JS
 // opens modal window for read more button
