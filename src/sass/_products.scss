@@ -99,6 +99,10 @@ body {
     border-radius: 100px; 
     position: absolute; 
     top: -25%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/products-ice-cream@2x.jpg);
+    }
   }
   
   .ice-cream-container::before {
@@ -134,6 +138,10 @@ body {
     border-radius: 100px; 
     position: absolute; 
     top: -25%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/products-ice-coffee@2x.jpg);
+    }
   }
   
   .ice-coffee-container::before {
@@ -170,6 +178,10 @@ body {
     border-radius: 100px; 
     position: absolute; 
     top: -25%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/products-milkshakes@2x.jpg);
+    }
   }
   
   .milkshakes-container::before {
@@ -249,6 +261,7 @@ body {
   .modal-window-ingredients.is-open {
     visibility: visible;
     opacity: 1;
+    z-index: 9;
   }
   
   .modal-close-button {
@@ -441,6 +454,10 @@ body {
       background-image: url(../images/ice-cream-background-tablet.jpg);
       background-size: 125%;
       background-position: -30px -122px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../images/ice-cream-background-tablet@2x.jpg);
+      }
     }
   
     .section-products-header {
@@ -473,11 +490,15 @@ body {
   
     .product-card-title {
       font-size: 22px;
-      padding-top: 108px;
+      padding-top: 124px;
     }
   
     .product-card-paragraph {
       width: 172px;
+    }
+
+    .product-card-arrow-button {
+      transform: translateX(115%);
     }
   }
   
@@ -487,6 +508,12 @@ body {
       background-size: cover;
       background-position: 0 0;
       background-repeat: no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../images/ice-cream-background-desktop@2x.jpg);
+        background-position: -60px -250px;
+        background-size: 107%;
+      }
     }
   
     .section-products-header {
@@ -619,5 +646,4 @@ body {
     min-width: 121px;
     margin-top: 12px;
   }
-  
   }
