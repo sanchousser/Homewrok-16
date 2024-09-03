@@ -1,6 +1,6 @@
 .reviews-section {
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     padding-left: 20px;
     padding-right: 20px;
 
@@ -79,6 +79,10 @@
 
 @media only screen and (min-width: 768px) {
     .reviews-section {
+        margin-top: 150px;
+        margin-bottom: 150px;
+        padding-left: 32px;
+        padding-right: 32px;
 
         .reviews-title {
             font-size: 48px;
@@ -101,9 +105,19 @@
 
 @media only screen and (min-width: 1280px) {
     .reviews-section {
+        padding-left: 50px;
+        padding-right: 50px;
+
         .reviews-title {
-            min-width: 854px;
+            width: 854px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
+        .reviews-paragraph {
+            width: 571px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 }
