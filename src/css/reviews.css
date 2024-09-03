@@ -64,13 +64,9 @@
 
 }
 @media (min-width:300px) and (max-width:767px) {
-    ul li:nth-child(3) {
-        display: none;
-    }
-    ul li:nth-child(2) {
-        display: none;
-    }
-
+.review-type-second, .review-type-last {
+    display: none;
+}
 }
 
 /* --tablet-- */
