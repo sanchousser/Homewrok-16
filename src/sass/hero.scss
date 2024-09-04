@@ -39,6 +39,7 @@
 
 .swiper-buttons {
   display: flex;
+  position: static;
   flex-direction: row;
   align-items: center;
   height: 32px;
@@ -85,11 +86,24 @@
 }
 
 .swiper-counter {
+  display: flex;
+  align-items: center;
+  width: 82px;
+  height: 18px;
+  display: flex;
   position: absolute;
-  margin-left: 204px;
-  margin-top: 36px;
+  margin-left: 184px;
+  margin-top: 35px;
   color: #fff;
   font-size: 14px;
+}
+
+#current-slide {
+  margin-right: 6px;
+}
+
+#total-slides {
+  margin-left: 6px;
 }
 
 @media screen and (min-width: 768px) {
@@ -150,8 +164,8 @@
   }
 
   .swiper-counter {
-    margin-left: 375px;
-    margin-top: 45px;
+    margin-left: 353px;
+    margin-top: 43px;
   }
 }
 

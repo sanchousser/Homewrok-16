@@ -20,6 +20,7 @@
 .modal {
   position: absolute;
   width: 100%;
+  box-sizing: border-box;
   left: 50%;
   padding-top: 12px;
   padding-left: 20px;

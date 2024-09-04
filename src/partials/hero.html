@@ -131,17 +131,25 @@
     },
     on: {
       init: function () {
-        document.getElementById('total-slides').textContent =
-          this.slides.length;
-        document.getElementById('current-slide').textContent =
-          this.realIndex + 1;
+        document.getElementById('total-slides').textContent = formatNumber(
+          this.slides.length
+        );
+
+        document.getElementById('current-slide').textContent = formatNumber(
+          this.realIndex + 1
+        );
       },
       slideChange: function () {
-        document.getElementById('current-slide').textContent =
-          this.realIndex + 1;
+        document.getElementById('current-slide').textContent = formatNumber(
+          this.realIndex + 1
+        );
       },
     },
   });
+
+  function formatNumber(number) {
+    return number < 10 ? '0' + number : number;
+  }
 </script>
 
 <link
