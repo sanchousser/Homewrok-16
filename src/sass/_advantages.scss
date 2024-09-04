@@ -4,7 +4,7 @@
 }
 
 .big-container {
-   max-width: 365px;
+   min-width: 365px;
    margin: 0 auto;
    display: flex;
    flex-direction: column;
@@ -114,7 +114,7 @@
     }
 
     .big-container {
-        max-width: 704px;
+        min-width: 704px;
         flex-direction: column;
         align-items: center;
     }
@@ -205,7 +205,7 @@
     }
 
     .big-container {
-        max-width: 1210px;
+        min-width: 1210px;
         display: flex;
         flex-direction: row;
         align-items: flex-start; 
@@ -290,7 +290,7 @@
 /* Larger Desktop Styling (1440px and Above) */
 @media screen and (min-width: 1440px) {
     .big-container {
-        max-width: 1340px;
+        min-width: 1340px;
     }
 }
 
