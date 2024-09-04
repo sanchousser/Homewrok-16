@@ -143,8 +143,10 @@
 @media screen and (min-width: 1280px) {
 
   .hero {
+    margin-left:auto ;
+    margin-right: auto;
     padding: 235px 0 215px 0;
-    min-width: 1280px;
+    width: 1280px;
     background-image: url("../image/hero/hero-desc.jpg");
   }
 
