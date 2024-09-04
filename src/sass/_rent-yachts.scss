@@ -6,7 +6,6 @@
 
 .section {
     padding-top: 40px;
-    padding-bottom: 40px;
 }
 
 .form-container {
@@ -95,6 +94,14 @@
     line-height: 18px;
     letter-spacing: -0.02em;
     text-align: left;
+    
+}
+
+.btn-yacht-form:focus,
+.btn-yacht-form:hover {
+    color: #1b414b;
+    background-color: #fbfbfb;
+    transition: backround-color .25s cubic-bezier(.4, 0, .2, 1);
 }
 
 .rent-picture .img-rent {
@@ -136,6 +143,9 @@
 
 @media screen and (min-width: 1280px) {
     .rent-container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 1280px;
         display: flex;
         flex-direction: row;
         gap: 50px;
