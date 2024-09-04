@@ -1,3 +1,5 @@
+/* Catalog Section */
+
 @media only screen and (max-width: 1020px) {
   .catalog-list-item.blockmob {
     display: none;
@@ -221,9 +223,11 @@
   .overlay {
     padding: 25px 0 25px;
   }
+
   .overlay-text {
     margin-bottom: 40px;
   }
+
   .image-container img {
     width: 276px;
     height: 375px;
