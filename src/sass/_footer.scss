@@ -1,0 +1,159 @@
+.site-footer {
+    background-color: #1B414B;
+    border-radius: 24px 24px 0px 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    .footer-container {
+        padding: 40px 30px 20px 30px;
+
+        .footer-and-sections-container {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .footer-logo {
+            text-decoration: none;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16.94px;
+            letter-spacing: -0.03em;
+            text-align: left;
+            color: var(--primary-text-color);
+        }
+
+        .site-sections-list-footer {
+            display: flex;
+            justify-content: flex-end;
+            gap: 4px;
+        }
+
+        .site-section-item {
+            display: inline-flex;
+            align-items: center;
+
+            a {
+                border-radius: 8px;
+                font-family: 'Inter', sans-serif;
+                font-size: 9px;
+                font-weight: 400;
+                line-height: 11.7px;
+                text-align: center;
+                text-decoration: none;
+                color: #FBFBFB;
+                background-color: #FBFBFB4D;
+                text-transform: uppercase;
+                padding: 15px 12px;
+            }
+
+        }
+
+        .site-section-item a:hover,
+        .site-section-item a:focus {
+            color: #1b414b;
+            background-color: #fbfbfb;
+            transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    .footer-container ul {
+        list-style: none;
+    }
+
+    .social-link-list-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        margin-bottom: 40px;
+        gap: 8px;
+
+        .footer-icon {
+            fill: #FBFBFB;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    .social-link-list-footer .footer-icon:hover,
+    .social-link-list-footer .footer-icon:focus {
+        fill: #FBFBFBCC;
+    }
+
+    .site-slogan {
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: -0.02em;
+        text-align: center;
+        margin-bottom: 82px;
+        min-width: 279px;
+    }
+
+    .policy-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        .adventures-privacy {
+            color: #FBFBFB66;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.03em;
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .site-footer {
+        margin-left: 16px;
+        margin-right: 16px;
+
+        .footer-container {
+            .tablet-desktop-container {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 96px;
+            }
+
+            .footer-and-sections-container {
+                display: contents;
+            }
+
+            .footer-logo {
+                font-size: 20px;
+                line-height: 24.2px;
+            }
+        }
+
+        .social-link-list-footer {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .site-slogan {
+            font-size: 32px;
+            line-height: 32px;
+            margin-bottom: 99px;
+            min-width: 640px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1280px) {
+    .site-footer {
+        width: 1230px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .site-slogan {
+            width: 693px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+}
