@@ -1,0 +1,61 @@
+<div class="news-main">
+  <section class="section-newsletter" id="id-section-newsletter">
+    <div class="news-form">
+      <h2 class="newsletter-h-doi">Newsletter</h2>
+      <p class="newsletter-p m-bot">
+        Every week we will send you new designs and information about sales.
+      </p>
+      <form>
+        <div>
+          <input
+            class="news-input m-bot"
+            type="text"
+            name="newsletter"
+            minlength="2"
+            maxlength="16"
+            pattern="^[a-zA-Z]+ [a-zA-Z]+$"
+            placeholder="Name"
+            title="Please enter your Name and Surname"
+            required
+          />
+        </div>
+        <div>
+          <input
+            class="news-input m-bot"
+            type="email"
+            name="newsletter"
+            pattern="\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+            placeholder="E-mail"
+            title="Please enter your E-mail"
+            required
+          />
+        </div>
+        <div class="news-checkbox">
+          <input
+            class="news-box"
+            type="checkbox"
+            id="agree"
+            value="true"
+            name="user-privacy"
+          />
+          <label for="agree" class="news-agree"
+            >Agree to subscribe to the newsletter</label
+          >
+        </div>
+        <button class="news-button" type="submit">Send</button>
+      </form>
+    </div>
+
+    <div>
+      <img
+        class="news-img"
+        srcset="
+          ./images/newsletters-picture@1x.jpg 1x,
+          ./images/newsletters-picture@2x.jpg 2x
+        "
+        src="./images/newsletters-picture@1x.jpg"
+        alt="Newsletter picture"
+      />
+    </div>
+  </section>
+</div>

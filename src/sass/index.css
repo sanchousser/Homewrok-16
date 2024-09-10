@@ -1,0 +1,149 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+:root {
+  --font-family: "Roboto", sans-serif;
+  --font-family-hero: "Playfair Display", serif;
+  --Blue-font: #0A224A;
+  --White: #FFFFFF;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+  cursor: pointer;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+ul {
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media (min-width: 375px) {
+  .container {
+    width: 375px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 32px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    width: 1240px;
+  }
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header {
+  color: darkorange;
+  background-color: black;
+}
+
+.hero {
+  color: darkorange;
+  background-color: black;
+}
+
+.about {
+  color: darkorange;
+  background-color: black;
+}
+
+.prices {
+  color: darkorange;
+  background-color: black;
+}
+
+.products {
+  color: darkorange;
+  background-color: black;
+}
+
+.bestsellers {
+  color: darkorange;
+  background-color: black;
+}
+
+.newsletter {
+  color: darkorange;
+  background-color: black;
+}
+
+.reviews {
+  color: darkorange;
+  background-color: black;
+}
+
+.footer {
+  color: darkorange;
+  background-color: black;
+}/*# sourceMappingURL=index.css.map */
