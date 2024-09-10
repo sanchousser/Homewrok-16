@@ -1,14 +1,16 @@
-(() => {
-    const refs = {
-        openMenuBtn: document.querySelector('[data-menu-open]'),
-        closeMenuBtn: document.querySelector('[data-menu-close]'),
-        menu: document.querySelector('[data-menu]')
-    };
-
-    refs.openMenuBtn.addEventListener('click', toggleMenu);
-    refs.closeMenuBtn.addEventListener('click', toggleMenu);
-
-    function toggleMenu() {
-        refs.menu.classList.toggle('is-open');
-    }
-})();
+document.addEventListener('DOMContentLoaded', function () {
+    const menuButton = document.querySelector('.menu-btn');
+    const closeButton = document.querySelector('.menu-close-btn');
+    const mobileMenu = document.querySelector('.mobile-menu');
+  
+    // Open menu
+    menuButton.addEventListener('click', function () {
+      mobileMenu.classList.add('is-open');
+    });
+  
+    // Close menu
+    closeButton.addEventListener('click', function () {
+      mobileMenu.classList.remove('is-open');
+    });
+  });
+  
